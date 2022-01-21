@@ -226,11 +226,11 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
   class="max-w-7xl mx-auto p-8">
 
     <div 
-    class="flex justify-center md:justify-end space-x-2 py-6">
+    class="flex justify-center md:justify-end space-x-2 py-6 flex-col md:flex-row">
       <div 
       class="pt-2 relative text-gray-600">
         <input 
-        class="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none" 
+        class="border-2 border-gray-300 bg-white h-10 px-5 pr-10 rounded-lg text-sm focus:outline-none relative w-full md:w-auto" 
         type="search" 
         name="search" 
         placeholder="Search">
@@ -245,16 +245,21 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
       <div 
       class="mt-1 relative text-gray-600">
         <select 
-        class="mt-1 w-20 md:w-36 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        class="mt-1 w-20 md:w-36 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm appearance-none relative">
           <option>FILTER</option>
           <option>Canada</option>
           <option>Mexico</option>
         </select>
+        <div class="absolute right-0 top-3 mr-2 text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+        </div>
       </div>
       <div 
       class="mt-1 relative text-gray-600">
         <select 
-        class="mt-1 w-20 md:w-36 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm">
+        class="mt-1 w-20 md:w-36 py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm appearance-none">
           <option>STATUS</option>
           <option>Canada</option>
           <option>Mexico</option>
@@ -983,7 +988,7 @@ class="text-white bg-darkblue">
 x-data="topBtn" 
 @click="scrolltoTop" 
 id="topButton"
-class="fixed z-10 hidden p-3 text-white bottom-10 right-5">
+class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
   </svg>

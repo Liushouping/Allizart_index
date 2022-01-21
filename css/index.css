@@ -5,43 +5,8 @@
 /* 
    Font Family
 */
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;500;700;900&display=swap');
 
-/*@font-face {
-  font-family: 'Prompt-thin';
-  font-style: normal;
-  font-weight: 100;
-  font-display: swap;
-  src: url(./font/Prompt-thin.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'Prompt-light';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: url(./font/Prompt-light.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'Prompt-Medium';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(./font/Prompt-Medium.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'Prompt-Bold';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: url(./font/Prompt-Bold.ttf) format('ttf');
-}
-@font-face {
-  font-family: 'Prompt-Black';
-  font-style: normal;
-  font-weight: 900;
-  font-display: swap;
-  src: url(./font/Prompt-Black.ttf) format('ttf');
-}*/
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;500;700;900&display=swap');
 
 /* 
    Swiper
