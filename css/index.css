@@ -5,8 +5,9 @@
 /* 
    Font Family
 */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;300;500;700;900&display=swap');
 
-@font-face {
+/*@font-face {
   font-family: 'Prompt-thin';
   font-style: normal;
   font-weight: 100;
@@ -40,7 +41,7 @@
   font-weight: 900;
   font-display: swap;
   src: url(./font/Prompt-Black.ttf) format('ttf');
-}
+}*/
 
 /* 
    Swiper
