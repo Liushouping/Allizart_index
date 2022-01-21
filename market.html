@@ -256,15 +256,20 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             DEKF51848#*********553118515
                           </p>
                         </div>
                         <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                          	<button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -275,14 +280,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
@@ -295,102 +300,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             7 days left
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-                      
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png" >
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
+                          class="text-xs">
                             offer for 0.0100
                           </p>
                         </div>
@@ -411,7 +328,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
             class="absolute -top-5 left-10 z-10">
               <img 
               class="block scale-150" 
-              src="./image/product-07.png" >
+              src="./image/product-07.png">
             </div>
             <div 
             class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
@@ -432,15 +349,20 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             DEKF51848#*********553118515
                           </p>
                         </div>
                         <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -451,14 +373,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
@@ -471,278 +393,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             7 days left
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-                      
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png" >
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img c
-              lass="block scale-150" 
-              src="./image/product-07.png" >
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-                      
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png" >
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-sm">
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-sm">
+                          class="text-xs">
                             offer for 0.0100
                           </p>
                         </div>
@@ -763,7 +421,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
             class="absolute -top-5 left-10 z-10">
               <img 
               class="block scale-150" 
-              src="./image/product-07.png" >
+              src="./image/product-07.png">
             </div>
             <div 
             class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
@@ -784,15 +442,20 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             DEKF51848#*********553118515
                           </p>
                         </div>
                         <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -803,14 +466,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
@@ -823,14 +486,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             7 days left
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             offer for 0.0100
                           </p>
                         </div>
@@ -840,7 +503,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
           </div>
         </div>
       </div>
-                      
+
       <div 
       class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
         <div 
@@ -851,7 +514,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
             class="absolute -top-5 left-10 z-10">
               <img 
               class="block scale-150" 
-              src="./image/product-07.png" >
+              src="./image/product-07.png">
             </div>
             <div 
             class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
@@ -872,15 +535,20 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             DEKF51848#*********553118515
                           </p>
                         </div>
                         <div 
-                        class="inline-flex items-center justify-center text-gray-400">
-                          	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              							  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-              							</svg> 9
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
                         </div>
                     </div>
                 </li>
@@ -891,14 +559,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             Title Name
                           </p>
                         </div>
@@ -911,14 +579,14 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
                         <div 
                         class="flex-1 min-w-0">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             7 days left
                           </p>
                         </div>
                         <div 
                         class="inline-flex items-center">
                           <p 
-                          class="text-sm">
+                          class="text-xs">
                             offer for 0.0100
                           </p>
                         </div>
@@ -928,6 +596,379 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
           </div>
         </div>
       </div>
+
+      <div 
+      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
+        <div 
+        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
+          <picture 
+          class="relative block bg-black h-96 border-t rounded border-black">
+            <div 
+            class="absolute -top-5 left-10 z-10">
+              <img 
+              class="block scale-150" 
+              src="./image/product-07.png">
+            </div>
+            <div 
+            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              <span 
+              class="px-6 pt-2 text-sm">Title Name</span>
+              <span 
+              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
+            </div>
+          </picture>
+          <div 
+          class="p-4 bg-black text-white text-sm relative z-20">
+            <ul>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            DEKF51848#*********553118515
+                          </p>
+                        </div>
+                        <div 
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            7 days left
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            offer for 0.0100
+                          </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div 
+      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
+        <div 
+        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
+          <picture 
+          class="relative block bg-black h-96 border-t rounded border-black">
+            <div 
+            class="absolute -top-5 left-10 z-10">
+              <img 
+              class="block scale-150" 
+              src="./image/product-07.png">
+            </div>
+            <div 
+            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              <span 
+              class="px-6 pt-2 text-sm">Title Name</span>
+              <span 
+              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
+            </div>
+          </picture>
+          <div 
+          class="p-4 bg-black text-white text-sm relative z-20">
+            <ul>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            DEKF51848#*********553118515
+                          </p>
+                        </div>
+                        <div 
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            7 days left
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            offer for 0.0100
+                          </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div 
+      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
+        <div 
+        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
+          <picture 
+          class="relative block bg-black h-96 border-t rounded border-black">
+            <div 
+            class="absolute -top-5 left-10 z-10">
+              <img 
+              class="block scale-150" 
+              src="./image/product-07.png">
+            </div>
+            <div 
+            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              <span 
+              class="px-6 pt-2 text-sm">Title Name</span>
+              <span 
+              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
+            </div>
+          </picture>
+          <div 
+          class="p-4 bg-black text-white text-sm relative z-20">
+            <ul>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            DEKF51848#*********553118515
+                          </p>
+                        </div>
+                        <div 
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            7 days left
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            offer for 0.0100
+                          </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div 
+      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
+        <div 
+        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
+          <picture 
+          class="relative block bg-black h-96 border-t rounded border-black">
+            <div 
+            class="absolute -top-5 left-10 z-10">
+              <img 
+              class="block scale-150" 
+              src="./image/product-07.png">
+            </div>
+            <div 
+            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              <span 
+              class="px-6 pt-2 text-sm">Title Name</span>
+              <span 
+              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
+            </div>
+          </picture>
+          <div 
+          class="p-4 bg-black text-white text-sm relative z-20">
+            <ul>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            DEKF51848#*********553118515
+                          </p>
+                        </div>
+                        <div 
+                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
+                            <button type="button" @click="open = !open">
+                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                              </svg>
+                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
+                              </svg> 9
+                            </button>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            Title Name
+                          </p>
+                        </div>
+                    </div>
+                </li>
+                <li 
+                class="py-1">
+                    <div 
+                    class="flex items-center">
+                        <div 
+                        class="flex-1 min-w-0">
+                          <p 
+                          class="text-xs">
+                            7 days left
+                          </p>
+                        </div>
+                        <div 
+                        class="inline-flex items-center">
+                          <p 
+                          class="text-xs">
+                            offer for 0.0100
+                          </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+                      
 
   <!-- Pagination -->
 	<div 
