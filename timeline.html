@@ -30,24 +30,15 @@ class="scroll-smooth tracking-widest">
 <nav 
 x-data="{ isopen: false }" 
 class="bg-darkblue">
+
   <div  
-  class="max-w-5xl mx-auto px-2 sm:px-6 lg:px-8 py-2">
+  class="max-w-5xl mx-auto px-6 lg:px-8 py-2">
+
     <div  
     class="relative flex items-center justify-between h-16">
-      <div 
-      class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-        <button 
-        @click="isopen = !isopen" 
-        type="button" 
-        class="inline-flex items-center justify-center p-2 rounded-md text-white">
-          <svg class="block h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-          </svg>
-        </button>
-      </div>
 
       <div 
-      class="flex-1 flex items-center justify-center">
+      class="flex items-center justify-center">
         <div 
         class="flex-shrink-0 flex items-start">
           <img 
@@ -57,8 +48,6 @@ class="bg-darkblue">
         </div>
         <div 
         class="hidden md:flex sm:ml-6 z-50">
-          <!-- navbar -->
-          <div>
             <a 
             href="#"
             class="text-white hover:text-yellow-300 px-3 py-2 rounded-md text-sm font-medium">Project</a>
@@ -68,78 +57,83 @@ class="bg-darkblue">
             <a 
             href="#" 
             class="text-white hover:text-yellow-300 px-3 py-2 rounded-md text-sm font-medium">Who Are We</a>
-          </div>
         </div>
 
       </div>
       <div 
-      class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0 space-x-4">
-        <div 
-        class="ml-3 relative" 
-        x-data="{ dropdownOpen: false }">
-          <div>
-            <!-- Sign Out -->
+      class="absolute right-4 flex flex-row space-x-6 items-center md:pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+          <div  
+          x-data="{ dropdownOpen: false }">
+              <!-- Sign Out -->
+              <button 
+              @click="dropdownOpen = !dropdownOpen" 
+              type="button" 
+              class="text-white flex items-center justify-center text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                </svg>
+                <span 
+                class="md:flex hidden ml-2 tracking-widest">User Name</span>
+              </button>
+              <!-- Sign Out -->
+              <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
+              <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
+                <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+                  Sign Out
+                </a>
+              </div>
+          </div>
+
+          <div  
+          x-data="{ translateopen: false }">
             <button 
-            @click="dropdownOpen = !dropdownOpen" 
+            @click="translateopen = !translateopen" 
             type="button" 
             class="text-white flex items-center justify-center text-sm">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
               </svg>
-              <span 
-              class="md:flex hidden ml-2 tracking-widest">User Name</span>
             </button>
-            <!-- Sign Out -->
-            <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-            <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
+            <!-- translate -->
+            <div x-show="translateopen" @click="translateopen = false" class="fixed inset-0 h-full w-full z-10"></div>
+            <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
               <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
-                Sign Out
+                  繁體中文
+              </a>
+              <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+                  English
               </a>
             </div>
-
-          </div>
-        </div>
-
-        <div 
-        x-data="{ translateopen: false }">
-          <!-- translate -->
-          <button 
-          @click="translateopen = !translateopen" 
-          type="button" 
-          class="text-white flex items-center justify-center text-sm">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
-            </svg>
-          </button>
-          <!-- translate -->
-          <div x-show="translateopen" @click="translateopen = false" class="fixed inset-0 h-full w-full z-10"></div>
-          <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
-            <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
-                繁體中文
-            </a>
-            <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
-                English
-            </a>
           </div>
 
-        </div>
+          <div class="flex md:hidden">
+            <button 
+              @click="isopen = !isopen" 
+              type="button" 
+              class="text-white flex items-center justify-center text-sm">
+                <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              </button>
+          </div>
+
           <!-- LOGOUT -->
           <button
           class="md:flex hidden text-white bg-gradient-to-t from-red-700 to-pink-600 px-12 py-2 rounded-md text-sm tracking-widest">
             LOGOUT
           </button>
-        </div>
+          <!-- LOGOUT -->
       </div>
-    </div>
 
     </div>
+  </div>
+
     <!-- mobile menu -->
     <div 
     x-show="isopen" 
-    class="w-screen h-60 md:h-0">
-      <div 
-      class="bg-darkblue">
-        <div>
+    class="w-full h-60 md:h-0">
+        <div 
+        class="bg-darkblue">
           <ul 
           class="space-y-8 pt-10">
             <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
@@ -153,7 +147,6 @@ class="bg-darkblue">
             </li>
           </ul>
         </div>
-      </div>
     </div>
 </nav>
 <!-- Banner -->
@@ -174,7 +167,7 @@ style="background-image: url(./image/vapor.png);">
       <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
         <a href="javascript:;" class="appearance-none">USDT RRCORD</a>
       </li>
-      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm flex-row">
+      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
         <a href="javascript:;" class="appearance-none">WALLET ADDRESS</a>
       </li>
     </ul>
