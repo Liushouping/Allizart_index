@@ -155,7 +155,7 @@ class="relative bg-cover bg-center h-60 py-12 flex justify-between z-20"
 style="background-image: url(./image/vapor.png);">
 
   <div 
-  class="max-w-5xl md:mx-auto mx-3 flex justify-between w-full">
+  class="max-w-5xl md:mx-auto mx-6 flex justify-between w-full">
     <ul
     class="space-y-4 text-white">
       <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
@@ -173,7 +173,7 @@ style="background-image: url(./image/vapor.png);">
     </ul>
 
     <div
-    class="flex flex-col text-white flex justify-center space-y-4">
+    class="flex flex-col text-white flex justify-center space-y-4 mx-6">
       <div
       class="flex flex-col">
         <span>Hello</span>
@@ -181,16 +181,15 @@ style="background-image: url(./image/vapor.png);">
       </div>
       <button
       class="bg-white px-8 py-2 text-gray-900 rounded-md flex items-center">
-      <img src="./image/disc.png" class="h-4 mr-4">
-      BUY
+        <img src="./image/disc.png" class="h-4 mr-4">BUY
       </button>
       <button 
       class="bg-white px-8 py-2 text-gray-900 rounded-md flex items-center">
-      <img src="./image/arrow.png" class="h-4 mr-4">
-      SEND
+        <img src="./image/arrow.png" class="h-4 mr-4">SEND
       </button>
     </div>
   </div>
+
 </section>
 <section 
 class="relative w-screen hidden lg:flex">
@@ -273,7 +272,7 @@ class="bg-deepblack">
 
 	          <div 
             class="flex w-full flex-col bg-white rounded-lg">
-	          	<div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+	          	<div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -287,7 +286,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-pink-500 text-3xl font-bold">+0.00581</li>
@@ -296,12 +295,12 @@ class="bg-deepblack">
                     <li 
                     class="text-gray-900 mt-12 text-sm">Account Balance
                       <span 
-                      class="ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -333,14 +332,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
@@ -387,7 +386,7 @@ class="bg-deepblack">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -401,7 +400,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-black text-3xl font-bold">+0.00581</li>
@@ -410,12 +409,12 @@ class="bg-deepblack">
                     <li 
                     class="text-gray-900 mt-12 text-sm">Account Balance
                       <span 
-                      class="ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -447,14 +446,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
@@ -501,7 +500,7 @@ class="bg-deepblack">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -515,7 +514,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-black text-3xl font-bold">+0.00581</li>
@@ -529,7 +528,7 @@ class="bg-deepblack">
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -561,14 +560,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
@@ -614,7 +613,7 @@ class="bg-deepblack">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -628,7 +627,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-pink-500 text-3xl font-bold">-0.00527</li>
@@ -637,12 +636,12 @@ class="bg-deepblack">
                     <li 
                     class="text-gray-900 mt-12 text-sm">Account Balance
                       <span 
-                      class="ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -674,14 +673,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
@@ -728,7 +727,7 @@ class="bg-deepblack">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -742,7 +741,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-black text-3xl font-bold">+0.00581</li>
@@ -751,12 +750,12 @@ class="bg-deepblack">
                     <li 
                     class="text-gray-900 mt-12 text-sm">Account Balance
                       <span 
-                      class="ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -788,14 +787,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
@@ -841,7 +840,7 @@ class="bg-deepblack">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -855,7 +854,7 @@ class="bg-deepblack">
                   </button>
                 </div>
                 <div 
-                class="w-full md:w-1/2 px-4 flex">
+                class="w-full md:w-1/2 px-4 flex pb-6 border-b md:border-0">
                   <ul>
                     <li 
                     class="text-pink-500 text-3xl font-bold">-0.00527</li>
@@ -864,12 +863,12 @@ class="bg-deepblack">
                     <li 
                     class="text-gray-900 mt-12 text-sm">Account Balance
                       <span 
-                      class="ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
                 <div 
-                class="w-full md:w-1/2 md:border-l px-2 md:px-10">
+                class="w-full md:w-1/2 md:border-l px-4 md:px-10 pt-6">
                   <ul>
                     <li 
                     class="text-black text-xl">2021/03/15 19:57</li>
@@ -901,14 +900,14 @@ class="bg-deepblack">
             <!-- 框內資訊 -->
             <!-- 框外資訊 -->
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-thin" 
             :class="{'flex': open, 'hidden': !open}">
               <div 
               class="absolute bottom-40 md:bottom-0 left-28">
                   <img src="./image/product-05.png" class="h-32">
               </div>
               <div 
-              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl">
+              class="w-full md:w-1/2 px-10 flex justify-end items-center text-white text-xl font-medium">
                 Sold
               </div>
               <div
