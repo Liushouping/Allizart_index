@@ -162,32 +162,37 @@ class="relative bg-cover bg-center h-60 py-12 flex justify-between z-20"
 style="background-image: url(./image/vapor.png);">
 
   <div 
-  class="max-w-5xl md:mx-auto mx-10 flex justify-between w-full">
-    <!-- Menu -->
+  class="max-w-5xl md:mx-auto mx-6 flex justify-between w-full">
     <ul
     class="space-y-4 text-white">
-      <li class="hover:before:content-['▶'] before:mr-2 before:text-red-500 hover:text-red-500">My Garage</li>
-      <li class="hover:before:content-['▶'] before:mr-2 before:text-red-500 hover:text-red-500">My auction</li>
-      <li class="hover:before:content-['▶'] before:mr-2 before:text-red-500 hover:text-red-500">USDT Record</li>
-      <li class="hover:before:content-['▶'] before:mr-2 before:text-red-500 hover:text-red-500">Wallet address</li>
+      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500">
+        <a href="javascript:;" class="appearance-none">MY GARAGE</a>
+      </li>
+      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500">
+        <a href="javascript:;" class="appearance-none">MY AUCTION</a>
+      </li>
+      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500">
+        <a href="javascript:;" class="appearance-none">USDT RRCORD</a>
+      </li>
+      <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500">
+        <a href="javascript:;" class="appearance-none">WALLET ADDRESS</a>
+      </li>
     </ul>
 
     <div
     class="flex flex-col text-white flex justify-center space-y-4">
-      <!-- User -->
       <div
       class="flex flex-col">
         <span>Hello</span>
         <span>User Name</span>
       </div>
-      <!-- BUY / SEND -->
       <button
-      class="bg-white px-12 py-2 text-gray-900 rounded-md flex items-center">
+      class="bg-white px-8 py-2 text-gray-900 rounded-md flex items-center">
       <img src="./image/disc.png" class="h-4 mr-4">
       BUY
       </button>
       <button 
-      class="bg-white px-12 py-2 text-gray-900 rounded-md flex items-center">
+      class="bg-white px-8 py-2 text-gray-900 rounded-md flex items-center">
       <img src="./image/arrow.png" class="h-4 mr-4">
       SEND
       </button>
@@ -195,7 +200,7 @@ style="background-image: url(./image/vapor.png);">
   </div>
 </section>
 <section 
-class="relative w-screen hidden md:flex">
+class="relative w-screen hidden lg:flex">
     <div 
     class="absolute -top-60 w-96 h-full inset-x-1/3 z-30">
     <img 
@@ -204,10 +209,9 @@ class="relative w-screen hidden md:flex">
       <div 
       class="absolute inset-x-1/3 -bottom-40 w-60 text-white z-50">
         <div>
-          <!-- Coin -->
           <ul 
           class=" w-60 flex justify-center items-center flex-col">
-            <li
+            <li 
             class="text-md">Your coin</li>
             <li 
             class="text-5xl">12.52419</li>
