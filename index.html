@@ -41,6 +41,7 @@ class="bg-darkblue">
 
       <div 
       class="flex items-center justify-center">
+
         <div 
         class="flex-shrink-0 flex items-start">
           <img 
@@ -48,6 +49,7 @@ class="bg-darkblue">
           <img 
           class="hidden lg:block h-12 w-auto" src="./image/Allizart-Logo-A01.png">
         </div>
+
         <div 
         class="hidden md:flex sm:ml-6 z-50">
             <a 
@@ -62,8 +64,10 @@ class="bg-darkblue">
         </div>
 
       </div>
+
       <div 
       class="absolute right-4 flex flex-row space-x-6 items-center md:pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+          <!-- 會員 -->
           <div  
           x-data="{ dropdownOpen: false }">
               <!-- Sign Out -->
@@ -79,14 +83,15 @@ class="bg-darkblue">
               </button>
               <!-- Sign Out -->
               <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-              <div x-show="dropdownOpen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
+              <div x-show="dropdownOpen" class="absolute right-0 md:right-52 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
                 <a href="#" class="block px-4 py-2 text-sm capitalize text-gray-700 hover:bg-gray-600 hover:text-white rounded">
                   Sign Out
                 </a>
               </div>
           </div>
-
-          <div  
+          <!-- 會員 -->
+          <!-- 翻譯 -->
+          <div 
           x-data="{ translateopen: false }">
             <button 
             @click="translateopen = !translateopen" 
@@ -107,7 +112,8 @@ class="bg-darkblue">
               </a>
             </div>
           </div>
-
+          <!-- 翻譯 -->
+          <!-- 選單 -->
           <div class="flex md:hidden">
             <button 
               @click="isopen = !isopen" 
@@ -118,13 +124,13 @@ class="bg-darkblue">
                 </svg>
               </button>
           </div>
-
-          <!-- LOGOUT -->
+          <!-- 選單 -->
+          <!-- 登出 -->
           <button
-          class="md:flex hidden text-white bg-gradient-to-t from-red-700 to-pink-600 px-12 py-2 rounded-md text-sm tracking-widest">
+          class="md:flex hidden text-white bg-gradient-to-t from-red-700 to-pink-600 px-12 py-2 rounded-lg text-sm tracking-widest">
             LOGOUT
           </button>
-          <!-- LOGOUT -->
+          <!-- 登出 -->
       </div>
 
     </div>
