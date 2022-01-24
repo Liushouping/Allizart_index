@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allizart</title>
   <link href="./css/index.css" rel="stylesheet">
-  <title>Allizart_market</title>
-
   <script src="./js/tailwind@3.0.14.js"></script>
+  <script src="./js/alpinejs@3.2.3.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -117,7 +117,8 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           </div>
           <!-- 翻譯 -->
           <!-- 選單 -->
-          <div class="flex md:hidden">
+          <div 
+          class="flex md:hidden">
             <button 
               @click="isopen = !isopen" 
               type="button" 
@@ -147,13 +148,16 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         class="bg-darkblue">
           <ul 
           class="space-y-8 pt-10">
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Dashboard</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Activity</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Library</a>
             </li>
           </ul>
@@ -216,7 +220,8 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
             <option>Canada</option>
             <option>Mexico</option>
           </select>
-          <div class="absolute right-0 top-4 mr-2 text-black">
+          <div 
+          class="absolute right-0 top-4 mr-2 text-black">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
             </svg>
@@ -1169,6 +1174,5 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
         }
 
 </script>
-<script src="./js/alpinejs@3.2.3.js"></script>
 </body>
 </html>

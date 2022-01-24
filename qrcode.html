@@ -3,9 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allizart</title>
   <link href="./css/index.css" rel="stylesheet">
   <script src="./js/tailwind@3.0.14.js"></script>
-  <title>Allizart_qrcode</title>
+  <script src="./js/alpinejs@3.2.3.js"></script>
+  <script src="./js/sweetalert2@9.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -115,7 +117,8 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           </div>
           <!-- 翻譯 -->
           <!-- 選單 -->
-          <div class="flex md:hidden">
+          <div 
+          class="flex md:hidden">
             <button 
               @click="isopen = !isopen" 
               type="button" 
@@ -166,20 +169,25 @@ style="background-image: url(./image/vapor.png);">
 
   <div 
   class="max-w-5xl md:mx-auto flex justify-between w-full">
-    <div class="w-full flex justify-start">
+    <div 
+    class="w-full flex justify-start">
       <!--  banner menu -->
       <ul
       class="space-y-4 text-white mx-4">
-        <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
+        <li 
+        class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
           <a href="javascript:;" class="appearance-none">MY GARAGE</a>
         </li>
-        <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
+        <li 
+        class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
           <a href="javascript:;" class="appearance-none">MY AUCTION</a>
         </li>
-        <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
+        <li 
+        class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm">
           <a href="javascript:;" class="appearance-none">USDT RRCORD</a>
         </li>
-        <li class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm flex flex-row">
+        <li 
+        class="hover:before:content-['&#9656;'] before:mr-2 before:text-red-500 hover:text-red-500 text-sm flex flex-row">
           <a href="javascript:;" class="appearance-none">WALLET ADDRESS</a>
         </li>
       </ul>
@@ -451,7 +459,5 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
             });
         }
   </script>
-<script src="./js/alpinejs@3.2.3.js"></script>
-<script src="./js/sweetalert2@9.js"></script>
 </body>
 </html>

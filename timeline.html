@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allizart</title>
   <link href="./css/index.css" rel="stylesheet">
   <script src="./js/tailwind@3.0.14.js"></script>
-
-  <title>Allizart_timeline</title>
+  <script src="./js/alpinejs@3.2.3.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -47,9 +47,11 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         <div 
         class="flex-shrink-0 flex items-start">
           <img 
-          class="block lg:hidden h-12 w-auto" src="./image/Allizart-Logo-A01.png">
+          class="block lg:hidden h-12 w-auto" 
+          src="./image/Allizart-Logo-A01.png">
           <img 
-          class="hidden lg:block h-12 w-auto" src="./image/Allizart-Logo-A01.png">
+          class="hidden lg:block h-12 w-auto" 
+          src="./image/Allizart-Logo-A01.png">
         </div>
 
         <div 
@@ -239,28 +241,32 @@ class="bg-gray-900">
 
         <div 
         class="flex justify-end space-x-4">
-          <div class="relative">
+          <div 
+          class="relative">
             <select 
             class="mt-1 w-40 md:w-36 py-2 px-3 bg-white rounded-md shadow-sm sm:text-sm appearance-none">
               <option>ORDER</option>
               <option>Canada</option>
               <option>Mexico</option>
             </select>
-            <div class="absolute right-0 top-3 mr-2 text-black">
+            <div 
+            class="absolute right-0 top-3 mr-2 text-black">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
             </div>
           </div>
 
-          <div class="relative">
+          <div 
+          class="relative">
             <select 
             class="mt-1 w-40 md:w-36 py-2 px-3 bg-white rounded-md shadow-sm sm:text-sm appearance-none">
               <option>ALL TIME</option>
               <option>Canada</option>
               <option>Mexico</option>
             </select>
-            <div class="absolute right-0 top-3 mr-2 text-black">
+            <div 
+            class="absolute right-0 top-3 mr-2 text-black">
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
               </svg>
@@ -286,7 +292,8 @@ class="bg-gray-900">
 
 	          <div 
             class="flex w-full flex-col bg-white rounded-lg">
-	          	<div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
+	          	<div 
+              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -400,7 +407,8 @@ class="bg-gray-900">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
+              <div 
+              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -514,7 +522,8 @@ class="bg-gray-900">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
+              <div 
+              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -741,7 +750,8 @@ class="bg-gray-900">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
+              <div 
+              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -854,7 +864,8 @@ class="bg-gray-900">
 
             <div 
             class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
+              <div 
+              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-thin">
                 <div 
                 class="absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -1108,6 +1119,5 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
 
         }
 </script>
-<script src="./js/alpinejs@3.2.3.js"></script>
 </body>
 </html>

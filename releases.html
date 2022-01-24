@@ -3,11 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Allizart</title>
   <link href="./css/index.css" rel="stylesheet">
-  <title>Allizart_releases</title>
   <script src="./js/tailwind@3.0.14.js"></script>
   <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
   <script src="./js/swiper@7.4.1.js"></script>
+  <script src="./js/alpinejs@3.2.3.js"></script>
   <script>
     tailwind.config = {
       theme: {
@@ -147,13 +148,16 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         class="bg-darkblue">
           <ul 
           class="space-y-8 pt-10">
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Dashboard</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Activity</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Library</a>
             </li>
           </ul>
@@ -202,7 +206,8 @@ id="banner">
         </div>
       </div>
     </div>
-    <div class="swiper-slide bg-cover bg-center" 
+    <div 
+    class="swiper-slide bg-cover bg-center" 
     style="background-image:url('./image/banner-04.png');">
       <div 
       class="max-w-5xl mx-auto px-4 py-12 flex justify-center items-start flex-col h-full relative">
@@ -592,6 +597,5 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
 
         }
 </script>
-<script src="./js/alpinejs@3.2.3.js"></script>
 </body>
 </html>
