@@ -269,7 +269,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
     <div 
     class="rounded shadow-xl overflow-hidden w-full md:flex" 
     style="max-width:900px">
-        <div class="flex w-full px-5 pb-4 pt-8 bg-gray-800 text-white items-center">
+        <div class="flex w-full px-5 pb-4 pt-8 bg-gradient-to-r from-gray-600 to-black text-white items-center">
             <canvas id="chart" class="w-full"></canvas>
         </div>
     </div>
@@ -471,7 +471,7 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
           borderWidth: 0,
           borderColor: '#E11E49',
           pointRadius: 6,
-          data: [0, 0.03, 0.03, 0.05, 0.03, 0.03, 0.05, 0.09, 0.095]
+          data: [0, 0.003, 0.003, 0.005, 0.003, 0.003, 0.005, 0.009, 0.0095]
         }]
     };
 
@@ -491,8 +491,9 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
             lineWidth: 1
           },
           ticks: {
+            fontColor: 'white',
             beginAtZero: true,
-            stepSize: 0.02,
+            stepSize: 0.002,
             min: 0
           }
         }],
@@ -500,6 +501,9 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
           gridLines: {
             color: 'white',
             lineWidth: 0
+          },
+          ticks: {
+            fontColor: 'white'
           }
         }]
       },
