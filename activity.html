@@ -456,11 +456,11 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
 // chart
 
     var chart    = document.getElementById('chart').getContext('2d'),
-    gradient = chart.createLinearGradient(0, 0, 0, 250);
+    gradient = chart.createLinearGradient(0, 0, 0, 350);
 
-    gradient.addColorStop(0, 'rgba(255, 0,0, 0.5)');
-    gradient.addColorStop(0.5, 'rgba(255, 0, 0, 0.25)');
-    gradient.addColorStop(1, 'rgba(255, 0, 0, 0)');
+    gradient.addColorStop(0, 'rgba(255, 30,73, 0.5)');
+    gradient.addColorStop(0.5, 'rgba(255, 30, 73, 0.25)');
+    gradient.addColorStop(1, 'rgba(255, 30, 73, 0)');
 
 
     var data  = {
@@ -469,9 +469,9 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
           label: 'Custom Label Name',
           backgroundColor: gradient,
           pointBackgroundColor: 'white',
-          borderWidth: 1,
-          borderColor: '#911215',
-          data: [0, 0.08, 0.06, 0.04, 0.04, 0.08, 0.08, 0.06, 0.04]
+          borderWidth: 0,
+          borderColor: '#E11E49',
+          data: [0, 0.03, 0.06, 0.04, 0.04, 0.08, 0.08, 0.06, 0.04]
         }]
     };
 
@@ -484,12 +484,6 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
         duration: 520
       },
       scales: {
-        xAxes: [{
-          gridLines: {
-            color: 'rgba(200, 200, 200, 0.05)',
-            lineWidth: 1
-          }
-        }],
         yAxes: [{
           gridLines: {
             color: 'rgba(200, 200, 200, 0.08)',
@@ -515,7 +509,7 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
         caretSize: 5,
         cornerRadius: 2,
         xPadding: 10,
-        yPadding: 10
+        yPadding: 10,
       }
     };
 
