@@ -12,9 +12,16 @@
       theme: {
         extend: {
           colors: {
-            darkblue: '#0f1023',
-            deepblack: '#17171c',
-            cherryred: '#E11E49',
+            darkblue: '#080B1A',
+            // deepblack: '#17171c',
+            // cherryred: '#E11E49',
+
+            //頁首頁尾
+            deepblue: '#080B1A',
+            lightblue: '#01003A',
+
+            deepred: '#82002A',
+            lightred: '#DE0D61',
           }
       },
       fontFamily: {
@@ -29,7 +36,7 @@ class="scroll-smooth tracking-widest">
 <!-- Navbar -->
 <nav 
 x-data="{ isopen: false }" 
-class="bg-darkblue">
+class="bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
   class="max-w-5xl mx-auto px-6 lg:px-8 py-2">
@@ -125,7 +132,7 @@ class="bg-darkblue">
           <!-- 選單 -->
           <!-- 登出 -->
           <button
-          class="md:flex hidden text-white bg-gradient-to-t from-red-700 to-pink-600 px-12 py-2 rounded-lg text-sm tracking-widest">
+          class="md:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-sm tracking-widest">
             LOGOUT
           </button>
           <!-- 登出 -->
@@ -186,10 +193,10 @@ style="background-image: url(./image/banner-03.png);">
         <h2 class="text-4xl font-black">0.0075</h2>
         <span class="text-xs pl-10">=1,000 USD</span>  
       </div>
-  		<button class="w-full bg-gradient-to-t from-red-700 to-pink-600 rounded-lg text-white py-2">
+  		<button class="w-full bg-gradient-to-t from-deepred to-lightred rounded-lg text-white py-2">
   			BUY NOW
   		</button>
-  		<button class="w-full border border-red-800 rounded-lg text-red-400 mt-2 text-red-800 py-2">
+  		<button class="w-full border border-lightred rounded-lg text-red-400 mt-2 text-lightred py-2">
   			MAKE OFFER
   		</button>
   	</div>
@@ -264,7 +271,7 @@ class="py-12 w-screen bg-darkblue flex justify-center items-center flex-col">
 </section>
 <!-- PRICE HISTORY -->
 <section
-class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col px-6">
+class="py-24 w-screen bg-darkblue flex justify-center items-center flex-col px-6">
     <div 
     class="flex justify-between max-w-4xl w-full py-6">
       <h3 
@@ -288,7 +295,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col px-
     class="rounded shadow-xl overflow-hidden w-full md:flex" 
     style="max-width:900px">
         <div 
-        class="flex w-full px-5 pb-4 pt-8 bg-gradient-to-r from-gray-600 to-black text-white items-center">
+        class="flex w-full px-5 pb-4 pt-8 bg-gradient-to-r from-gray-800 to-darkblue text-white items-center">
             <canvas 
             id="chart" 
             class="w-full"></canvas>
@@ -298,25 +305,25 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col px-
 </section>
 <!-- INFORMATION -->
 <section
-class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
+class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
 
   <div class="max-w-5xl mx-auto block w-full overflow-x-auto px-4 space-y-4">
     <div class="text-white flex items-center justify-start py-2">
       <h3 class="text-3xl">INFORMATION</h3>
     </div>
     <div 
-    class="bg-gray-800 rounded flex justify-start items-start flex-col p-10">
-      <h5 class="text-red-600 pb-4 text-2xl">ABOUT</h5>
+    class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+      <h5 class="text-lightred pb-4 text-2xl">ABOUT</h5>
       <p class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
     <div 
-    class="bg-gray-800 rounded flex justify-start items-start flex-col p-10">
-      <h5 class="text-red-600 pb-4 text-2xl">DETILS</h5>
+    class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+      <h5 class="text-lightred pb-4 text-2xl">DETILS</h5>
       <p class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
     <div 
-    class="bg-gray-800 rounded flex justify-start items-start flex-col p-10">
-      <h5 class="text-red-600 pb-4 text-2xl">HISTORY</h5>
+    class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+      <h5 class="text-lightred pb-4 text-2xl">HISTORY</h5>
       <p class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
   </div>
@@ -325,7 +332,7 @@ class="py-24 w-screen bg-deepblack flex justify-center items-center flex-col">
 
 <!-- Footer -->
 <footer 
-class="text-white bg-darkblue">
+class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   <!-- 社群連結 -->
   <div 
   class="flex items-center justify-center pt-20 space-x-4">
@@ -362,7 +369,7 @@ class="text-white bg-darkblue">
       <div 
       class="lg:w-1/3 md:w-1/2 w-full px-4">
         <h2 
-        class="title-font font-bold text-cherryred tracking-widest text-md mb-3">About Us</h2>
+        class="title-font font-bold text-lightred tracking-widest text-md mb-3">About Us</h2>
           <nav 
           class="list-none mb-10">
             <li>
@@ -387,7 +394,7 @@ class="text-white bg-darkblue">
         <div 
         class="lg:w-1/3 md:w-1/2 w-full px-4">
           <h2 
-          class="title-font font-bold text-cherryred tracking-widest text-md mb-3">Community</h2>
+          class="title-font font-bold text-lightred tracking-widest text-md mb-3">Community</h2>
           <nav 
           class="list-none mb-10">
             <li>
@@ -416,7 +423,7 @@ class="text-white bg-darkblue">
         <div 
         class="lg:w-1/3 md:w-1/2 w-full px-4">
           <h2 
-          class="title-font font-bold text-cherryred tracking-widest text-md mb-3">BE FIRST ON OUR DROP</h2>
+          class="title-font font-bold text-lightred tracking-widest text-md mb-3">BE FIRST ON OUR DROP</h2>
           <p 
           class="text-sm text-white">By joining our mailing list, you will get all the updates or simply just contact us if you have any question!</p>
           <div 
