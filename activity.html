@@ -454,24 +454,24 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
 
         }
 // chart
+    var chart = document.getElementById('chart').getContext('2d'),
+      gradient = chart.createLinearGradient(0, 0, 0, 350);
 
-    var chart    = document.getElementById('chart').getContext('2d'),
-    gradient = chart.createLinearGradient(0, 0, 0, 350);
-
-    gradient.addColorStop(0, 'rgba(255, 30,73, 0.5)');
-    gradient.addColorStop(0.5, 'rgba(255, 30, 73, 0.25)');
-    gradient.addColorStop(1, 'rgba(255, 30, 73, 0)');
+      gradient.addColorStop(0, 'rgba(255, 30,73, 0.5)');
+      gradient.addColorStop(0.5, 'rgba(255, 30, 73, 0.15)');
+      gradient.addColorStop(1, 'rgba(255, 30, 73, 0)');
 
 
     var data  = {
         labels: [ '1/1', '2/2', '3/3', '4/4', '5/5', '6/6', '7/7', '8/8', '9/9'],
         datasets: [{
-          label: 'Custom Label Name',
+          label: 'NFT',
           backgroundColor: gradient,
           pointBackgroundColor: 'white',
           borderWidth: 0,
           borderColor: '#E11E49',
-          data: [0, 0.03, 0.06, 0.04, 0.04, 0.08, 0.08, 0.06, 0.04]
+          pointRadius: 6,
+          data: [0, 0.03, 0.03, 0.05, 0.03, 0.03, 0.05, 0.09, 0.095]
         }]
     };
 
@@ -489,12 +489,23 @@ class="fixed z-50 hidden p-3 text-white bottom-10 right-5">
           gridLines: {
             color: 'rgba(200, 200, 200, 0.08)',
             lineWidth: 1
+          },
+          ticks: {
+            beginAtZero: true,
+            stepSize: 0.02,
+            min: 0
+          }
+        }],
+        xAxes: [{
+          gridLines: {
+            color: 'white',
+            lineWidth: 0
           }
         }]
       },
       elements: {
         line: {
-          tension: 0.4
+          tension: 0
         }
       },
       legend: {
