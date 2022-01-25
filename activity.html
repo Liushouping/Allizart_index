@@ -13,16 +13,19 @@
         extend: {
           colors: {
             darkblue: '#080B1A',
-
+            //漸層
             deepblue: '#080B1A',
             lightblue: '#01003A',
-
+            //漸層
             deepred: '#82002A',
             lightred: '#DE0D61',
-
+            // 四個logo
+            instruction: "#F2F2F2",
             parther: '#DCDCDC',
-
+            //按鈕
             buttonhover: '#EF443F',
+            //文字紅色
+            fontred: '#FF3631'
           }
       },
       fontFamily: {
@@ -40,7 +43,7 @@ x-data="{ isopen: false }"
 class="bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
-  class="max-w-5xl mx-auto px-6 lg:px-8 py-2">
+  class="max-w-7xl mx-auto px-6 lg:px-8 py-2">
 
     <div  
     class="relative flex items-center justify-between h-16">
@@ -57,7 +60,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         </div>
 
         <div 
-        class="hidden md:flex sm:ml-6 z-50">
+        class="hidden lg:flex sm:ml-6 z-50">
             <a 
             href="#"
             class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-sm font-medium">Project</a>
@@ -72,7 +75,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
       </div>
 
       <div 
-      class="absolute right-4 flex flex-row space-x-6 items-center md:pr-2 md:static md:inset-auto md:ml-6 md:pr-0">
+      class="absolute right-4 flex flex-row space-x-6 items-center md:pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
           <!-- 會員 -->
           <div  
           x-data="{ dropdownOpen: false }">
@@ -85,7 +88,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                 </svg>
                 <span 
-                class="md:flex hidden ml-2 tracking-widest">User Name</span>
+                class="lg:flex hidden ml-2 tracking-widest">User Name</span>
               </button>
               <!-- Sign Out -->
               <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
@@ -120,7 +123,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           </div>
           <!-- 翻譯 -->
           <!-- 選單 -->
-          <div class="flex md:hidden">
+          <div class="flex lg:hidden">
             <button 
               @click="isopen = !isopen" 
               type="button" 
@@ -133,7 +136,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           <!-- 選單 -->
           <!-- 登出 -->
           <button
-          class="md:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-sm tracking-widest">
+          class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-sm tracking-widest">
             LOGOUT
           </button>
           <!-- 登出 -->
@@ -169,17 +172,17 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
 
 <!-- Banner -->
 <section
-class="relative bg-cover bg-center h-96 py-12 overflow-hidden" 
-style="background-image: url(./image/banner-03.png);">
+class="relative bg-cover bg-center py-24 overflow-hidden" 
+style="background-image: url(./image/banner-03.png);height: 500px;">
 
   <div 
   class="max-w-5xl flex justify-center md:justify-end items-center w-full mx-auto">
   	<div 
-    class="absolute -top-72 left-52 md:inset-x-1/3 md:right-0 opacity-60">
-  		<img src="./image/product-07.png">
+    class="absolute bottom-28 md:-top-48 inset-x-1/4 md:inset-x-1/4 md:right-0 opacity-80">
+  		<img src="./image/product-07.png" class="transition scale-150 md:scale-100">
   	</div>
   	<div 
-  	class="bg-white rounded-lg p-6 flex flex-col z-20 w-96">
+  	class="absolute bg-white rounded-lg p-6 flex flex-col w-96 top-20 md:right-96">
   		<div 
       class="flex justify-between" 
       x-data="{ open: false }">
@@ -362,21 +365,21 @@ class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
       <h5 
       class="text-lightred pb-4 text-2xl">ABOUT</h5>
       <p 
-      class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+      class="text-sm md:text-base text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
     <div 
     class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
       <h5 
       class="text-lightred pb-4 text-2xl">DETILS</h5>
       <p 
-      class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+      class="text-sm md:text-base text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
     <div 
     class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
       <h5 
       class="text-lightred pb-4 text-2xl">HISTORY</h5>
       <p 
-      class="text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+      class="text-sm md:text-base text-white text-justify">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
     </div>
   </div>
   
@@ -403,12 +406,12 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   </div>
   <!--  導覽列 -->
   <div 
-  class="container px-10 md:pt-20 pb-20 mx-auto flex justify-center items-center md:flex-row md:flex-nowrap flex-wrap flex-col">
+  class="container px-10 md:pt-20 pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
     <!-- Logo -->
     <div 
-    class="w-64 flex-shrink-0 md:mx-0 mx-auto text-center md:text-left md:order-first order-last pt-20 md:pt-0">
+    class="w-full md:w-72 flex-shrink-1 md:mx-0 mx-auto text-center lg:text-left md:order-first order-last pt-20 md:py-12">
       <a 
-      class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+      class="flex title-font font-medium items-center justify-center text-gray-900">
         <img src="./image/Allizart-Logo-A01.png">
       </a>
       <p 
@@ -419,7 +422,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
     class="flex-grow flex flex-wrap md:pl-10 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-center">
 
       <div 
-      class="lg:w-1/3 md:w-1/2 w-full px-4">
+      class="md:w-1/3 w-full px-4">
         <h2 
         class="title-font font-bold text-lightred tracking-widest text-md mb-3">About Us</h2>
           <nav 
@@ -444,7 +447,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
         </div>
 
         <div 
-        class="lg:w-1/3 md:w-1/2 w-full px-4">
+        class="md:w-1/3 w-full px-4">
           <h2 
           class="title-font font-bold text-lightred tracking-widest text-md mb-3">Community</h2>
           <nav 
@@ -473,7 +476,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
         </div>
 
         <div 
-        class="lg:w-1/3 md:w-1/2 w-full px-4">
+        class="md:w-1/3 w-full px-4">
           <h2 
           class="title-font font-bold text-lightred tracking-widest text-md mb-3">BE FIRST ON OUR DROP</h2>
           <p 
@@ -489,7 +492,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
                   class="w-1/3 md:w-1/2 w-full m-1 p-2 appearance-none text-gray-900 text-sm focus:outline-none" 
                   placeholder="Your Email">
                   <button 
-                  class="w-1/3 md:w-1/2 m-1 p-2 text-sm rounded-lg font-semibold uppercase lg:w-auto flex items-center justify-between text-gray-600">
+                  class="w-1/3 p-1 text-sm rounded-lg font-semibold uppercase md:w-auto flex items-center justify-between text-gray-600 flex flex-row">
                   SUBMIT
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
