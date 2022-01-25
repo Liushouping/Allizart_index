@@ -24,6 +24,9 @@
             parther: '#DCDCDC',
 
             buttonhover: '#EF443F',
+          },
+          scale: {
+            '300': '3',
           }
       },
       fontFamily: {
@@ -233,11 +236,11 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
   	</div>
   	
     <!-- PRODUCT -->
-  	<div 
-    class="relative w-full bg-white h-full md:h-96 bg-cover bg-center border-l-4 border-lightred" 
-    style="background-image: url(./image/sell-01.png);">
+    <div 
+    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-lightred overflow-hidden" 
+    style="background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);">
       <div 
-      class="h-96 mx-10 flex justify-center items-start flex-col">
+      class="absolute h-96 mx-10 flex justify-center items-start flex-col z-20">
         <ul>
           <li 
           class="text-3xl text-white font-black">PRODUCT</li>
@@ -253,15 +256,20 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
             class="bg-white rounded-lg text-black my-6 text-xl px-10 py-2">BUY NOW</button>
           </li>
         </ul>
+      </div>
+
+      <div 
+      class="absolute top-40 md:top-96 inset-x-1/3 z-10">
+        <img src="./image/png01.png" class="transition scale-300">
       </div>
     </div>
 
     <!-- PRODUCT -->
     <div 
-    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-lightred" 
-    style="background-image: url(./image/sell-02.png);">
+    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-lightred overflow-hidden" 
+    style="background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);">
       <div 
-      class="h-96 mx-10 flex justify-center items-start flex-col">
+      class="absolute h-96 mx-10 flex justify-center items-start flex-col z-20">
         <ul>
           <li 
           class="text-3xl text-white font-black">PRODUCT</li>
@@ -278,14 +286,19 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
           </li>
         </ul>
       </div>
+
+      <div 
+      class="absolute -bottom-20 md:-top-40 right-0 z-10">
+        <img src="./image/png02.png" class="transition scale-75">
+      </div>
     </div>
     
     <!-- PRODUCT SOLD OUT -->
     <div 
-    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-gray-500" 
-    style="background-image: url(./image/sell-03.png);">
+    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-gray-500 overflow-hidden grayscale" 
+    style="background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.4) 50%,rgba(222,13,97,0.98) 50%,rgba(222,13,97,0.18) 100%);">
       <div 
-      class="h-96 mx-10 flex justify-center items-start flex-col">
+      class="absolute h-96 mx-10 flex justify-center items-start flex-col z-20">
         <ul>
           <li 
           class="text-3xl text-gray-500 font-black">PRODUCT</li>
@@ -302,6 +315,11 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
             disabled>SOLD OUT</button>
           </li>
         </ul>
+      </div>
+
+      <div 
+      class="absolute top-0 right-0 z-10">
+        <img src="./image/png03.png">
       </div>
     </div>
   </div>
