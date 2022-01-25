@@ -19,6 +19,10 @@
 
             deepred: '#82002A',
             lightred: '#DE0D61',
+
+            parther: '#DCDCDC',
+
+            buttonhover: '#EF443F',
           }
       },
       fontFamily: {
@@ -56,13 +60,13 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         class="hidden md:flex sm:ml-6 z-50">
             <a 
             href="#"
-            class="text-white hover:text-yellow-300 px-3 py-2 rounded-md text-sm font-medium">Project</a>
+            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-sm font-medium">Project</a>
             <a 
             href="#" 
-            class="text-white hover:text-yellow-300 px-3 py-2 rounded-md text-sm font-medium">Secondary</a>
+            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-sm font-medium">Secondary</a>
             <a 
             href="#" 
-            class="text-white hover:text-yellow-300 px-3 py-2 rounded-md text-sm font-medium">Who Are We</a>
+            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-sm font-medium">Who Are We</a>
         </div>
 
       </div>
@@ -116,8 +120,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           </div>
           <!-- 翻譯 -->
           <!-- 選單 -->
-          <div 
-          class="flex md:hidden">
+          <div class="flex md:hidden">
             <button 
               @click="isopen = !isopen" 
               type="button" 
@@ -147,13 +150,16 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
         class="bg-gradient-to-r from-deepblue to-lightblue">
           <ul 
           class="space-y-8 pt-10">
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Dashboard</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Activity</a>
             </li>
-            <li class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
+            <li 
+            class="flex md:hidden items-center justify-center text-white hover:text-yellow-300 cursor-pointer">
               <a href="">Library</a>
             </li>
           </ul>
@@ -443,16 +449,16 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   <div 
   class="flex items-center justify-center pt-20 space-x-4">
     <a href="#">
-      <img src="./image/facebook-logo.png" class="h-8 transition hover:scale-125">
+      <img src="./image/facebook-logo.png" class="h-8 transition hover:scale-125 mx-10">
     </a>
     <a href="#">
-      <img src="./image/linkedin-logo.png" class="h-8 transition hover:scale-125">
+      <img src="./image/linkedin-logo.png" class="h-8 transition hover:scale-125 mx-10">
     </a>
     <a href="#">
-      <img src="./image/pinterest-logo.png" class="h-8 transition hover:scale-125">
+      <img src="./image/pinterest-logo.png" class="h-8 transition hover:scale-125 mx-10">
     </a>
     <a href="#">
-      <img src="./image/twitter-logo.png" class="h-8 transition hover:scale-125">
+      <img src="./image/twitter-logo.png" class="h-8 transition hover:scale-125 mx-10">
     </a>
   </div>
   <!--  導覽列 -->
@@ -480,19 +486,19 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
           class="list-none mb-10">
             <li>
               <a 
-              class="text-white hover:text-yellow-300" href="#">About</a>
+              class="text-white hover:text-buttonhover" href="#">About</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" href="#">Explore</a>
+              class="text-white hover:text-buttonhover" href="#">Explore</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" href="#">Terms</a>
+              class="text-white hover:text-buttonhover" href="#">Terms</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" href="#">Privacy</a>
+              class="text-white hover:text-buttonhover" href="#">Privacy</a>
             </li>
           </nav>
         </div>
@@ -505,22 +511,22 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
           class="list-none mb-10">
             <li>
               <a 
-              class="text-white hover:text-yellow-300" 
+              class="text-white hover:text-buttonhover" 
               href="#">Support</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" 
+              class="text-white hover:text-buttonhover" 
               href="#">How its work?</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" 
+              class="text-white hover:text-buttonhover" 
               href="#">Third Link</a>
             </li>
             <li>
               <a 
-              class="text-white hover:text-yellow-300" 
+              class="text-white hover:text-buttonhover" 
               href="#">Fourth Link</a>
             </li>
           </nav>
@@ -557,6 +563,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
       </div>
     </div>
 </footer>
+
 <!-- BACK TO TOP -->
 <button 
 x-data="topBtn" 
