@@ -1,5 +1,6 @@
 <!doctype html>
-<html>
+<html 
+class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -47,7 +48,7 @@
   </script>
 </head>
 <body 
-class="scroll-smooth tracking-widest">
+class="tracking-widest">
 <!-- Navbar -->
 <nav 
 x-data="{ isopen: false }" 
@@ -296,6 +297,7 @@ class="flex justify-center items-center bg-instruction">
 </section>
 <!-- video -->
 <section 
+id="video" 
 class="relative w-screen md:h-screen">
   <div 
   class="w-screen h-72 md:h-screen absolute top-0 bottom-0 z-10 overflow-hidden pointer-events-none bg-black">
@@ -304,7 +306,7 @@ class="relative w-screen md:h-screen">
 </section>
 <!-- 3D -->
 <section 
-class="relative flex justify-center items-center bg-black">
+class="flex justify-center items-center bg-black">
   <div 
   class="relative w-full md:max-w-5xl h-screen my-12">
     <iframe 
@@ -312,10 +314,25 @@ class="relative flex justify-center items-center bg-black">
     class="w-full h-screen relative" 
     scrolling="yes">
     </iframe>
+    <a 
+    href="#video" 
+    class="cursor-pointer absolute bottom-32 right-10 text-gray-600 z-50 rounded-full h-12 w-12 flex items-center justify-center bg-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
+    <a 
+    href="#informattion" 
+    class="cursor-pointer absolute bottom-12 right-10 text-gray-600 z-50 rounded-full h-12 w-12 flex items-center justify-center bg-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
   </div>
 </section>
 <!-- INFORMATION -->
-<section
+<section 
+id="informattion" 
 class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
 
   <div 
@@ -496,7 +513,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   </div>
   <!--  導覽列 -->
   <div 
-  class="container px-10 md:pt-20 pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
+  class="container px-10 md:pt-20 pt-10 pb-28 md:pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
     <!-- Logo -->
     <div 
     class="w-full md:w-72 flex-shrink-1 md:mx-0 mx-auto text-center lg:text-left md:order-first order-last pt-20 md:py-12">
