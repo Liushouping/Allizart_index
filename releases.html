@@ -6,7 +6,7 @@ class="scroll-smooth">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Allizart</title>
   <script src="./js/tailwind@3.0.14.js"></script>
-  <link href="./css/index.css" rel="stylesheet" />
+  <link href="./css/index.css" rel="stylesheet">
   <link href="./css/swiper-bundle.min.css" rel="stylesheet" />
   <script>
     tailwind.config = {
@@ -234,7 +234,7 @@ id="banner">
 class="py-24 w-screen bg-black flex justify-center items-center flex-col">
 
   <div 
-  class="max-w-5xl mx-auto block w-full px-4 space-y-20">
+  class="max-w-5xl mx-auto block w-full px-4 md:px-10 space-y-20">
   	<div 
     class="text-white flex items-center justify-center py-6 flex-col">
   		<h3 
@@ -266,9 +266,13 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
         </ul>
       </div>
 
-      <div 
-      class="absolute top-40 md:top-96 inset-x-1/3 z-10">
+      <!-- <div 
+      class="absolute object-cover top-40 md:top-96 inset-x-1/3 z-10">
         <img src="./image/png01.png" class="transition scale-300">
+      </div> -->
+      <div 
+      class="absolute object-cover top-0 z-10">
+        <img src="./image/png01.png" class="w-full h-full">
       </div>
     </div>
 
@@ -309,17 +313,17 @@ class="py-24 w-screen bg-black flex justify-center items-center flex-col">
       class="absolute h-96 mx-10 flex justify-center items-start flex-col z-20">
         <ul>
           <li 
-          class="text-3xl text-gray-500 font-black">PRODUCT</li>
+          class="text-3xl text-white font-black">PRODUCT</li>
           <li 
-          class="text-3xl text-gray-500 font-black">NAME</li>
+          class="text-3xl text-white font-black">NAME</li>
           <li 
-          class="text-sm py-6 font-light text-gray-500">Sale starts in</li>
+          class="text-sm py-6 font-light text-white">Sale starts in</li>
           <li 
-          class="text-3xl text-gray-500">00:00:00</li>
+          class="text-3xl text-lightred">00:00:00</li>
           <li>
             <button 
             type="button" 
-            class="bg-gray-500 rounded-lg text-black my-6 text-xl px-10 py-2" 
+            class="bg-white rounded-lg text-black my-6 text-xl px-10 py-2" 
             disabled>SOLD OUT</button>
           </li>
         </ul>
