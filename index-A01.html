@@ -12,13 +12,13 @@ class="scroll-smooth">
     tailwind.config = {
       theme: {
         screens: {
-      		'xs': '414px',
-		      'sm': '768px',
-		      'md': '992px',
-		      'ld': '1024px',
-		      'lg': '1366px',
-		      'xl': '1920px',
-		    },
+          'xs': '414px',
+          'sm': '768px',
+          'md': '992px',
+          'ld': '1024px',
+          'lg': '1366px',
+          'xl': '1920px',
+        },
         extend: {
           colors: {
             //說明框背景
@@ -37,6 +37,8 @@ class="scroll-smooth">
             //文字
             fontred: '#FF3631',
             charyred: '#E01E49',
+            //線條
+            linecolor: '#4c4c4c'
           },
           scale: {
             '200': '2',
@@ -57,7 +59,7 @@ class="tracking-widest">
 <!-- Navbar -->
 <nav 
 x-data="{ isopen: false }" 
-class="bg-gradient-to-r from-deepblue to-lightblue">
+class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
   class="max-w-7xl xl:max-w-full mx-auto px-6 lg:px-8 py-2">
@@ -82,7 +84,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
             href="#"
             class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-left font-light text-xs md:text-sm">Project</a>
             <a 
-            href="#" 
+            href="market.html" 
             class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-left font-light text-xs md:text-sm">Secondary</a>
             <a 
             href="#" 
@@ -189,7 +191,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
 
 <!-- Banner -->
 <section 
-class="relative overflow-hidden">
+class="relative overflow-hidden mt-20">
   <!-- 上層影片特效 -->
 	<div
 	class="w-screen h-96 bg-black relative">
@@ -633,7 +635,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
 x-data="topBtn" 
 @click="scrolltoTop" 
 id="topButton" 
-class="slide fixed z-50 hidden p-3 text-white bottom-10 right-5">
+class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
   </svg>

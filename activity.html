@@ -58,7 +58,7 @@ class="tracking-widest">
 <!-- Navbar -->
 <nav 
 x-data="{ isopen: false }" 
-class="fixed top-0 w-full z-20 bg-gradient-to-r from-deepblue to-lightblue">
+class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
   class="max-w-7xl xl:max-w-full mx-auto px-6 lg:px-8 py-2">
@@ -190,7 +190,7 @@ class="fixed top-0 w-full z-20 bg-gradient-to-r from-deepblue to-lightblue">
 
 <!-- Banner -->
 <section
-class="relative bg-cover bg-center py-24 overflow-hidden mt-20 h-[60vh] lg:h-[500px]" 
+class="relative bg-cover bg-center py-24 overflow-hidden mt-20 h-[80vh] sm:h-[60vh] xl:h-[500px]" 
 style="background-image: url(./image/banner-03.png);">
 
   <div 
@@ -200,13 +200,13 @@ style="background-image: url(./image/banner-03.png);">
   		<img src="./image/index_GK_IMG_7723_1024.png" class="w-full h-full">
   	</div>
   	<div 
-  	class="absolute bg-white rounded-lg p-5 flex flex-col w-80 md:w-96 bottom-[2rem] md:right-48 lg-right-80">
+  	class="absolute bg-white rounded-lg p-4 flex flex-col w-80 md:w-96 bottom-[2rem] md:bottom-[6rem] md:right-48 lg-right-80">
   		<h3 
       class="font-light text-md text-gray-400">NARUTO</h3>
   		<h5 
       class="font-bold">NARUTO&HINATA #001</h5>
   		<div 
-      class="flex justify-center items-center flex-col py-12">
+      class="flex justify-center items-center flex-col py-6">
         <h2 
         class="text-4xl font-bold">17.5 USDT</h2>
       </div>
@@ -216,8 +216,8 @@ style="background-image: url(./image/banner-03.png);">
   			BUY NOW
   		</button>
       <div class="flex justify-between flex-col md:flex-row pt-6">
-        <p class="text-xs font-light text-gray-400">Contact Address</p>
-        <p class="text-xs font-light text-black">DEKF51848#*****51851851</p>
+        <p class="text-[12px] font-light text-gray-400">Contact Address</p>
+        <p class="text-[12px] font-light text-black">DEKF51848#*****51851851</p>
       </div>
   	</div>
   </div>
@@ -506,7 +506,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
 x-data="topBtn" 
 @click="scrolltoTop" 
 id="topButton" 
-class="slide fixed z-50 hidden p-3 text-white bottom-10 right-5">
+class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
   </svg>
