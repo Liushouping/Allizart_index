@@ -6,7 +6,7 @@ class="scroll-smooth">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Allizart</title>
   <script src="./js/tailwind@3.0.14.js"></script>
-  <link href="./css/index.css" rel="stylesheet">
+  <link href="./css/index.css" rel="stylesheet" />
   <link href="./css/swiper-bundle.min.css" rel="stylesheet" />
   <script>
     tailwind.config = {
@@ -189,280 +189,303 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
 
 <!-- Banner -->
 <section 
-class="swiper flex justify-center items-center relative mx-auto" 
-id="banner">
+class="relative overflow-hidden">
+  <!-- 上層影片特效 -->
+	<div
+	class="w-screen h-96 bg-black relative">
+    <div 
+      class="w-full h-96 absolute top-0 left-0 z-10 overflow-hidden pointer-events-none mix-blend-screen">
+      <video class="absolute bottom-0 w-full" src="./image/bg-loop.mp4" autoplay="" playsinline="" webkit-playsinline="" muted="" loop="" style=""></video>
+    </div>
+	</div>
+  <!-- 下層漸層 -->
+	<div
+	class="w-screen h-96 bg-gradient-to-r from-deepred to-lightred">
+	</div>
+  <!-- 背景人物 -->
   <div 
-  class="swiper-wrapper">
+  class="absolute top-0 h-full w-full z-20 flex justify-center">
+    <img src="./image/index_GK_narutohinata_1366.png" class="object-cover object-top w-[720px] h-full">
+  </div>
+  <!-- 卡片 -->
+  <div class="absolute max-w-5xl w-full mx-auto h-full z-20 top-0 inset-x-0 flex justify-end items-center flex-col pb-20">
     <div 
-    class="swiper-slide bg-cover bg-center" 
-    style="background-image:url('./image/banner-04.png');">
+    class="flex justify-center items-center flex-col">
+      <div 
+      class="text-[10px] sm:text-[16px] font-light flex justify-center items-center">
+        <div class="bg-gray-800 py-2 px-2 rounded space-x-4 flex flex-col md:flex-row justify-center items-center text-center text-white">
+          <span>Created by: Tycho</span>
+          <span>Collection: TYCHO : ISO50 - Collection 005 : Dive</span>
+          <span>Released: Nov 12, 2021</span>
+        </div>
+      </div>
+      <h3 
+      class="text-2xl font-bold text-center py-2 flex flex-row w-96 justify-center items-center text-white">ANIME PRODUCT NAME</h3>
     </div>
     <div 
-    class="swiper-slide bg-cover bg-center" 
-    style="background-image:url('./image/banner-04.png');">
+    class="flex justify-center items-center px-4">
+      <div 
+      class="bg-white rounded-lg flex flex-col z-20 shadow-lg px-10">
+        <div 
+        class="pt-6">
+          <div 
+          class="flex items-start flex-col text-[14px] sm:text-[16px] font-light text-gray-500">
+            <div class="flex flex-col md:flex-row">
+              <span>Sale starts in</span>
+              <span class="text-black font-bold pl-0 md:pl-4">00:00:00</span>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <span>Remaining Amount</span>
+              <span class="text-black font-bold pl-0 md:pl-4">22,000 / 22,000</span>
+            </div>
+          </div>
+          <div 
+          class="text-center py-12">
+            <h2 
+            class="text-4xl font-bold">17.5 USDT</h2>
+          </div>
+        </div>
+        <div 
+        class="pb-6">
+          <button 
+          type="button"  
+          class="w-full bg-gradient-to-t from-deepred to-lightred rounded-lg text-white py-2 px-2">
+          BUY NOW
+          </button>
+        </div>
+      </div>
     </div>
+
   </div>
 
-  <!-- -->
-  <div class="absolute z-20 w-full h-full">
+</section>
+
+<!-- size -->
+<section 
+id="size" 
+class="flex justify-center items-center bg-instruction">
     <div 
-    class="max-w-5xl mx-auto sm:px-4 sm:px-24 md:px-4 py-12 flex justify-center items-center sm:items-start flex-col h-full relative">
-      <img src="./image/Allizart-Logo-A01.png">
-      <h5 
-      class="text-white py-6 text-[14px] leading-[20px] sm:text-[16px] leading-[22px]">World’s First GK Defi NFT Platform</h5>
-      <button 
-      type="button" 
-      class="bg-gradient-to-t from-deepred to-lightred text-white rounded-lg px-12 py-2 font-medium">SIGN IN</button>
-      <div 
-      class="absolute right-0 bottom-0 bg-white flex flex-row">
+    class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-4">
+        <div 
+        class="grid grid-cols-2 md:grid-cols-4 gap-4 py-10 md:py-20">
             <div 
-            class="w-14 p-3 bg-gray-900 text-white">
-              <div 
-              class="bn1 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
-                </svg>
-              </div>
+            class="flex items-center justify-center p-6 col-span-1 md:col-span-2 lg:col-span-1 flex flex-col">
+                <img src="./image/p1.png" class="grayscale h-20 w-20">
+                <p class="py-2">Polyresin</p>
             </div>
+            <div 
+            class="flex items-center justify-center p-6 col-span-1 md:col-span-2 lg:col-span-1 flex flex-col">
+                <img src="./image/p2.png" class="grayscale h-20 w-20">
+                <p class="py-2">1/6th</p>
+            </div>
+            <div 
+            class="flex items-center justify-center p-6 col-span-1 md:col-span-2 lg:col-span-1 flex flex-col">
+                <img src="./image/p3.png" class="grayscale h-20 w-20">
+                <p class="py-2">18 x 36 x 34 cm</p>
+            </div>
+            <div 
+            class="flex items-center justify-center p-6 col-span-1 md:col-span-2 lg:col-span-1 flex flex-col">
+                <img src="./image/p4.png" class="grayscale h-20 w-20">
+                <p class="py-2">2022 - 2023</p>
+            </div>
+        </div>
+</div>
+</section>
+<!-- video -->
+<!-- <section 
+class="relative w-screen md:h-screen">
+  <div 
+  class="w-full h-full overflow-hidden bg-black">
+      <video class="w-full h-full" src="./image/test.video.mp4" autoplay="" playsinline="" webkit-playsinline="" muted="" loop="" style=""></video>
+  </div>
+</section> -->
+<!-- 3D -->
+<section 
+class="flex justify-center items-center bg-black">
+  <div 
+  class="relative w-full md:max-w-5xl h-screen my-12 px-20 sm:px-0">
+    <iframe 
+    src="https://www.lightmatrix3d.com/model/?id=narutohinata" 
+    class="w-full h-screen relative" 
+    scrolling="yes">
+    </iframe>
+    <a 
+    href="#size" 
+    class="cursor-pointer absolute bottom-32 right-24 md:right-10 sm:right-10 text-gray-600 z-50 rounded-full h-12 w-12 flex items-center justify-center bg-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M5.293 9.707a1 1 0 010-1.414l4-4a1 1 0 011.414 0l4 4a1 1 0 01-1.414 1.414L11 7.414V15a1 1 0 11-2 0V7.414L6.707 9.707a1 1 0 01-1.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
+    <a 
+    href="#informattion" 
+    class="cursor-pointer absolute bottom-12 right-24 md:right-10 text-gray-600 z-50 rounded-full h-12 w-12 flex items-center justify-center bg-white">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+        <path fill-rule="evenodd" d="M14.707 10.293a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 111.414-1.414L9 12.586V5a1 1 0 012 0v7.586l2.293-2.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+      </svg>
+    </a>
+  </div>
+</section>
+<!-- INFORMATION -->
+<section 
+id="informattion" 
+class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
+
+  <div 
+  class="max-w-5xl mx-auto block w-full overflow-x-auto px-4 space-y-4">
+  	<div 
+    class="text-white flex items-center justify-start py-2">
+  		<h3 
+      class="text-3xl">INFORMATION</h3>
+  	</div>
+  	<div 
+  	class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+  		<h5 
+      class="text-lightred pb-4 text-2xl">ABOUT</h5>
+  		<p 
+      class="font-light text-xs md:text-sm text-white text-left">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+  	</div>
+  	<div 
+  	class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+  		<h5 
+      class="text-lightred pb-4 text-2xl">DETILS</h5>
+  		<p 
+      class="font-light text-xs md:text-sm text-white text-left">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+  	</div>
+  	<div 
+  	class="bg-darkblue rounded flex justify-start items-start flex-col p-10">
+  		<h5 
+      class="text-lightred pb-4 text-2xl">HISTORY</h5>
+  		<p 
+      class="font-light text-xs md:text-sm text-white text-left">Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum</p>
+  	</div>
+  </div>
+
+</section>
+<!-- slider -->
+<section class="bg-black">
+  <div 
+  id="product" 
+  class="swiper relative py-12 md:mr-40">
+    <div 
+    class="swiper-wrapper relative bg-black">
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="https://firebasestorage.googleapis.com/v0/b/upload-image-78764.appspot.com/o/images%2Fs1.JPG?alt=media&token=b06e3f84-5aeb-4bd9-9b6e-de8e642bf21d"
+        data-type="image">
+          <img src="./image/s2.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="https://firebasestorage.googleapis.com/v0/b/upload-image-78764.appspot.com/o/images%2Fs1.JPG?alt=media&token=b06e3f84-5aeb-4bd9-9b6e-de8e642bf21d"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="https://firebasestorage.googleapis.com/v0/b/upload-image-78764.appspot.com/o/images%2Fs1.JPG?alt=media&token=b06e3f84-5aeb-4bd9-9b6e-de8e642bf21d"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="https://firebasestorage.googleapis.com/v0/b/upload-image-78764.appspot.com/o/images%2Fs1.JPG?alt=media&token=b06e3f84-5aeb-4bd9-9b6e-de8e642bf21d"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+      <div 
+      class="swiper-slide">
+        <a 
+        data-fslightbox href="https://firebasestorage.googleapis.com/v0/b/upload-image-78764.appspot.com/o/images%2Fs1.JPG?alt=media&token=b06e3f84-5aeb-4bd9-9b6e-de8e642bf21d"
+        data-type="image">
+          <img src="./image/s1.JPG">
+        </a>
+      </div>
+    </div>
+    <div 
+    class="absolute right-0 bottom-12 bg-white flex flex-row z-50">
             <div 
             class="w-14 p-3 bg-lightred text-white">
               <div 
-              class="bp2 flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-                </svg>
+              class="flex items-center justify-center">
+                <button type="button" class="bn1">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
               </div>
             </div>
-      </div>
+    </div>
+    <div 
+    class="absolute left-0 bottom-12 bg-white flex flex-row z-50">
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="flex items-center justify-center">
+                <button type="button" class="bp2">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+              </div>
+            </div>
     </div>
   </div>
 </section>
-<!-- UPCOMING RELEASES -->
+<!-- sell -->
 <section
-class="py-24 w-full bg-black flex justify-center items-center flex-col">
+class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22rem] md:py-36 overflow-hidden">
 
   <div 
-  class="max-w-5xl mx-auto block w-full px-4 md:px-10 space-y-20">
-  	<div 
-    class="text-white flex items-center justify-center py-6 flex-col">
-  		<h3 
-      class="text-5xl italic pr-24">UPCOMING</h3>
-  		<h3 
-      class="text-5xl italic pl-24 text-lightred">RELEASES</h3>
-  	</div>
-  	
-    <!-- PRODUCT -->
+  class="max-w-5xl flex flex-col justify-center md:justify-end items-center md:items-end w-full mx-auto px-10">
     <div 
-    class="relative w-full bg-white h-[24rem] bg-cover bg-right border-l-4 border-lightred overflow-hidden group" 
-    style=" 
-    background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%)">
-      <a href="index.html" class="appearance-none">
-        <div 
-        class="absolute h-96 w-full md:px-10 flex justify-end md:justify-center items-center md:items-start flex-col z-20">
-          <ul>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">PRODUCT</li>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">NAME</li>
-            <li 
-            class="flex md:hidden justify-center text-4xl md:text-5xl text-white font-semibold text-center md:text-left italic">PRODUCT NAME</li>
-            <li 
-            class="py-2 md:py-6 font-light text-white text-center md:text-left text-[14px] leading-[20px] sm:text-[16px] leading-[22px]">Sale starts in</li>
-            <li 
-            class="text-4xl md:text-5xl text-lightred text-center md:text-left tracking-[10px]" style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start">
-              <button 
-              type="button" 
-              class="bg-white rounded-lg text-black my-2 md:my-6 text-xl px-20 sm:px-32 md:px-10 py-2 w-full transition duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
-            </li>
-          </ul>
-        </div>
-
-        <div 
-        class="absolute object-cover top-0 z-10">
-          <img src="./image/index_GK_IMG_0285_1024.png" class="w-full h-full duration-500 group-hover:scale-105">
-        </div>
-      </a>
+    class="absolute object-cover top-0">
+      <img src="./image/index_GK_narutohinata_1366.png" class="w-full h-full">
     </div>
-
-    <!-- PRODUCT -->
     <div 
-    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-lightred overflow-hidden group" 
-    style=" 
-    background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%)">
-      <a href="index-A01.html" class="appearance-none">
-        <div 
-        class="absolute h-96 w-full md:px-10 flex justify-end md:justify-center items-center md:items-start flex-col z-20">
-          <ul>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">PRODUCT</li>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">NAME</li>
-            <li 
-            class="flex md:hidden justify-center text-4xl md:text-5xl text-white font-semibold text-center md:text-left italic">PRODUCT NAME</li>
-            <li 
-            class="text-[14px] leading-[20px] sm:text-[16px] leading-[22px] py-2 md:py-6 font-light text-white text-center md:text-left">Sale starts in</li>
-            <li 
-            class="text-4xl md:text-5xl text-lightred text-center md:text-left tracking-[10px]" style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start">
-              <button 
-              type="button" 
-              class="bg-white rounded-lg text-black my-2 md:my-6 text-xl px-20 sm:px-32 md:px-10 py-2 w-full transition duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
-            </li>
-          </ul>
-        </div>
-
-        <div 
-        class="absolute object-cover top-0 z-10">
-          <img src="./image/index_GK_IMG_7723_1024.png" class="w-full h-full duration-500 group-hover:scale-105">
-        </div>
-      </a>
+    class="text-center z-20 py-6 px-4">
+      <h3 
+      class="text-2xl px-10 font-bold text-white">ANIME PRODUCT NAME</h3>
     </div>
-
-    <!-- PRODUCT -->
     <div 
-    class="relative w-full bg-white h-96 bg-cover bg-right border-l-4 border-lightred overflow-hidden grayscale group" 
-    style=" 
-    background: -moz-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: -webkit-linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%);
-    background: linear-gradient(left, rgba(0,0,0,1) 35%,rgba(255,255,255,0.5) 50%,rgba(222,13,97,0.5) 0%,rgba(222,13,97,0) 100%)">
-      <a href="index-A02.html" class="appearance-none">
+    class="bg-white rounded-lg flex flex-col z-20 shadow-lg px-10">
         <div 
-        class="absolute h-96 w-full md:px-10 flex justify-end md:justify-center items-center md:items-start flex-col z-20">
-          <ul>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">PRODUCT</li>
-            <li 
-            class="hidden md:flex text-4xl md:text-5xl text-white font-semibold text-center md:text-left">NAME</li>
-            <li 
-            class="flex md:hidden justify-center text-4xl md:text-5xl text-white font-semibold text-center md:text-left italic">PRODUCT NAME</li>
-            <li 
-            class="text-[14px] leading-[20px] sm:text-[16px] leading-[22px] py-2 md:py-6 font-light text-white text-center md:text-left">Sale starts in</li>
-            <li 
-            class="text-4xl md:text-5xl text-lightred text-center md:text-left tracking-[10px]" style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start">
-              <button 
-              type="button" 
-              class="bg-white rounded-lg text-black my-2 md:my-6 text-xl px-20 sm:px-32 md:px-10 py-2 w-full transition duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
-            </li>
-          </ul>
+        class="pt-6">
+          <div 
+          class="flex items-start flex-col text-[14px] sm:text-[16px] font-light text-gray-500">
+            <div class="flex flex-col md:flex-row">
+              <span>Sale starts in</span>
+              <span class="text-black font-bold pl-0 md:pl-4">00:00:00</span>
+            </div>
+            <div class="flex flex-col md:flex-row">
+              <span>Remaining Amount</span>
+              <span class="text-black font-bold pl-0 md:pl-4">22,000 / 22,000</span>
+            </div>
+          </div>
+          <div 
+          class="text-center py-12">
+            <h2 
+            class="text-4xl font-bold">17.5 USDT</h2>
+          </div>
         </div>
-
         <div 
-        class="absolute object-cover top-0 z-10">
-          <img src="./image/index_GK_narutohinata_1024.png" class="w-full h-full duration-500 group-hover:scale-105">
+        class="pb-6">
+          <button 
+          type="button"  
+          class="w-full bg-gradient-to-t from-deepred to-lightred rounded-lg text-white py-2 px-2">
+          BUY NOW
+          </button>
         </div>
-      </a>
     </div>
   </div>
 
-</section>
-
-<!-- ALLIZART X CARYPTO -->
-<section 
-class="relative">
-	<div
-	class="pt-4 md:pt-28 w-full bg-fixed bg-right" 
-	style="background-image: url(./image/vapor-02.png);">
-		<div 
-    class="max-w-5xl mx-auto w-full px-4">
-		  	<h5 
-        class="text-center text-[32px] md:text-5xl text-white py-20 font-medium">Allizart <span class="text-lightred">X</span> Crypto</h5>
-	  	</div>
-	  	<div 
-		  class="flex flex-col md:flex-row mx-auto justify-center items-center space-y-20 md:space-y-0">
-  			<div 
-        class="h-80 w-80 mx-10 md:mx-3">
-  				<div 
-          class="rounded-full h-60 w-60 bg-white flex justify-center items-center flex-col mx-auto">
-  					<h3 
-            class="text-7xl text-lightred font-bold">360<sup>o</sup></h3>
-  					<p 
-            class="text-xl text-lightred font-light">All is art</p>
-  				</div>
-  				<p 
-          class="py-6 text-white font-light tracking-normal text-[14px] leading-[20px] sm:text-[16px] sm:leading-[22px]">Find the best angle from Buy the blind box Hit or lose which to catch the moment</p>
-  			</div>
-  			<div 
-        class="h-80 w-80 mx-10 md:mx-3">
-  				<div 
-          class="rounded-full h-60 w-60 bg-white flex justify-center items-center flex-col mx-auto">
-  					<h3 
-            class="text-7xl text-lightred font-bold">NFT</h3>
-  					<p 
-            class="text-xl text-lightred font-light">Get Future</p>
-  				</div>
-  				<p 
-          class="py-6 text-white font-light tracking-normal text-[14px] leading-[20px] sm:text-[16px] sm:leading-[22px]">Find the best angle from Buy the blind box Hit or lose which to catch the moment</p>
-  			</div>
-  			<div 
-        class="h-80 w-80 mx-10 md:mx-3">
-  				<div 
-          class="rounded-full h-60 w-60 bg-white flex justify-center items-center flex-col mx-auto">
-  					<h3 
-            class="text-7xl text-lightred font-bold">10%</h3>
-  					<p 
-            class="text-xl text-lightred font-light">Hit or lose</p>
-  				</div>
-  				<p 
-          class="py-6 text-white font-light tracking-normal text-[14px] leading-[20px] sm:text-[16px] sm:leading-[22px]">Find the best angle from Buy the blind box Hit or lose which to catch the moment</p>
-  			</div>
-		  </div>
-	</div>
-	<div
-	class="py-28 w-full bg-gray-900">
-	  <div 
-    class="max-w-5xl mx-auto w-full px-4">
-	  	<div 
-      class="mx-10">
-	  		<h5 
-        class="text-lightred text-xl leading-7 font-light mb-[10px]">ALLizART MARKETPLACE</h5>
-	  		<h3 
-        class="text-white text-3xl pb-10 leading-9 font-light">Discover rare Genuine Doll by world original comics</h3>
-	  		<p 
-        class="text-white text-left font-light text-[14px] leading-[20px] sm:text-[16px] sm:leading-[22px] tracking-normal">Vivamus auctor tortor purus, non imperdiet mi bibendum a. Mauris euismod hendrerit nisi eget dictum. Nunc aliquet luctus ornare. Sed finibus venenatis posuere. Praesent accumsan vitae arcu vitae vulputate. Morbi sit amet justo vitae turpis sagittis vestibulum ut in ante. Praesent sit amet euismod dui, pulvinar sollicitudin leo. Nulla commodo molestie bibendum. Donec lacus magna, porta nec feugiat nec, vulputate nec leo. Cras porta magna at justo pharetra tincidunt. Suspendisse porttitor arcu quis eros molestie sollicitudin.
-	Mauris sem dolor, malesuada et odio ac, tincidunt scelerisque odio. Nunc mi ligula, aliquet quis finibus ut, suscipit ut lectus. Pellentesque et augue finibus, dignissim elit ut, scelerisque augue. Morbi at ex accumsan, luctus odio sit amet, dapibus mi. Mauris lobortis, quam vel tempor tristique, ante ex feugiat neque, ut auctor eros ipsum vel magna. Mauris nec turpis quis justo luctus cursus. Maecenas aliquet dolor vitae turpis euismod, eu vulputate urna dignissim. Curabitur sed erat condimentum, faucibus erat quis, viverra libero. Quisque gravida in ipsum non laoreet. Etiam lacinia mattis mi non dictum.</p>
-	  	</div>
-	  </div>
-	</div>
-</section>
-
-<!-- PARTNER -->
-<section 
-class="py-28 h-full flex justify-center items-center bg-parther">
-    <div 
-    class="max-w-7xl mx-auto px-4 md:px-6">
-    	<div>
-    		<h3 
-        class="text-[32px] md:text-5xl text-center font-bold">PARTHER</h3>
-    	</div>
-        <div 
-        class="grid grid-cols-1 sm:grid-cols-3 gap-4">
-            <div 
-            class="flex items-center justify-center p-3 col-span-1 md:col-span-1 lg:col-span-1">
-                <img 
-                src="./image/Allizone.png" 
-                class="grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            </div>
-            <div 
-            class="flex items-center justify-center p-3 col-span-1 md:col-span-1 lg:col-span-1">
-                <img 
-                src="./image/saint seiya.png" 
-                class="grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            </div>
-            <div 
-            class="flex items-center justify-center p-3 col-span-1 md:col-span-1 lg:col-span-1">
-                <img 
-                src="./image/narkto.png" 
-                class="grayscale hover:grayscale-0 transition duration-300 ease-in-out">
-            </div>
-
-        </div>
-    </div>
 </section>
 <!-- Footer -->
 <footer 
@@ -589,7 +612,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
 x-data="topBtn" 
 @click="scrolltoTop" 
 id="topButton" 
-class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
+class="slide fixed z-50 hidden p-3 text-white bottom-10 right-5">
   <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 11l7-7 7 7M5 19l7-7 7 7" />
   </svg>
@@ -599,19 +622,10 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
 </button>
 <script src="./js/swiper@7.4.1.js"></script>
 <script src="./js/alpinejs@3.2.3.js" defer></script>
+<script src="./js/fslightbox@3.0.9.js"></script>
+<script src="./js/alpinejs@3.2.3.js"></script>
 <script>
-    // * Swiper
-    const swiper = new Swiper('#banner', {
-      loop: true,
-      slidesPerView: 1,
-      navigation: {
-        nextEl: '.bn1',
-        prevEl: '.bp2',
-        clickable: true,
-      },
-
-    });
-        // back to top
+    // back to top
         document.addEventListener('alpine:init', () => {
             Alpine.data('topBtn', () => ({
                 scrolltoTop() {
@@ -627,6 +641,30 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
         }
+    // * Swiper
+    const swiper = new Swiper('#product', {
+      loop: true,
+      slidesPerView: 1,
+      navigation: {
+        nextEl: '.bp2',
+        prevEl: '.bn1',
+        clickable: true,
+      },
+      breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 0,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 0,
+          },
+        },
+    });
 </script>
 </body>
 </html>
