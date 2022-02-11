@@ -60,7 +60,7 @@ x-data="{ isopen: false }"
 class="bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
-  class="max-w-7xl mx-auto px-6 lg:px-8 py-2">
+  class="max-w-7xl xl:max-w-full mx-auto px-6 lg:px-8 py-2">
 
     <div  
     class="relative flex items-center justify-between h-16">
@@ -153,7 +153,7 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
           <!-- 選單 -->
           <!-- 登出 -->
           <button
-          class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-left font-light text-xs md:text-sm tracking-widest">
+          class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-left font-medium text-xs md:text-sm tracking-widest">
             LOGOUT
           </button>
           <!-- 登出 -->
@@ -189,862 +189,257 @@ class="bg-gradient-to-r from-deepblue to-lightblue">
 
 <!-- Banner -->
 <section
-class="relative bg-cover bg-center h-60 py-12 flex justify-between overflow-hidden" 
+class="relative bg-cover bg-center h-72 flex justify-between overflow-hidden" 
 style="background-image: url(./image/banner-02.png);">
 
   <div 
-  class="max-w-5xl md:mx-auto mx-10 flex justify-between w-full">
+  class="relative max-w-5xl md:mx-auto mx-10 flex justify-between w-full">
   	<div 
   	class="flex items-start justify-center flex-col z-10 mx-4">
   		<h2 
-  		class="font-bold text-red-500 text-3xl">SECONDARY MARKET</h2>
+  		class="font-bold text-red-500 text-[30px]">SECONDARY MARKET</h2>
   		<p 
-  		class="text-white text-left text-md">Anime Product Name</p>
+  		class="text-white text-left font-light text-[14px] leading-[20px] sm:text-[16px] sm:leading-[22px]">Anime Product Name</p>
   	</div>
-  	<div 
-    class="absolute -top-72 -right-52 md:right-0 opacity-60">
+    <div 
+    class="absolute top-0 right-0 opacity-60">
   		<img 
-      src="./image/product-07.png">
+      src="./image/index_GK_narutohinata.png" class="w-[420px] h-full">
   	</div>
   </div>
+
 </section>
 
 <!-- SECONDARY MARKET -->
 <section
-class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
+class="py-12 md:py-24 w-full bg-deepblue flex justify-center items-center flex-col">
 
   <div 
-  class="max-w-7xl mx-6 md:mx-auto">
-
-    <div 
-    class="py-6">
-      <div 
-      class="flex justify-center md:justify-end space-x-4 mx-8">
+  class="max-w-7xl w-full mx-auto p-8">
+    <!-- input select -->
+    <div class="flex justify-end space-x-4 md:space-x-6 my-6">
+      <div class="relative text-gray-600">
+        <input 
+        class="bg-white h-10 md:h-9 px-3 pr-6 rounded-lg text-sm focus:outline-none relative w-full appearance-none" 
+        type="search" 
+        name="search" 
+        placeholder="Search">
+        <button 
+        type="submit" 
+        class="absolute right-0 top-2 mr-2">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
+          </svg>
+        </button>
+      </div>
+      <div class="relative text-gray-600">
+        <select 
+        class="w-full h-full pl-4 pr-10 bg-white rounded-md shadow-sm sm:text-sm appearance-none relative">
+          <option>Price</option>
+          <option>Canada</option>
+          <option>Mexico</option>
+        </select>
         <div 
-        class="pt-2 relative text-gray-600">
-          <input 
-          class="bg-white h-10 px-4 rounded-lg text-sm appearance-none placeholder-gray-400 w-40 md:w-full"
-          type="search" 
-          name="search" 
-          placeholder="Search">
-          <button 
-          type="submit" class="absolute right-0 top-0 mt-5 mr-2">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
-                  <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
-            </svg>
-          </button>
-        </div>
-        <div 
-        class="pt-2 relative text-gray-600">
-          <select 
-          class="w-40 md:w-44 px-4 py-2 h-10 bg-white rounded-md shadow-sm sm:text-sm appearance-none w-32 md:w-full">
-            <option>STATUS</option>
-            <option>Canada</option>
-            <option>Mexico</option>
-          </select>
-          <div 
-          class="absolute right-0 top-4 mr-2 text-black">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
+        class="absolute right-0 top-2 mr-2 text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
         </div>
       </div>
     </div>
-
+  </div>
+  <div class="max-w-7xl w-full">
+    <!-- product -->
     <div 
-    class="flex flex-row flex-wrap">   
-
+    class="flex flex-row flex-wrap">    
       <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
+      class="w-full sm:w-1/2 lg:w-1/5 mb-4 px-2">
+        <a href="#" class="appearance-none">
           <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                          	<button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+          class="relative rounded overflow-hidden">
+            <picture 
+            class="relative block bg-black h-72">
+              <div 
+              class="absolute object-cover top-0 z-20">
+                <img 
+                class="w-full h-full duration-500 group-hover:scale-105" 
+                src="./image/index_GK_narutohinata_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-10 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              </div>
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-left font-light text-xs md:text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center justify-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="text-left font-light text-xs md:text-sm">
+                              NARUTO & HINATA #025
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-xs md:text-sm text-gray-400">
+                                  Price
+                              </p>
+                          </div>
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-right font-bold text-xs md:text-sm">
+                                  17.5 USD
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        </a>
+      </div>
+      <div 
+      class="w-full sm:w-1/2 lg:w-1/5 mb-4 px-2">
+        <a href="#" class="appearance-none">
+          <div 
+          class="relative rounded overflow-hidden">
+            <picture 
+            class="relative block bg-black h-72">
+              <div 
+              class="absolute object-cover top-0 z-20">
+                <img 
+                class="w-full h-full" 
+                src="./image/index_GK_narutohinata_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-10 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
+              </div>
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-left font-light text-xs md:text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center justify-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="text-left font-light text-xs md:text-sm">
+                              NARUTO & HINATA #025
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-xs md:text-sm text-gray-400">
+                                  Price
+                              </p>
+                          </div>
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-right font-bold text-xs md:text-sm">
+                                  17.5 USD
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
       </div>
 
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
 
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div 
-      class="w-full sm:w-1/2 lg:w-1/4 mb-4 px-2">
-        <div 
-        class="relative rounded border-b border-black overflow-hidden pt-6 bg-deepblack">
-          <picture 
-          class="relative block bg-black h-96 border-t rounded border-black">
-            <div 
-            class="absolute -top-5 left-10 z-10">
-              <img 
-              class="block scale-150" 
-              src="./image/product-07.png">
-            </div>
-            <div 
-            class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-60 flex items-end flex-wrap flex-col justify-end" 
-            style="background: linear-gradient(-45deg, #D32546, transparent 50%); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(-45deg, #D32546, transparent 50%); background: -ms-linear-gradient(-45deg, #D32546, transparent 50%); background: -o-linear-gradient(-45deg, #D32546, transparent 50%);">
-              <span 
-              class="px-6 pt-2 text-left font-light text-xs md:text-sm">Title Name</span>
-              <span 
-              class="px-6 pb-2 text-3xl font-bold">0.0075</span>
-            </div>
-          </picture>
-          <div 
-          class="p-4 bg-black text-white text-left font-light text-xs md:text-sm relative z-20">
-            <ul>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            DEKF51848#*********553118515
-                          </p>
-                        </div>
-                        <div 
-                        class="flex flex-row items-center justify-center text-gray-400" x-data="{ open: false }">
-                            <button type="button" @click="open = !open">
-                              <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                              </svg>
-                              <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 flex flex-row text-rose-600" viewBox="0 0 20 20" fill="currentColor">
-                                <path fill-rule="evenodd" d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z" clip-rule="evenodd" />
-                              </svg> 9
-                            </button>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p 
-                          class="text-gray-400">
-                            Title Name
-                          </p>
-                        </div>
-                    </div>
-                </li>
-                <li 
-                class="py-1">
-                    <div 
-                    class="flex items-center">
-                        <div 
-                        class="flex-1 min-w-0">
-                          <p>
-                            7 days left
-                          </p>
-                        </div>
-                        <div 
-                        class="inline-flex items-center">
-                          <p>
-                            offer for 0.0100
-                          </p>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-                      
+    </div>
+  </div>
 
   <!-- Pagination -->
-	<div 
+  <div 
   class="flex flex-col items-center py-12 mx-auto">
-	    <div 
-      class="flex text-gray-700">
-	        <div 
+      <div 
+      class="flex text-gray-700 max-w-5xl">
+          <div 
           class="h-16 w-16 mr-1 flex justify-center items-center rounded-full cursor-pointer text-white hover:text-buttonhover">
-	            <a href="javascript:;" class="appearance-none flex">
+              <a href="javascript:;" class="appearance-none flex">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>BACK 
               </a>
-	        </div>
-	        <div 
+          </div>
+          <div 
           class="flex h-16 font-medium rounded-full">
-	            <div 
+              <div 
               class="w-12 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   2
                 </a>
               </div>
-	            <div 
+              <div 
               class="w-12 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   3
                 </a>
               </div>
-	            <div 
+              <div 
               class="w-12 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   4
                 </a>
               </div>
-	            <div 
+              <div 
               class="w-12 flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   5
                 </a>
               </div>
-	            <div 
+              <div 
               class="w-12 hidden md:flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   6
                 </a>
               </div>
-	            <div 
+              <div 
               class="w-12 hidden md:flex justify-center items-center cursor-pointer leading-5 transition duration-150 ease-in text-white hover:text-buttonhover">
                 <a href="javascript:;" class="appearance-none">
                   7
                 </a>
               </div>
 
-	        </div>
-	        <div 
+          </div>
+          <div 
           class="h-16 w-16 ml-1 flex justify-center items-center rounded-full cursor-pointer text-white hover:text-buttonhover">
-	        	<a href="javascript:;" class="appearance-none flex">
+            <a href="javascript:;" class="appearance-none flex">
               NEXT
               <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
               </svg>  
             </a>
-	        </div>
-	    </div>
-	</div>
-
-    </div>
-
+          </div>
+      </div>
   </div>
+
 </section>
 
 <!-- Footer -->
@@ -1052,109 +447,107 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
 class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   <!-- 社群連結 -->
   <div 
-  class="flex items-center justify-center pt-20 space-x-4">
+  class="flex items-center justify-center pt-20 space-x-10">
     <a href="#">
-      <img src="./image/facebook-logo.png" class="h-8 transition hover:scale-125 mx-2">
+      <img src="./image/discord.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
     </a>
     <a href="#">
-      <img src="./image/linkedin-logo.png" class="h-8 transition hover:scale-125 mx-2">
+      <img src="./image/twitter.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
     </a>
     <a href="#">
-      <img src="./image/pinterest-logo.png" class="h-8 transition hover:scale-125 mx-2">
-    </a>
-    <a href="#">
-      <img src="./image/twitter-logo.png" class="h-8 transition hover:scale-125 mx-2">
+      <img src="./image/instagram.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
     </a>
   </div>
   <!--  導覽列 -->
   <div 
-  class="container px-10 md:pt-20 pt-10 pb-28 md:pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
-    <!-- Logo -->
-    <div 
-    class="w-full md:w-72 flex-shrink-1 md:mx-0 mx-auto text-center lg:text-left md:order-first order-last pt-20 md:py-12">
-      <a 
-      class="flex title-font font-medium items-center justify-center text-gray-900">
-        <img src="./image/Allizart-Logo-A01.png">
-      </a>
-      <p 
-      class="mt-2 text-left font-light text-xs md:text-sm text-white">©2021 ALLizART. All rights reserved</p>
-    </div>
+  class="max-w-5xl lg:max-w-7xl px-10 md:pt-20 pt-10 pb-16 md:pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
     <!-- 導覽 -->
     <div 
     class="flex-grow flex flex-wrap md:pl-10 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-center">
 
+    <div 
+    class="w-full sm:w-1/3 md:w-1/6 px-4 order-last md:order-first my-6 md:my-0">
+      <a 
+      class="flex title-font font-medium items-center justify-center text-gray-900" 
+      href="/">
+        <img src="./image/Allizart-Logo-A01.png">
+      </a>
+      <p 
+      class="mt-[40px] md:mt-2 text-center md:text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white">Copyright © 2022 Allizart All Rights Reserved</p>
+      </div>
+
       <div 
-      class="md:w-1/3 w-full px-4">
+      class="w-full sm:w-1/3 md:w-1/6 px-4">
         <h2 
         class="title-font font-bold text-lightred tracking-widest text-md mb-3">About Us</h2>
           <nav 
           class="list-none mb-10">
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" href="#">About</a>
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" href="#">About</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" href="#">Explore</a>
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" href="#">Explore</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" href="#">Terms</a>
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" href="#">Terms</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" href="#">Privacy</a>
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" href="#">Privacy</a>
             </li>
           </nav>
         </div>
 
         <div 
-        class="md:w-1/3 w-full px-4">
+        class="w-full sm:w-1/3 md:w-1/6 px-4">
           <h2 
           class="title-font font-bold text-lightred tracking-widest text-md mb-3">Community</h2>
           <nav 
           class="list-none mb-10">
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" 
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" 
               href="#">Support</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" 
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" 
               href="#">How its work?</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" 
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" 
               href="#">Third Link</a>
             </li>
             <li>
               <a 
-              class="text-left font-light text-xs md:text-sm text-white hover:text-buttonhover" 
+              class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white hover:text-buttonhover" 
               href="#">Fourth Link</a>
             </li>
           </nav>
         </div>
 
         <div 
-        class="md:w-1/3 w-full px-4">
+        class="w-full md:w-3/6 px-4">
           <h2 
           class="title-font font-bold text-lightred tracking-widest text-md mb-3">BE FIRST ON OUR DROP</h2>
           <p 
-          class="text-left font-light text-xs md:text-sm text-white">By joining our mailing list, you will get all the updates or simply just contact us if you have any question!</p>
+          class="text-left font-light text-[12px] leading-[20px] sm:text-[14px] leading-[22px] text-white">By joining our mailing list, you will get all the updates or simply just contact us if you have any question!</p>
           <div 
           class="flex justify-center mt-6">
             <div 
-            class="bg-white rounded-lg">
+            class="bg-white rounded-lg w-full">
               <div 
               class="flex flex-wrap justify-between md:flex-row relative z-20">
                   <input 
                   type="email" 
-                  class="w-1/3 md:w-1/2 w-full m-1 p-2 appearance-none text-gray-900 font-light text-xs md:text-sm focus:outline-none" 
+                  class="w-1/3 md:w-1/2 m-1 p-2 appearance-none text-gray-900 font-light text-xs md:text-sm focus:outline-none" 
                   placeholder="Your Email">
                   <button 
-                  class="w-1/3 p-1 font-light text-xs md:text-sm rounded-lg uppercase md:w-auto flex items-center justify-between text-gray-600 flex flex-row">
+                  class="w-1/3 p-1 font-light text-xs md:text-sm rounded-lg uppercase md:w-auto flex items-center justify-end md:justify-between text-gray-600 flex flex-row">
                   SUBMIT
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
