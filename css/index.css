@@ -46,5 +46,10 @@
 	height:32rem;
 };
 
+input:checked ~ .radio {
+  color:white;
+  background-color: green;
+}
+
 
 
