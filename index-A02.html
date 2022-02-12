@@ -21,23 +21,16 @@ class="scroll-smooth">
         },
         extend: {
           colors: {
-            //說明框背景
             darkblue: '#080B1A',
-            //頁首頁尾漸層
             deepblue: '#080B1A',
             lightblue: '#01003A',
-            //按鈕漸層
             deepred: '#9E1533',
             lightred: '#E01E49',
-            //標示及合作背景
             instruction: "#F2F2F2",
             parther: '#DCDCDC',
-            //按鈕
             buttonhover: '#EF443F',
-            //文字
             fontred: '#FF3631',
             charyred: '#E01E49',
-            //線條
             linecolor: '#4c4c4c'
           },
           scale: {
@@ -56,7 +49,7 @@ class="scroll-smooth">
 </head>
 <body 
 class="tracking-widest">
-<!-- Navbar -->
+
 <nav 
 x-data="{ isopen: false }" 
 class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
@@ -95,10 +88,10 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
       <div 
       class="absolute right-4 flex flex-row space-x-6 items-center md:pr-2 lg:static lg:inset-auto lg:ml-6 lg:pr-0">
-          <!-- 會員 -->
+
           <div  
           x-data="{ dropdownOpen: false }">
-              <!-- Sign Out -->
+
               <button 
               @click="dropdownOpen = !dropdownOpen" 
               type="button" 
@@ -109,7 +102,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
                 <span 
                 class="lg:flex hidden ml-2 tracking-widest text-left font-light text-xs md:text-sm">User Name</span>
               </button>
-              <!-- Sign Out -->
+
               <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
               <div x-show="dropdownOpen" class="absolute right-0 md:right-52 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
                 <a href="#" class="block px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
@@ -117,8 +110,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
                 </a>
               </div>
           </div>
-          <!-- 會員 -->
-          <!-- 翻譯 -->
+
           <div 
           x-data="{ translateopen: false }">
             <button 
@@ -129,7 +121,6 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
               </svg>
             </button>
-            <!-- translate -->
             <div x-show="translateopen" @click="translateopen = false" class="fixed inset-0 h-full w-full z-10"></div>
             <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
               <a href="#" class="block px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
@@ -140,8 +131,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
               </a>
             </div>
           </div>
-          <!-- 翻譯 -->
-          <!-- 選單 -->
+
           <div class="flex lg:hidden">
             <button 
               @click="isopen = !isopen" 
@@ -152,19 +142,17 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
                 </svg>
               </button>
           </div>
-          <!-- 選單 -->
-          <!-- 登出 -->
+
           <button
           class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-left font-medium text-xs md:text-sm tracking-widest">
             LOGOUT
           </button>
-          <!-- 登出 -->
+
       </div>
 
     </div>
   </div>
 
-    <!-- mobile menu -->
     <div 
     x-show="isopen" 
     class="slide w-full h-60">
@@ -175,24 +163,23 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
             <li 
             class="flex lg:hidden items-center justify-center text-white hover:text-buttonhover cursor-pointer text-left font-light text-xs md:text-sm">
               <a href="">Dashboard</a>
-            </li>
+            
             <li 
             class="flex lg:hidden items-center justify-center text-white hover:text-buttonhover cursor-pointer text-left font-light text-xs md:text-sm">
               <a href="">Activity</a>
-            </li>
+            
             <li 
             class="flex lg:hidden items-center justify-center text-white hover:text-buttonhover cursor-pointer text-left font-light text-xs md:text-sm">
               <a href="">Library</a>
-            </li>
+            
           </ul>
         </div>
     </div>
 </nav>
 
-<!-- Banner -->
 <section 
 class="relative overflow-hidden mt-20">
-  <!-- 上層影片特效 -->
+
 	<div
 	class="w-screen h-96 bg-black relative">
     <div 
@@ -200,16 +187,16 @@ class="relative overflow-hidden mt-20">
       <video class="absolute bottom-0 w-full" src="./image/bg-loop.mp4" autoplay="" playsinline="" webkit-playsinline="" muted="" loop="" style=""></video>
     </div>
 	</div>
-  <!-- 下層漸層 -->
+
 	<div
 	class="w-screen h-96 bg-gradient-to-r from-deepred to-lightred">
 	</div>
-  <!-- 背景人物 -->
+
   <div 
   class="absolute top-0 h-full w-full z-20 flex justify-center">
     <img src="./image/index_GK_narutohinata_1366.png" class="object-cover object-top w-[720px] h-full">
   </div>
-  <!-- 卡片 -->
+
   <div class="absolute max-w-5xl w-full mx-auto h-full z-20 top-0 inset-x-0 flex justify-end items-center flex-col pb-20">
     <div 
     class="flex justify-center items-center flex-col">
@@ -262,7 +249,6 @@ class="relative overflow-hidden mt-20">
 
 </section>
 
-<!-- size -->
 <section 
 class="flex justify-center items-center bg-instruction">
     <div 
@@ -292,15 +278,15 @@ class="flex justify-center items-center bg-instruction">
         </div>
 </div>
 </section>
-<!-- video -->
+
 <!-- <section 
-class="relative w-screen md:h-screen">
+class="relative w-screen md:h-screen hidden">
   <div 
   class="w-full h-full overflow-hidden bg-black">
       <video class="w-full h-full" src="./image/test.video.mp4" autoplay="" playsinline="" webkit-playsinline="" muted="" loop="" style=""></video>
   </div>
 </section> -->
-<!-- 3D -->
+
 <section 
 class="flex justify-center items-center bg-black">
   <div 
@@ -312,7 +298,7 @@ class="flex justify-center items-center bg-black">
     </iframe>
   </div>
 </section>
-<!-- INFORMATION -->
+
 <section 
 class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
 
@@ -347,7 +333,7 @@ class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
   </div>
 
 </section>
-<!-- slider -->
+
 <section class="bg-black">
   <div 
   id="product" 
@@ -425,7 +411,7 @@ class="py-24 w-screen bg-gray-900 flex justify-center items-center flex-col">
     </div>
   </div>
 </section>
-<!-- sell -->
+
 <section
 class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22rem] md:py-36 overflow-hidden">
 
@@ -473,10 +459,10 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22
   </div>
 
 </section>
-<!-- Footer -->
+
 <footer 
 class="text-white bg-gradient-to-r from-deepblue to-lightblue">
-  <!-- 社群連結 -->
+
   <div 
   class="flex items-center justify-center pt-20 space-x-10">
     <a href="#">
@@ -489,10 +475,10 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
       <img src="./image/instagram.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
     </a>
   </div>
-  <!--  導覽列 -->
+
   <div 
   class="max-w-5xl lg:max-w-7xl px-10 md:pt-20 pt-10 pb-16 md:pb-20 mx-auto flex justify-center items-center flex-col lg:flex-row md:flex-nowrap flex-wrap">
-    <!-- 導覽 -->
+
     <div 
     class="flex-grow flex flex-wrap md:pl-10 -mb-10 md:mt-0 mt-10 md:text-left text-center justify-center">
 
@@ -593,7 +579,6 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
     </div>
 </footer>
 
-<!-- BACK TO TOP -->
 <button 
 x-data="topBtn" 
 @click="scrolltoTop" 
