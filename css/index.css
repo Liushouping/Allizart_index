@@ -2,30 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700;900&display=swap');
 /* 
    Font family
 */
-@font-face {
+/*@font-face {
 	font-family: 'Prompt light';
-	font-style: normal;
-	font-weight: 300;
-	font-display: swap;
 	src: url(../font/Prompt-light.ttf) format("opentype");
 }
 @font-face {
-	font-family: 'Prompt medium';
-	font-style: normal;
-	font-weight: 500;
-	font-display: swap;
+	font-family: 'Prompt Medium';
 	src: url(../font/Prompt-medium.ttf) format("opentype");
 }
 @font-face {
 	font-family: 'Prompt bold';
-	font-style: normal;
-	font-weight: 700;
-	font-display: swap;
 	src: url(../font/Prompt-bold.ttf) format("opentype");
-}
+}*/
 /* 
    Swiper
 */
