@@ -328,21 +328,34 @@ class="w-screen pb-36 bg-gray-900 flex flex-col justify-center items-center">
           <p class="font-light mb-12">DEKF51848#**********118515</p>
           <p class="font-bold">Select your sell method</p>
           <div class="relative mt-1 mb-2 bg-gray-100 flex justify-between">
-<!--             <input 
-            class="bg-gray-100 h-12 px-3 pr-6 rounded-lg text-sm focus:outline-none relative w-full appearance-none cursor-pointer" 
-            type="radio">
-            <input 
-            class="bg-gray-100 h-12 px-3 pr-6 rounded-lg text-sm focus:outline-none relative w-full appearance-none cursor-pointer" 
-            type="radio"> -->
-            <div class="inline-flex rounded-lg w-1/2 flex justify-center">
-              <input type="radio" name="room_type" id="roomPrivate" checked hidden/>
-              <label for="roomPrivate" class="radio text-center self-center py-2 px-4 rounded-lg cursor-pointer hover:opacity-75">Highest Bid</label>
-            </div>
-            <div class="inline-flex rounded-lg w-1/2 flex justify-center">
-              <input type="radio" name="room_type" id="roomPublic" hidden/>
-              <label for="roomPublic" class="text-center self-center py-2 px-4 rounded-lg cursor-pointer hover:opacity-75">Set Price</label>
-            </div>
+            <div class="inline-flex radio w-1/2">
+            <input
+              name="answer"
+              type="radio"
+              id="Highest Bid"
+              hidden="hidden"
+              value="Highest Bid"/>
+            <label
+              for="Highest Bid"
+              class="px-2 py-1 rounded-lg flex justify-center items-center text-[14px] font-light w-full">
+              Highest Bid
+            </label>
           </div>
+          <div class="inline-flex radio w-1/2">
+            <input
+              name="answer"
+              type="radio"
+              id="Set Price"
+              hidden="hidden"
+              value="Set Price"/>
+            <label
+              for="Set Price"
+              class="px-2 py-1 rounded-lg flex justify-center items-center text-[14px] font-light w-full h-12">
+              Set Price
+            </label>
+          </div>
+          </div>
+
           <p class="font-bold">Minimum bid</p>
           <div class="relative mt-1">
             <input 
@@ -358,6 +371,15 @@ class="w-screen pb-36 bg-gray-900 flex flex-col justify-center items-center">
         </ul>
       </div>
     </div>
+  </div>
+
+  <div 
+  class="my-12">
+    <button 
+      type="button"  
+      class="w-full bg-gradient-to-t from-deepred to-lightred rounded-lg text-white py-3 px-44 text-[21px]">
+      SUBMIT
+    </button>
   </div>
 </section>
 
