@@ -298,11 +298,11 @@ class="py-24 w-screen bg-darkblue flex justify-center items-center flex-col">
       <div 
       class="flex justify-start md:justify-between flex-col md:flex-row">
         <h3 
-        class="text-white text-4xl order-last md:order-first px-4 pt-4">PEICE HISTORY</h3>
+        class="text-white text-4xl order-last md:order-first py-4 md:py-0">PEICE HISTORY</h3>
         <div 
         class="relative text-gray-600 w-32">
           <select 
-          class="mt-1 w-full py-3 px-3 bg-white rounded-md shadow-sm sm:text-sm appearance-none relative">
+          class="w-full py-3 px-3 bg-white rounded-md shadow-sm sm:text-sm appearance-none relative">
             <option>All TIME</option>
             <option>Last 2 days</option>
             <option>Last 4 days</option>
@@ -529,7 +529,6 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
 // chart
     var chart = document.getElementById('chart').getContext('2d'),
       gradient = chart.createLinearGradient(0, 0, 0, 350);
-
       gradient.addColorStop(0, 'rgba(255, 30,73, 0.5)');
       gradient.addColorStop(0.5, 'rgba(255, 30, 73, 0.15)');
       gradient.addColorStop(1, 'rgba(255, 30, 73, 0)');
@@ -537,7 +536,7 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
     var data  = {
         labels: [ '7/27', '8/15', '9/3', '9/22'],
         datasets: [{
-          label: 'NFT',
+          label: '##',
           backgroundColor: gradient,
           pointBackgroundColor: 'white',
           borderWidth: 0,
