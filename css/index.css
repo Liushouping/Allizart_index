@@ -6,6 +6,7 @@
    Font family
 */
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700;900&display=swap');
+
 /*@font-face {
 	font-family: 'Prompt light';
 	src: url(../font/Prompt-light.ttf) format("opentype");
@@ -17,7 +18,8 @@
 @font-face {
 	font-family: 'Prompt bold';
 	src: url(../font/Prompt-bold.ttf) format("opentype");
-}*/
+}
+*/
 /* 
    Swiper
 */
