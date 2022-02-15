@@ -49,7 +49,7 @@ x-data="{ isopen: false }"
 class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
-  class="max-w-7xl xl:max-w-full mx-auto px-6 lg:px-8 py-2">
+  class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4">
 
     <div  
     class="relative flex items-center justify-between h-16">
@@ -61,7 +61,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
         class="flex-shrink-0 flex items-start">
           <a href="releases.html" class="appearance-none">
             <img 
-            class="flex h-12 w-auto" src="./image/Allizart-Logo-A01.png">
+            class="flex h-9 w-auto" src="./image/Allizart-Logo-A01.png">
           </a>
         </div>
 
@@ -99,7 +99,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
               <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
               <div x-show="dropdownOpen" class="absolute right-0 md:right-52 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
-                <a href="#" class="block px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+                <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
                   Sign Out
                 </a>
               </div>
@@ -117,10 +117,10 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
             </button>
             <div x-show="translateopen" @click="translateopen = false" class="fixed inset-0 h-full w-full z-10"></div>
             <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
-              <a href="#" class="block px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
                   繁體中文
               </a>
-              <a href="#" class="block px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
                   English
               </a>
             </div>
@@ -179,7 +179,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 </nav>
 
 <section 
-class="relative overflow-hidden mt-20">
+class="relative overflow-hidden mt-16">
 
 	<div
 	class="w-screen h-96 bg-black relative">
@@ -260,23 +260,23 @@ class="flex justify-center items-center bg-instruction">
         class="grid grid-cols-4 gap-4 py-10 md:py-20">
             <div 
             class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
-                <img src="./image/p1.png" class="grayscale h-20 w-20">
-                <p class="pt-2">Polyresin</p>
+                <img src="./image/p1.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">Polyresin</p>
             </div>
             <div 
             class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
-                <img src="./image/p2.png" class="grayscale h-20 w-20">
-                <p class="pt-2">1/6th</p>
+                <img src="./image/p2.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">1/6th</p>
             </div>
             <div 
             class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
-                <img src="./image/p3.png" class="grayscale h-20 w-20">
-                <p class="pt-2">18 x 36 x 34 cm</p>
+                <img src="./image/p3.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">18 x 36 x 34 cm</p>
             </div>
             <div 
             class="flex items-center justify-start md:p-6 col-span-1 flex flex-col">
-                <img src="./image/p4.png" class="grayscale h-20 w-20">
-                <p class="pt-2">2022 - 2023</p>
+                <img src="./image/p4.png" class="grayscale h-[70px] w-[70px]">
+                <p class="pt-2 text-[12px] text-center tracking-normal">2022 - 2023</p>
             </div>
         </div>
     </div>
@@ -445,7 +445,7 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22
             </div>
           </div>
           <div 
-          class="text-center py-12">
+          class="text-center py-4 ld:py-12">
             <h2 
             class="text-4xl font-bold">17.5 USDT</h2>
           </div>
@@ -471,13 +471,13 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
   <div 
   class="flex items-center justify-center pt-20 space-x-10">
     <a href="#">
-      <img src="./image/discord.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
+      <img src="./image/discord.svg" class="h-[20px] w-[20px] sm:h-[25px] sm:w-[25px] lg:h-8 lg:w-8 transition hover:scale-125">
     </a>
     <a href="#">
-      <img src="./image/twitter.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
+      <img src="./image/twitter.svg" class="h-[20px] w-[20px] sm:h-[25px] sm:w-[25px] lg:h-8 lg:w-8 transition hover:scale-125">
     </a>
     <a href="#">
-      <img src="./image/instagram.svg" class="h-8 w-8 transition hover:scale-125 mx-2">
+      <img src="./image/instagram.svg" class="h-[20px] w-[20px] sm:h-[25px] sm:w-[25px] lg:h-8 lg:w-8 transition hover:scale-125">
     </a>
   </div>
 
