@@ -7,6 +7,7 @@ class="scroll-smooth">
   <title>Allizart</title>
   <script src="./js/tailwind@3.0.14.js"></script>
   <link href="./css/index.css" rel="stylesheet" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css">
   <script>
     tailwind.config = {
       theme: {
@@ -1280,7 +1281,9 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
   class="mt-4 tracking-widest" 
   style="writing-mode: vertical-lr;">BACK to right</p>
 </button>
+
 <script src="./js/alpinejs@3.2.3.js" defer></script>
+<script src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.js" defer></script>
 <script>
         // back to right
         document.addEventListener('alpine:init', () => {
@@ -1298,6 +1301,11 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
         }
+
+        //
+        cookieconsent.run({
+          page_scripts: true
+        });
 </script>
 </body>
 </html>
