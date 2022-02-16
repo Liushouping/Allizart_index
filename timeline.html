@@ -219,12 +219,12 @@ style="background-image: url(./image/vapor.png);">
       </div>
 
       <button
-      class="bg-white py-2 text-gray-900 rounded-lg flex justify-center px-6 items-center hover:scale-105 transition font-medium text-[14px] w-[120px] xs:w-[220px] sm:w-[180px] mx-auto relative">
+      class="bg-white py-2 text-gray-900 rounded-[0.3rem] flex justify-center px-6 items-center hover:scale-105 transition font-medium text-[14px] w-[120px] xs:w-[220px] sm:w-[180px] mx-auto relative">
         <img src="./image/disc.png" class="absolute left-4 h-4 w-4">BUY
       </button>
 
       <button 
-      class="bg-white py-2 text-gray-900 rounded-lg flex justify-center px-6  items-center hover:scale-105 transition font-medium text-[14px] w-[120px] xs:w-[220px] sm:w-[180px] mx-auto relative">
+      class="bg-white py-2 text-gray-900 rounded-[0.3rem] flex justify-center px-6  items-center hover:scale-105 transition font-medium text-[14px] w-[120px] xs:w-[220px] sm:w-[180px] mx-auto relative">
         <img src="./image/arrow.png" class="absolute left-4 h-4 w-4">SEND
       </button>
     </div>
@@ -289,12 +289,12 @@ style="background-image: url(./image/vapor.png);">
         <div 
         class="flex flex-row sm:flex-col space-x-2 w-full">
           <button
-          class="bg-white py-2 text-gray-900 rounded-lg flex justify-center px-6 items-center hover:scle-105 transition font-medium text-[14px] w-full mx-auto relative">
+          class="bg-white py-2 text-gray-900 rounded-[0.3rem] flex justify-center px-6 items-center hover:scle-105 transition font-medium text-[14px] w-full mx-auto relative">
             <img src="./image/disc.png" class="absolute left-1 sm:left-4 h-4 w-4">BUY
           </button>
 
           <button 
-          class="bg-white py-2 text-gray-900 rounded-lg flex justify-center px-6 items-center hover:scale-105 transition font-medium text-[14px] w-full mx-auto relative">
+          class="bg-white py-2 text-gray-900 rounded-[0.3rem] flex justify-center px-6 items-center hover:scale-105 transition font-medium text-[14px] w-full mx-auto relative">
             <img src="./image/arrow.png" class="absolute left-1 sm:left-4 h-4 w-4">SEND
           </button>
         </div>
@@ -341,7 +341,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
         <div class="flex justify-end space-x-4 md:space-x-6 my-6">
           <div class="relative text-gray-600">
             <select 
-            class="w-[150px] h-9 pl-4 pr-10 bg-white rounded-md shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
+            class="w-[150px] h-9 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
               <option>ORDER</option>
               <option>Canada</option>
               <option>Mexico</option>
@@ -355,7 +355,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
           </div>
           <div class="relative text-gray-600">
             <select 
-            class="w-[150px] h-9 pl-4 pr-10 bg-white rounded-md shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
+            class="w-[150px] h-9 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
               <option>ALL TIME</option>
               <option>Last 3 days</option>
               <option>Last 7 days</option>
@@ -374,7 +374,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
 	        <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
 	          <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -383,9 +383,9 @@ class="bg-gray-900 pt-0 lg:pt-16">
 	          </div>
 
 	          <div 
-            class="flex w-full flex-col bg-white rounded-lg">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
 	          	<div 
-              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+              class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -444,7 +444,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 	          </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -492,7 +492,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 hidden justify-center items-center flex-col">
@@ -501,9 +501,9 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-lg">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
               <div 
-              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+              class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -562,7 +562,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -611,7 +611,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 hidden justify-center items-center flex-col">
@@ -620,9 +620,9 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-lg">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
               <div 
-              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+              class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -681,7 +681,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -728,7 +728,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 hidden justify-center items-center flex-col">
@@ -737,8 +737,8 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-lg">
-              <div class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+              <div class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -797,7 +797,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -845,7 +845,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 hidden justify-center items-center flex-col">
@@ -854,9 +854,9 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-lg">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
               <div 
-              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+              class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -915,7 +915,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -963,7 +963,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
 
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-lg mb-10 flex-col">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -972,9 +972,9 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-lg">
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
               <div 
-              class="flex flex-col md:flex-row px-4 py-10 rounded-lg font-light">
+              class="flex flex-col md:flex-row px-4 py-10 rounded-[0.3rem] font-light">
                 <div 
                 class="slide absolute right-5 top-5 text-gray-900" 
                 @click="open = !open">
@@ -1033,7 +1033,7 @@ class="bg-gray-900 pt-0 lg:pt-16">
             </div>
 
             <div 
-            class="slide relative w-full bg-gray-800 border-gray-500 rounded-lg px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
+            class="slide relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col md:flex-row justify-between overflow-hidden pt-40 md:pt-6 pb-6 font-light" 
             :class="{'flex': open, 'hidden': !open}" 
             x-show="open" 
             x-transition:enter="transition ease-out duration-300"
@@ -1179,7 +1179,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
           <div 
           class="flex justify-center mt-6">
             <div 
-            class="bg-white rounded-lg w-full">
+            class="bg-white rounded-[0.3rem] w-full">
               <div 
               class="flex flex-wrap justify-between md:flex-row relative z-20">
                   <input 
