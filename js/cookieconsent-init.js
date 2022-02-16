@@ -5,7 +5,7 @@ var cc = initCookieConsent();
 cc.run({
     current_lang: 'en',
     autoclear_cookies: true,                   // default: false
-    theme_css: './css/cookieconsent.css',  // 🚨 replace with a valid path
+    theme_css: 'https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v2.8.0/dist/cookieconsent.css',  // 🚨 replace with a valid path
     page_scripts: true,                        // default: false
 
     // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
@@ -114,5 +114,3 @@ cc.run({
         }
     }
 });
-
-alert('11');
