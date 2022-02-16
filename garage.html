@@ -68,13 +68,13 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
         class="hidden lg:flex sm:ml-6 z-50">
             <a 
             href="#"
-            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-left font-light text-xs md:text-sm">Project</a>
+            class="text-white hover:text-buttonhover px-3 py-2 text-left font-light text-xs md:text-sm">Project</a>
             <a 
             href="market.html" 
-            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-left font-light text-xs md:text-sm">Secondary</a>
+            class="text-white hover:text-buttonhover px-3 py-2 text-left font-light text-xs md:text-sm">Secondary</a>
             <a 
             href="#" 
-            class="text-white hover:text-buttonhover px-3 py-2 rounded-md text-left font-light text-xs md:text-sm">Who Are We</a>
+            class="text-white hover:text-buttonhover px-3 py-2 text-left font-light text-xs md:text-sm">Who Are We</a>
         </div>
 
       </div>
@@ -97,8 +97,8 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
               </button>
 
               <div x-show="dropdownOpen" @click="dropdownOpen = false" class="fixed inset-0 h-full w-full z-10"></div>
-              <div x-show="dropdownOpen" class="absolute right-0 md:right-52 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
-                <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+              <div x-show="dropdownOpen" class="absolute right-0 md:right-52 mt-2 py-2 px-2 w-48 bg-white rounded-[0.3rem] shadow-xl z-50">
+                <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded-[0.3rem]">
                   Sign Out
                 </a>
               </div>
@@ -115,11 +115,11 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
               </svg>
             </button>
             <div x-show="translateopen" @click="translateopen = false" class="fixed inset-0 h-full w-full z-10"></div>
-            <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-md shadow-xl z-50">
-              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+            <div x-show="translateopen" class="absolute right-0 mt-2 py-2 px-2 w-48 bg-white rounded-[0.3rem] shadow-xl z-50">
+              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded-[0.3rem]">
                   繁體中文
               </a>
-              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded">
+              <a href="#" class="block w-full mx-auto px-4 py-2 text-left font-light text-xs md:text-sm text-gray-700 hover:bg-gray-600 hover:text-white rounded-[0.3rem]">
                   English
               </a>
             </div>
@@ -137,7 +137,7 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
           </div>
 
           <button
-          class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-lg text-left font-medium text-xs md:text-sm tracking-widest">
+          class="lg:flex hidden text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-[0.3rem] text-left font-medium text-xs md:text-sm tracking-widest">
             LOGOUT
           </button>
 
@@ -277,7 +277,7 @@ style="background-image: url(./image/vapor.png);">
           </div>
       </div>
     </div>
-    <div class="w-1/2 flex flex-col justify-center items-start px-3 xs:px-6 space-y-2">
+    <div class="w-1/2 flex flex-col justify-center items-start pl-3 pr-3 xs:pl-2 xs:pr-6 space-y-2">
       <div
       class="flex flex-col justify-center items-start">
         <h5 
@@ -342,7 +342,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
     <div class="flex justify-end items-center flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 ">
       <div class="w-full sm:w-1/4 relative text-gray-600 text-[12px] sm:text-[14px] ld:text-[16px]">
         <input 
-        class="bg-white h-10 md:h-9 px-3 rounded-lg focus:outline-none relative w-full appearance-none" 
+        class="bg-white h-10 md:h-9 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none" 
         type="search" 
         name="search" 
         placeholder="Search">
@@ -357,7 +357,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       <div class="w-full sm:w-[320px] flex flex-row space-x-4">
         <div class="w-full relative text-gray-600">
           <select 
-          class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-md shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
+          class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
             <option>FILTER</option>
             <option>Canada</option>
             <option>Mexico</option>
@@ -371,7 +371,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
         </div>
         <div class="w-full sm:w-[320px] relative text-gray-600">
           <select 
-          class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-md shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
+          class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
             <option>STATUS</option>
             <option>Canada</option>
             <option>Mexico</option>
@@ -394,9 +394,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -404,13 +404,17 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/index_GK_IMG_0285_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
                 class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
               </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
             </picture>
             <div 
             class="p-4 bg-gray-900 text-white text-sm relative z-20">
@@ -423,7 +427,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -431,18 +435,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -457,9 +461,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -467,13 +471,17 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/test-2-removebg-preview.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
                 class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
               </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
             </picture>
             <div 
             class="p-4 bg-gray-900 text-white text-sm relative z-20">
@@ -486,7 +494,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -494,18 +502,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -520,9 +528,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -530,13 +538,17 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/test-1-removebg-preview.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
                 class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
               </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
             </picture>
             <div 
             class="p-4 bg-gray-900 text-white text-sm relative z-20">
@@ -549,7 +561,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -557,18 +569,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -583,9 +595,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -593,8 +605,276 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/test-1-removebg-preview.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+                <span 
+                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
+                <span 
+                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              </div>
+              <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div>
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-[12px]">
+                                  DKF58#**********1115
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex flex-col sm:flex-row justify-start items-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
+                              2022/10/22
+                            </p>
+                          </div>
+                          <div 
+                          class="inline-flex items-center">
+                            <p 
+                            class="text-left font-bold text-[12px]">
+                              17.5 USDT
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/test-1-removebg-preview.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+                <span 
+                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
+                <span 
+                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-[12px]">
+                                  DKF58#**********1115
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex flex-col sm:flex-row justify-start items-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
+                              2022/10/22
+                            </p>
+                          </div>
+                          <div 
+                          class="inline-flex items-center">
+                            <p 
+                            class="text-left font-bold text-[12px]">
+                              17.5 USDT
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/index_GK_IMG_7723_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+                <span 
+                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
+                <span 
+                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-[12px]">
+                                  DKF58#**********1115
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex flex-col sm:flex-row justify-start items-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
+                              2022/10/22
+                            </p>
+                          </div>
+                          <div 
+                          class="inline-flex items-center">
+                            <p 
+                            class="text-left font-bold text-[12px]">
+                              17.5 USDT
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/index_GK_IMG_7723_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+                <span 
+                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
+                <span 
+                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
+            </picture>
+            <div 
+            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex items-center space-x-4">
+                          <div 
+                          class="flex-1 min-w-0">
+                              <p 
+                              class="text-left font-light text-[12px]">
+                                  DKF58#**********1115
+                              </p>
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="py-1">
+                      <div 
+                      class="flex flex-col sm:flex-row justify-start items-start">
+                          <div 
+                          class="flex-1 min-w-0">
+                            <p 
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
+                              2022/10/22
+                            </p>
+                          </div>
+                          <div 
+                          class="inline-flex items-center">
+                            <p 
+                            class="text-left font-bold text-[12px]">
+                              17.5 USDT
+                            </p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/index_GK_narutohinata_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
@@ -619,7 +899,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -627,18 +907,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -653,198 +933,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/test-1-removebg-preview.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_7723_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_7723_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -852,20 +943,17 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/index_GK_narutohinata_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
                 class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
               </div>
-              <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                <img 
-                src="./image/upload.png" 
-                class="h-2 w-2 mr-3">
-                <span>Drawing Straws</span>
-              </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
             </picture>
             <div 
             class="p-4 bg-gray-900 text-white text-sm relative z-20">
@@ -878,7 +966,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -886,18 +974,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -912,9 +1000,9 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
           <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
             <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
               <div 
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
@@ -922,13 +1010,17 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/index_GK_narutohinata_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
+              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
                 <span 
                 class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
                 <span 
                 class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
               </div>
+<!--               <div 
+              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div> -->
             </picture>
             <div 
             class="p-4 bg-gray-900 text-white text-sm relative z-20">
@@ -941,7 +1033,7 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                           class="flex-1 min-w-0">
                               <p 
                               class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
+                                  DKF58#**********1115
                               </p>
                           </div>
                       </div>
@@ -949,81 +1041,18 @@ class="py-2 md:py-24 w-full bg-deepblue flex justify-center items-center flex-co
                   <li 
                   class="py-1">
                       <div 
-                      class="flex items-center">
+                      class="flex flex-col sm:flex-row justify-start items-start">
                           <div 
                           class="flex-1 min-w-0">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="<text-left font-light text-[12px] text-gray-500 opacity-50">
                               2022/10/22
                             </p>
                           </div>
                           <div 
                           class="inline-flex items-center">
                             <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_narutohinata_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-20 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to top, #D32546, transparent); background: -webkit-linear-gradient(to top, #D32546, transparent); background: -moz-linear-gradient(to top, #D32546, transparent); background: -ms-linear-gradient(to top, #D32546, transparent); background: -o-linear-gradient(to top, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DEKF51848#**********118515
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-light text-xs md:text-sm">
+                            class="text-left font-bold text-[12px]">
                               17.5 USDT
                             </p>
                           </div>
@@ -1209,7 +1238,7 @@ class="text-white bg-gradient-to-r from-deepblue to-lightblue">
                   class="w-full m-1 p-2 appearance-none text-gray-900 font-light" 
                   placeholder="Your Email">
                   <button 
-                  class="absolute right-0 top-4 mr-2 font-light text-xs md:text-sm rounded-lg uppercase md:w-auto flex items-center justify-end md:justify-between text-gray-600 flex flex-row">
+                  class="absolute right-0 top-4 mr-2 font-light text-xs md:text-sm rounded-[0.3rem] uppercase md:w-auto flex items-center justify-end md:justify-between text-gray-600 flex flex-row">
                   SUBMIT
                   <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-1" viewBox="0 0 20 20" fill="currentColor">
                     <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z" clip-rule="evenodd" />
@@ -1234,11 +1263,11 @@ class="slide fixed z-50 hidden p-3 text-white bottom-2 right-1">
   </svg>
   <p 
   class="mt-4 tracking-widest" 
-  style="writing-mode: vertical-lr;">BACK TO TOP</p>
+  style="writing-mode: vertical-lr;">BACK to right</p>
 </button>
 <script src="./js/alpinejs@3.2.3.js" defer></script>
 <script>
-        // back to top
+        // back to right
         document.addEventListener('alpine:init', () => {
             Alpine.data('topBtn', () => ({
                 scrolltoTop() {
