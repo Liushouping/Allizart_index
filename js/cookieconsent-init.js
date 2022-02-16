@@ -1,4 +1,3 @@
-
 // obtain plugin
 var cc = initCookieConsent();
 
@@ -115,3 +114,5 @@ cc.run({
         }
     }
 });
+
+alert('11');
