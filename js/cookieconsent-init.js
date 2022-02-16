@@ -1,3 +1,4 @@
+
 // obtain plugin
 var cc = initCookieConsent();
 
