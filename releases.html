@@ -36,6 +36,7 @@ class="scroll-smooth">
         },
         fontFamily: {
           'sans': ['Prompt', 'sans-serif'],
+          'beatstreet': ['beatstreet', 'sans-serif']
         },
       }
     }
@@ -179,29 +180,45 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 </nav>
 
 <section 
-class="swiper flex justify-center items-center relative mx-auto mt-16" 
+class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[36rem] ld:h-[38rem]" 
 id="banner">
   <div 
   class="swiper-wrapper">
     <div 
-    class="swiper-slide bg-cover bg-center" 
-    style="background-image:url('./image/banner-04.png');">
+    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    style="background-image:url('./image/banner_pc_0222.jpg');">
     </div>
     <div 
-    class="swiper-slide bg-cover bg-center" 
-    style="background-image:url('./image/banner-04.png');">
+    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    style="background-image:url('./image/banner_pc_0222.jpg');">
+    </div>
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center hidden sm:flex ld:hidden" 
+    style="background-image:url('./image/banner_pad_0222.jpg');">
+    </div>
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center hidden sm:flex ld:hidden" 
+    style="background-image:url('./image/banner_pad_0222.jpg');">
+    </div>
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center flex sm:hidden" 
+    style="background-image:url('./image/banner_sp_0222.jpg');">
+    </div>
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center flex sm:hidden" 
+    style="background-image:url('./image/banner_sp_0222.jpg');">
     </div>
   </div>
 
   <div class="absolute z-20 w-full h-full">
     <div 
     class="max-w-5xl mx-auto sm:px-4 sm:px-24 md:px-4 py-12 flex justify-center items-center sm:items-start flex-col h-full relative">
-      <img src="./image/Allizart-Logo-A01.png">
+<!--       <img src="./image/Allizart-Logo-A01.png">
       <h5 
       class="text-white py-6 text-[14px] leading-[20px] sm:text-[16px] leading-[22px]">World’s First GK Defi NFT Platform</h5>
       <button 
       type="button" 
-      class="bg-gradient-to-t from-deepred to-lightred text-white rounded-[0.3rem] px-12 py-2 font-medium">SIGN IN</button>
+      class="bg-gradient-to-t from-deepred to-lightred text-white rounded-[0.3rem] px-12 py-2 font-medium">SIGN IN</button> -->
       <div 
       class="absolute right-0 bottom-0 bg-white flex flex-row">
             <div 
@@ -235,9 +252,9 @@ class="py-24 w-full bg-black flex justify-center items-center flex-col">
   	<div 
     class="text-white flex items-center justify-center py-6 flex-col">
   		<h3 
-      class="text-5xl italic pr-24">UPCOMING</h3>
+      class="text-5xl italic pr-24 font-beatstreet">UPCOMING</h3>
   		<h3 
-      class="text-5xl italic pl-24 text-lightred">RELEASES</h3>
+      class="text-5xl italic pl-24 text-lightred font-beatstreet">RELEASES</h3>
   	</div>
   	
     <div 
@@ -356,7 +373,7 @@ class="relative">
 		<div 
     class="max-w-5xl mx-auto w-full px-4">
 		  	<h5 
-        class="text-center text-[32px] md:text-5xl text-white py-20 font-medium">Allizart <span class="text-lightred">X</span> Crypto</h5>
+        class="text-center text-[32px] md:text-5xl text-white py-20 font-medium font-beatstreet">Allizart <span class="text-lightred">X</span> Crypto</h5>
 	  	</div>
 	  	<div 
 		  class="flex flex-col md:flex-row mx-auto justify-center items-center space-y-20 md:space-y-0">
@@ -422,7 +439,7 @@ class="py-28 h-full flex justify-center items-center bg-parther">
     class="max-w-7xl mx-auto px-4 md:px-6">
     	<div>
     		<h3 
-        class="text-[32px] md:text-5xl text-center font-bold">PARTHER</h3>
+        class="text-[32px] md:text-5xl text-center font-bold font-beatstreet">PARTHER</h3>
     	</div>
         <div 
         class="grid grid-cols-1 sm:grid-cols-3 gap-4">

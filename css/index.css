@@ -6,13 +6,14 @@
    Font family
 */
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;500;700;900&display=swap');
-/* 
-   Swiper
-*/
-#banner{
-	width:100%;
-	height:32rem;
-};
+
+@font-face {
+  font-family: 'beatstreet';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../font/beatstreet.ttf) format("opentype");
+}
 /* 
    Account input radio
 */
@@ -24,7 +25,9 @@
   background-color: #E01E49;
   color: white;
 }
-
+/* 
+   cookie theme
+*/
 .theme_gk{
     --cc-bg: #161a1c;
     --cc-text: #d8e5ea;
