@@ -308,10 +308,24 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
       class="text-[2rem] sm:text-[3rem] ld:text-[4rem] font-beatstreet">INFORMATION</h3>
   	</div>
   	<div 
-  	class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10">
+    x-data="{ open: false }" 
+  	class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10 relative">
+      <div 
+      class="slide absolute right-5 top-5 text-white" 
+      @click="open = !open">
+        <button type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+          </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+          </svg>
+        </button>
+      </div>
   		<h5 
       class="text-lightred pb-4 text-2xl">ABOUT</h5>
   		<p 
+      :class="{'flex h-auto': open, 'hidden': !open}" 
       class="font-light text-xs md:text-sm text-white text-left">The Last: Naruto the Movie has a red scarf bringing out the story’s beginning and end! In regards to this manga, Naruto, the scarf is a must-have for many ninjas, especially for Naruto Uzumaki, the red scarf has an irreplaceable special meaning. On the poster for The Last: Naruto the Movie, the main visual is Naruto Uzumaki with the red scarf wrapped around his neck! This red scarf is a representation of a love story because it was knitted by Hinata Hyuga. Although the scarf has been through countless battles and has sustained damage, Hinata still persistently knits the scarf over and over again, with every needle and thread representing her love for Naruto and announcing that the love story between the two of characters will begin. In order to bring the classic main visual on the poster, Zodiakos Studio went through the process of restoring the main character on the original poster, including Naruto’s expression and charm through refined engraving and painting, demonstrating expertise in restoration – even details of the knit patterns on the scarf are so realistic that one can see the restoration artist’s experienced sculpting abilities and also including the scarf’s flowing design, demonstrating incredibly vivid and dynamic visual effects – adding the perfect finishing touches on this GK. In terms of the scenes that players value, the studio definitely did not slack on either. In the most realistic aspect, the studio perfectly replicated the footprints in the snow through work with glitter to show the shimmering effect of snow grounds and a small Naruto snowman off to the side, giving a cute and lovable vibe. This GK is definitely a very detailed work! Zodiakos Studio is the studio for authentic GK, possessing top-notch craftsmanship and pursuit of perfection! All packaging for GK works include a luxury box, Styrofoam drawstring, perfect sealant, unboxing gloves, and the most important for the work – certification of authenticity and serial number iron plate. It is definitely a top-notch work of art!</p>
   	</div>
   	<div 
