@@ -17,10 +17,10 @@
 /* 
    Account input radio
 */
-.radio input:checked ~ label {
+/*.radio input:checked ~ label {
   background-color: #E01E49;
   color: white;
-}
+}*/
 /* 
    cookie theme
 */
