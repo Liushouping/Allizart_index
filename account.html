@@ -358,26 +358,25 @@ class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
           <p class="text-[24px] sm:text-[32px] font-bold">SASUKE #003</p>
           <p class="text-gray-400 text-[12px] font-light mt-6">Contract Address</p>
           <p class="font-light text-[12px] mb-12">DEKF51848#**********118515</p>
-          <p class="font-bold">Select your sell method</p>
           <div class="relative mt-1 mb-2 flex justify-between space-x-2">
             <button 
             @click="productstatus = 'sale'" 
-            :class="{ 'bg-charyred text-white': productstatus === 'sale' }"
             type="button" 
-            class="px-2 py-3 rounded-[0.3rem] bg-gray-100 hover:bg-charyred hover:text-white flex justify-center items-center text-[12px] sm:text-[14px] ld:text-[16px] font-light w-full">
+            class="px-2 py-3 rounded-[0.3rem] bg-white border border-charyred flex justify-center items-center text-[12px] sm:text-[14px] ld:text-[16px] font-light w-full text-charyred" 
+            :class="{ 'bg-charyred text-gray-50': productstatus === 'sale' }">
               Sale
             </button>
             <button 
             @click="productstatus = 'exchange'" 
-            :class="{ 'bg-lightgreen text-white': productstatus === 'exchange' }"
             type="button" 
-            class="px-2 py-3 rounded-[0.3rem] bg-gray-100 hover:bg-lightgreen hover:text-white flex justify-center items-center text-[12px] sm:text-[14px] ld:text-[16px] font-light w-full">
+            class="px-2 py-3 rounded-[0.3rem] bg-white border border-lightgreen flex justify-center items-center text-[12px] sm:text-[14px] ld:text-[16px] font-light w-full text-lightgreen" 
+            :class="{ 'bg-lightgreen text-gray-50': productstatus === 'exchange' }">
               Exchange
             </button>
           </div>
 
           <div x-show="productstatus === 'sale'">
-            <p class="font-bold">Minimum bid</p>
+            <p class="font-bold">Price</p>
             <div class="relative mt-1">
               <input 
               class="bg-gray-100 h-12 px-3 pr-6 rounded-[0.3rem] focus:outline-none relative w-full appearance-none" 
@@ -470,7 +469,7 @@ class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
     <button 
       type="button"  
       class="w-[260px] bg-gradient-to-t from-deepred to-lightred rounded-[0.3rem] text-white text-xl px-20 sm:px-32 md:px-10 py-2">
-      CONFIRM
+      SUBMIT
     </button>
   </div>
 </section>
