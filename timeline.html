@@ -47,7 +47,7 @@ class="tracking-[1px] bg-gray-900 theme_gk">
 
 <nav 
 x-data="{ isopen: false }" 
-class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
+class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
   class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4 bg-gradient-to-r from-deepblue to-lightblue">
@@ -143,8 +143,8 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
   </div>
 
   <div 
-  class="w-full h-full transition-all duration-500 -mt-32" 
-  :class="{ 'mt-4': isopen }">
+  class="w-full h-full transition-all duration-500 -mt-32 sm:hidden" 
+  :class="{ 'mt-0': isopen }">
     <div 
     class="bg-gradient-to-r from-deepblue to-lightblue">
       <ul 
