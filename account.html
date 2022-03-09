@@ -50,7 +50,7 @@ x-data="{ isopen: false }"
 class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
-  class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4">
+  class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4 bg-gradient-to-r from-deepblue to-lightblue">
 
     <div  
     class="relative flex items-center justify-between h-16">
@@ -142,27 +142,21 @@ class="fixed top-0 w-full z-50 bg-gradient-to-r from-deepblue to-lightblue">
     </div>
   </div>
 
-
+  <div 
+  class="w-full h-full transition-all duration-500 -mt-32" 
+  :class="{ 'mt-4': isopen }">
     <div 
-    x-show="isopen" 
-    class="slide w-full h-20" 
-    x-transition:enter="transition ease-out duration-300"
-    x-transition:enter-start="opacity-0 scale-90"
-    x-transition:enter-end="opacity-100 scale-100"
-    x-transition:leave="transition ease-in duration-300"
-    x-transition:leave-start="opacity-100 scale-100"
-    x-transition:leave-end="opacity-0 scale-90">
-        <div 
-        class="bg-gradient-to-r from-deepblue to-lightblue">
-          <ul 
-          class="space-y-8 pt-10">
-            <li 
-            class="flex lg:hidden items-center justify-center text-white hover:text-buttonhover cursor-pointer text-left font-light text-xs md:text-sm">
-              <a href="market.html">Secondary</a>
-            </li>
-          </ul>
-        </div>
+    class="bg-gradient-to-r from-deepblue to-lightblue">
+      <ul 
+      class="space-y-8 py-10">
+        <li 
+        class="flex items-center justify-center text-white hover:text-buttonhover cursor-pointer font-light text-xs md:text-sm">
+          <a href="market.html">Secondary</a>
+        </li>
+      </ul>
     </div>
+  </div>
+
 </nav>
 
 <section
