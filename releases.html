@@ -166,16 +166,15 @@ class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[
   <div 
   class="swiper-wrapper">
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center flex" 
     style="background-image:url('./image/banner_pc_0222.jpg');">
     </div>
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center flex" 
     style="background-image:url('./image/banner_pc_0222.jpg');">
     </div>
 
-
-    <div 
+<!--     <div 
     class="swiper-slide bg-cover bg-no-repeat bg-center hidden sm:flex ld:hidden" 
     style="background-image:url('./image/banner_pad_0222.jpg');">
     </div>
@@ -191,7 +190,7 @@ class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[
     <div 
     class="swiper-slide bg-cover bg-no-repeat bg-center flex sm:hidden" 
     style="background-image:url('./image/banner_sp_0222.jpg');">
-    </div>
+    </div> -->
   </div>
 
   <div class="absolute z-20 w-full h-full">
@@ -625,7 +624,7 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
     const swiper = new Swiper('#banner', {
       slidesPerView: 1,
       autoplay: {
-          delay: 3000,
+          delay: 1000,
       },
       loop: true,
       navigation: {
