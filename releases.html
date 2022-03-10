@@ -161,34 +161,112 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
 </nav>
 
 <section 
-id="banner" 
-class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[36rem] ld:h-[38rem]">
+id="lgbanner" 
+class="swiper hidden lg:flex justify-center items-center relative mx-auto mt-16 w-full h-[36rem] ld:h-[38rem]">
   <div 
   class="swiper-wrapper">
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_pc_0222.jpg');">
     </div>
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden ld:flex" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_pc_0222.jpg');">
     </div>
+  </div>
 
+  <div class="absolute z-20 w-full h-full">
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden sm:flex ld:hidden" 
+    class="max-w-5xl mx-auto sm:px-4 sm:px-24 md:px-4 py-12 flex justify-center items-center sm:items-start flex-col h-full relative">
+<!--       <img src="./image/Allizart-Logo-A01.png">
+      <h5 
+      class="text-white py-6 text-[14px] leading-[20px] sm:text-[16px] leading-[22px]">World’s First GK Defi NFT Platform</h5>
+      <button 
+      type="button" 
+      class="bg-gradient-to-t from-deepred to-lightred text-white rounded-[0.3rem] px-12 py-2 font-medium">SIGN IN</button> -->
+      <div 
+      class="absolute right-0 bottom-0 bg-white flex flex-row">
+            <div 
+            class="w-14 p-3 bg-gray-900 text-white">
+              <div 
+              class="lgbn flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </div>
+            </div>
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="lgbp flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section 
+id="smbanner" 
+class="swiper hidden sm:flex lg:hidden justify-center items-center relative mx-auto mt-16 w-full h-[36rem] ld:h-[38rem]">
+  <div 
+  class="swiper-wrapper">
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_pad_0222.jpg');">
     </div>
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center hidden sm:flex ld:hidden" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_pad_0222.jpg');">
     </div>
+  </div>
 
+  <div class="absolute z-20 w-full h-full">
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center flex sm:hidden" 
+    class="max-w-5xl mx-auto sm:px-4 sm:px-24 md:px-4 py-12 flex justify-center items-center sm:items-start flex-col h-full relative">
+<!--       <img src="./image/Allizart-Logo-A01.png">
+      <h5 
+      class="text-white py-6 text-[14px] leading-[20px] sm:text-[16px] leading-[22px]">World’s First GK Defi NFT Platform</h5>
+      <button 
+      type="button" 
+      class="bg-gradient-to-t from-deepred to-lightred text-white rounded-[0.3rem] px-12 py-2 font-medium">SIGN IN</button> -->
+      <div 
+      class="absolute right-0 bottom-0 bg-white flex flex-row">
+            <div 
+            class="w-14 p-3 bg-gray-900 text-white">
+              <div 
+              class="smbn flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+                </svg>
+              </div>
+            </div>
+            <div 
+            class="w-14 p-3 bg-lightred text-white">
+              <div 
+              class="smbp flex items-center justify-center">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+                </svg>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section 
+id="mbbanner" 
+class="swiper flex sm:hidden justify-center items-center relative mx-auto mt-16 w-full h-[36rem] ld:h-[38rem]">
+  <div 
+  class="swiper-wrapper">
+    <div 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_sp_0222.jpg');">
     </div>
     <div 
-    class="swiper-slide bg-cover bg-no-repeat bg-center flex sm:hidden" 
+    class="swiper-slide bg-cover bg-no-repeat bg-center" 
     style="background-image:url('./image/banner_sp_0222.jpg');">
     </div>
   </div>
@@ -207,7 +285,7 @@ class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[
             <div 
             class="w-14 p-3 bg-gray-900 text-white">
               <div 
-              class="bn1 flex items-center justify-center">
+              class="mbbn flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
                 </svg>
@@ -216,7 +294,7 @@ class="swiper flex justify-center items-center relative mx-auto mt-16 w-full h-[
             <div 
             class="w-14 p-3 bg-lightred text-white">
               <div 
-              class="bp2 flex items-center justify-center">
+              class="mbbp flex items-center justify-center">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
                 </svg>
@@ -291,10 +369,10 @@ class="py-24 w-full bg-black flex justify-center items-center flex-col">
             <li 
             class="text-4xl ld:text-[3.5rem] text-lightred text-center md:text-left tracking-[6px]" 
             style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start mt-2">
+            <li class="flex justify-center md:justify-start ld:mt-8">
               <button 
               type="button" 
-              class="bg-white rounded-[0.3rem] text-black mt-2 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
+              class="bg-white rounded-[0.3rem] text-black mt-2 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
             </li>
           </ul>
         </div>
@@ -357,10 +435,10 @@ class="py-24 w-full bg-black flex justify-center items-center flex-col">
             <li 
             class="text-4xl ld:text-[3.5rem] text-lightred text-center md:text-left tracking-[6px]" 
             style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start mt-2">
+            <li class="flex justify-center md:justify-start ld:mt-8">
               <button 
               type="button" 
-              class="bg-white rounded-[0.3rem] text-black mt-2 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
+              class="bg-white rounded-[0.3rem] text-black mt-4 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
             </li>
           </ul>
         </div>
@@ -424,10 +502,10 @@ class="py-24 w-full bg-black flex justify-center items-center flex-col">
             <li 
             class="text-4xl ld:text-[3.5rem] text-lightred text-center md:text-left tracking-[6px]" 
             style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start mt-2">
+            <li class="flex justify-center md:justify-start ld:mt-8">
               <button 
               type="button" 
-              class="bg-white rounded-[0.3rem] text-black mt-2 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
+              class="bg-white rounded-[0.3rem] text-black mt-4 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out duration-500 hover:bg-lightred hover:text-white">BUY NOW</button>
             </li>
           </ul>
         </div>
@@ -490,10 +568,10 @@ class="py-24 w-full bg-black flex justify-center items-center flex-col">
             <li 
             class="text-4xl ld:text-[3.5rem] text-lightred text-center md:text-left tracking-[6px]" 
             style="text-shadow: 0px 0px 30px #000000;">23:28:40</li>
-            <li class="flex justify-center md:justify-start mt-2">
+            <li class="flex justify-center md:justify-start ld:mt-8">
               <button 
               type="button" 
-              class="bg-white rounded-[0.3rem] text-black mt-2 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out ease-out duration-500 hover:bg-lightred hover:text-white">SOLD OUT</button>
+              class="bg-white rounded-[0.3rem] text-black mt-4 mb-6 mx-auto sm:mx-0 sm:my-4 ld:my-6 text-xl py-2 w-[260px] ease-out duration-500 hover:bg-lightred hover:text-white">SOLD OUT</button>
             </li>
           </ul>
         </div>
@@ -696,18 +774,44 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
 <script src="./js/CookieConsent@2.8.0.js" defer></script>
 <script src="./js/cookieconsent-init.js" defer></script>
 <script>
-    // * Swiper
-    const swiper = new Swiper('#banner', {
+    // * pc Swiper
+    const LgSwiper = new Swiper('#lgbanner', {
       slidesPerView: 1,
       autoplay: {
-          delay: 500,
+          delay: 3000,
       },
       loop: true,
       navigation: {
-        nextEl: '.bn1',
-        prevEl: '.bp2',
+        nextEl: '.lgbn',
+        prevEl: '.lgbp',
         clickable: true,
+      }
+    });
+    // * ipad Swiper
+    const SmSwiper = new Swiper('#smbanner', {
+      slidesPerView: 1,
+      autoplay: {
+          delay: 3000,
       },
+      loop: true,
+      navigation: {
+        nextEl: '.smbn',
+        prevEl: '.smbp',
+        clickable: true,
+      }
+    });
+    // * Mobile Swiper
+    const MbSwiper = new Swiper('#mbbanner', {
+      slidesPerView: 1,
+      autoplay: {
+          delay: 3000,
+      },
+      loop: true,
+      navigation: {
+        nextEl: '.mbbn',
+        prevEl: '.mbbp',
+        clickable: true,
+      }
     });
         // back to top
         document.addEventListener('alpine:init', () => {
