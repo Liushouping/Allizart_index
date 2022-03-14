@@ -12,6 +12,7 @@ class="scroll-smooth">
     tailwind.config = {
       theme: {
         screens: {
+          'se': '375px',
           'xs': '414px',
           'sm': '768px',
           'md': '992px',
@@ -52,7 +53,7 @@ x-data="{ isopen: false }"
 class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue">
 
   <div  
-  class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4 bg-gradient-to-r from-deepblue to-lightblue z-30">
+  class="max-w-7xl xl:max-w-full mx-auto pl-6 pr-4 bg-gradient-to-r from-deepblue to-lightblue">
 
     <div  
     class="relative flex items-center justify-between h-16">
@@ -145,7 +146,7 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
   </div>
 
   <div 
-  class="w-full h-full transition-all duration-500 -mt-32 sm:hidden absolute z-10" 
+  class="w-full h-full transition-all duration-500 -mt-32 sm:hidden" 
   :class="{ 'mt-0': isopen }">
     <div 
     class="bg-gradient-to-r from-deepblue to-lightblue">
