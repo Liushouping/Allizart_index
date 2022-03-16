@@ -368,20 +368,22 @@ class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
             <p class="text-[14px] font-light text-gray-900 my-2">2022/3/31</p>
             <div class="w-full flex flex-row space-x-2">
               <div class="relative w-1/2">
-                <p class="text-[12px] font-bold">Reveal Date</p>
-                <input 
-                class="bg-gray-100 h-12 px-3 pr-6 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1" 
-                type="text" 
-                name="usdt" 
-                placeholder="0">
+                <p class="text-[12px] font-bold">Starting</p>
+                <div class="relative">
+                  <input datepicker datepicker-buttons datepicker-format="yyyy/mm/dd" type="text" class="bg-gray-100 h-12 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1 text-gray-900 sm:text-sm rounded-lg block w-full" disabled value="2022/3/31">
+                </div>
               </div>
               <div class="relative w-1/2">
-                <p class="text-[12px] font-bold">Reveal Date</p>
-                <input 
-                class="bg-gray-100 h-12 px-3 pr-6 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1" 
-                type="text" 
-                name="usdt" 
-                placeholder="0">
+                <p class="text-[12px] font-bold">Ending</p>
+                <div class="relative">
+                  <input datepicker datepicker-buttons datepicker-format="yyyy/mm/dd" type="text" class="bg-gray-100 h-12 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1 text-gray-900 sm:text-sm rounded-lg block w-full">
+                  <span 
+                  class="absolute right-0 top-3 mr-3">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                    </svg>
+                  </span>
+                </div>
               </div>
             </div>
             <p class="text-[12px] font-bold mt-2">Price</p>
@@ -567,6 +569,7 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
 <script src="./js/alpinejs@3.2.3.js" defer></script>
 <script src="./js/CookieConsent@2.8.0.js" defer></script>
 <script src="./js/cookieconsent-init.js" defer></script>
+<script src="./js/datepicker.js"></script>
 <script>
         // back to top
         document.addEventListener('alpine:init', () => {
