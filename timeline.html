@@ -392,7 +392,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
 	          </div>
 
 	          <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20">
 	          	<div 
               class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
                 <div 
@@ -453,15 +453,8 @@ class="bg-gray-900 pt-0 sm:mt-16">
 	          </div>
 
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light" 
-            :class="{'flex': open, 'hidden': !open}" 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0 scale-90">
+            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light z-10 transition-all duration-300" 
+            :class="{ 'mt-0': open, '-mt-[21rem] lg:-mt-32 opacity-0': !open }">
               <div
               class="w-full lg:w-1/5 px-4 md:px-10">
                 <div 
@@ -509,7 +502,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20">
               <div 
               class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
                 <div 
@@ -578,15 +571,8 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light" 
-            :class="{'flex': open, 'hidden': !open}" 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0 scale-90">
+            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light z-10 transition-all duration-300" 
+            :class="{ 'mt-0': open, '-mt-[21rem] lg:-mt-32 opacity-0': !open }">
               <div
               class="w-full lg:w-1/5 px-4 md:px-10">
                 <div 
@@ -633,7 +619,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20">
               <div 
               class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
 
@@ -686,7 +672,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
             <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20">
               <div 
               class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
 
