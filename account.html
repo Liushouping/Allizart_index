@@ -370,7 +370,7 @@ class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
               <div class="relative w-1/2">
                 <p class="text-[12px] font-bold">Starting</p>
                 <div class="relative">
-                  <input datepicker datepicker-buttons datepicker-format="yyyy/mm/dd" type="text" class="bg-gray-100 h-12 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1 text-gray-300 sm:text-sm rounded-lg block w-full" disabled value="2022/3/31">
+                  <input datepicker datepicker-buttons datepicker-format="yyyy/mm/dd" type="text" class="bg-gray-100 h-12 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none mt-1 text-gray-300 sm:text-sm rounded-lg block w-full" disabled value="Today">
                 </div>
               </div>
               <div class="relative w-1/2">
@@ -401,7 +401,7 @@ class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
           </div>
 
           <div x-show="productstatus === 'exchange'">
-            <div class="mt-4">
+            <div class="mt-6">
               <label
               for="country"
               class="text-[12px] font-bold">
@@ -587,6 +587,8 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
         }
+        // today
+        let Today = new Date();
 </script>
 </body>
 </html>
