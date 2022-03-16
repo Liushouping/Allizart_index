@@ -380,7 +380,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
 
 	      <div 
         class="border-l-2 mt-6 px-2 border-gray-500">
-
+          <!-- GK 買入 -->
 	        <div  
           x-data="{ open: false }" 
           class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
@@ -425,7 +425,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   </ul>
                 </div>
                 <div 
-                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0">
+                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0 flex items-start">
                   <ul>
                     <li 
                     class="text-black text-xl">
@@ -441,19 +441,11 @@ class="bg-gray-900 pt-0 sm:mt-16">
                     </li>
                     <li 
                     class="flex text-gray-900 font-bold text-xs mt-2">
-                      Txn Hash
+                      Amount
                     </li>
                     <li 
                     class="flextext-gray-900 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Fee
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      5.62 USDT
+                      1610.88 USDT
                     </li>
                   </ul>
                 </div>  
@@ -498,261 +490,14 @@ class="bg-gray-900 pt-0 sm:mt-16">
                     </li>
                     <li 
                     class="flex text-gray-300 text-xs">
-                      Srerjk14932894123asdsd8123912
+                      5rt15rg1551h5r14rf1f5hj5e15gh15e5
                     </li>
                   </ul>
               </div>
             </div>
 
 	        </div>
-          <div  
-          x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
-
-            <div 
-            class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
-              <span class="text-2xl">12</span>
-              <span class="text-xs">2021</span>
-            </div>
-
-            <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
-              <div 
-              class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
-                <div 
-                class="absolute right-5 top-5 text-gray-900" 
-                @click="open = !open">
-                  <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 px-4 flex border-b lg:border-0 pb-6 lg:pb-0">
-                  <ul>
-                    <li 
-                    class="text-charyred text-5xl font-bold flex flex-col items-start">
-                    -1527.25
-                      <span 
-                      class="text-charyred font-light text-xs mt-4">Deposit</span>
-                    </li>
-                    <li 
-                    class="text-gray-900 text-xs mt-14">
-                    Account Balance
-                      <span 
-                      class="md:ml-4 text-xl">12.64233</span>
-                    </li>
-                  </ul>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0">
-                  <ul>
-                    <li 
-                    class="text-black text-xl">
-                      2021/03/15 19:57
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-6">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Txn Hash
-                    </li>
-                    <li 
-                    class="flextext-gray-900 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Fee
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      5.62 USDT
-                    </li>
-                  </ul>
-                </div>  
-              </div>
-            </div>
-
-            <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light" 
-            :class="{'flex': open, 'hidden': !open}" 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0 scale-90">
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                <div 
-                class="absolute inset-x-0 lg:left-14 top-0">
-                    <img src="./image/index_GK_IMG_0285_1366.png" class="h-44 lg:h-64 mx-auto lg:mx-0">
-                </div>
-              </div>
-              <div 
-              class="w-full lg:w-1/3 px-4 md:px-10 flex justify-center items-center text-white text-2xl font-bold py-6">
-                RECEIVED
-              </div>
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                  <ul>
-                    <li 
-                    class="flex text-white font-bold text-xs">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-white font-bold text-xs mt-2">
-                      Txn Hash
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                  </ul>
-              </div>
-            </div>
-
-          </div>
-          <div  
-          x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
-
-            <div 
-            class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
-              <span class="text-2xl">12</span>
-              <span class="text-xs">2021</span>
-            </div>
-
-            <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem]">
-              <div 
-              class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
-                <div 
-                class="absolute right-5 top-5 text-gray-900" 
-                @click="open = !open">
-                  <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 px-4 flex border-b lg:border-0 pb-6 lg:pb-0">
-                  <ul>
-                    <li 
-                    class="text-charyred text-5xl font-bold flex flex-col items-start">
-                    -1527.25
-                      <span 
-                      class="text-charyred font-light text-xs mt-4">Deposit</span>
-                    </li>
-                    <li 
-                    class="text-gray-900 text-xs mt-14">
-                    Account Balance
-                      <span 
-                      class="md:ml-4 text-xl">12.64233</span>
-                    </li>
-                  </ul>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0">
-                  <ul>
-                    <li 
-                    class="text-black text-xl">
-                      2021/03/15 19:57
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-6">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Txn Hash
-                    </li>
-                    <li 
-                    class="flextext-gray-900 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Fee
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      5.62 USDT
-                    </li>
-                  </ul>
-                </div>  
-              </div>
-            </div>
-
-            <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light" 
-            :class="{'flex': open, 'hidden': !open}" 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0 scale-90">
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                <div 
-                class="absolute inset-x-0 lg:left-14 top-0">
-                    <img src="./image/index_GK_IMG_0285_1366.png" class="h-44 lg:h-64 mx-auto lg:mx-0">
-                </div>
-              </div>
-              <div 
-              class="w-full lg:w-1/3 px-4 md:px-10 flex justify-center items-center text-white text-2xl font-bold py-6">
-                RECEIVED
-              </div>
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                  <ul>
-                    <li 
-                    class="flex text-white font-bold text-xs">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-white font-bold text-xs mt-2">
-                      Txn Hash
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                  </ul>
-              </div>
-            </div>
-
-          </div>
+          <!-- GK 賣出 -->
           <div  
           x-data="{ open: false }" 
           class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
@@ -797,7 +542,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   </ul>
                 </div>
                 <div 
-                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0">
+                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0 flex items-start">
                   <ul>
                     <li 
                     class="text-black text-xl">
@@ -816,7 +561,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                       Txn Hash
                     </li>
                     <li 
-                    class="flextext-gray-900 text-xs">
+                    class="flex text-gray-900 text-xs">
                       Srerjk14932894123asdsd8123912
                     </li>
                     <li 
@@ -877,8 +622,8 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
           </div>
+          <!-- 虛擬幣 儲值 -->
           <div  
-          x-data="{ open: false }" 
           class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
@@ -891,24 +636,13 @@ class="bg-gray-900 pt-0 sm:mt-16">
             class="flex w-full flex-col bg-white rounded-[0.3rem]">
               <div 
               class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
-                <div 
-                class="absolute right-5 top-5 text-gray-900" 
-                @click="open = !open">
-                  <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
-                </div>
+
                 <div 
                 class="w-full lg:w-1/2 px-4 flex border-b lg:border-0 pb-6 lg:pb-0">
                   <ul>
                     <li 
                     class="text-lightgreen text-5xl font-bold flex flex-col items-start">
-                    -1527.25
+                    +1527.25
                       <span 
                       class="text-lightgreen font-light text-xs mt-4">Deposit</span>
                     </li>
@@ -921,7 +655,60 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   </ul>
                 </div>
                 <div 
-                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0">
+                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0 flex items-start">
+                  <ul>
+                    <li 
+                    class="text-black text-xl">
+                      2021/03/15 19:57
+                    </li>
+                    <li 
+                    class="flex text-gray-900 font-bold text-xs mt-6">
+                      Transaction number
+                    </li>
+                    <li 
+                    class="flex text-gray-900 text-xs">
+                      #SFRS5158128524
+                    </li>
+                  </ul>
+                </div>  
+              </div>
+            </div>
+
+          </div>
+          <!-- 虛擬幣 提領 -->
+          <div  
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
+
+            <div 
+            class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
+              <span class="text-2xl">01</span>
+              <span class="text-xs">2022</span>
+            </div>
+
+            <div 
+            class="flex w-full flex-col bg-white rounded-[0.3rem]">
+              <div 
+              class="flex flex-col lg:flex-row px-4 py-8 rounded-[0.3rem] font-light">
+
+                <div 
+                class="w-full lg:w-1/2 px-4 flex border-b lg:border-0 pb-6 lg:pb-0">
+                  <ul>
+                    <li 
+                    class="text-charyred text-5xl font-bold flex flex-col items-start">
+                    -1527.25
+                      <span 
+                      class="text-charyred font-light text-xs mt-4">Deposit</span>
+                    </li>
+                    <li 
+                    class="text-gray-900 text-xs mt-14">
+                    Account Balance
+                      <span 
+                      class="md:ml-4 text-xl">12.64233</span>
+                    </li>
+                  </ul>
+                </div>
+                <div 
+                class="w-full lg:w-1/2 lg:border-l border-gray-100 px-4 lg:px-10 pt-6 lg:pt-0 flex items-start">
                   <ul>
                     <li 
                     class="text-black text-xl">
@@ -940,7 +727,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                       Txn Hash
                     </li>
                     <li 
-                    class="flextext-gray-900 text-xs">
+                    class="flex text-gray-900 text-xs">
                       Srerjk14932894123asdsd8123912
                     </li>
                     <li 
@@ -956,51 +743,8 @@ class="bg-gray-900 pt-0 sm:mt-16">
               </div>
             </div>
 
-            <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 hidden flex-col lg:flex-row justify-between overflow-hidden pt-40 lg:pt-6 pb-6 font-light" 
-            :class="{'flex': open, 'hidden': !open}" 
-            x-show="open" 
-            x-transition:enter="transition ease-out duration-300"
-            x-transition:enter-start="opacity-0"
-            x-transition:enter-end="opacity-100 scale-100"
-            x-transition:leave="transition ease-in duration-300"
-            x-transition:leave-start="opacity-100"
-            x-transition:leave-end="opacity-0 scale-90">
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                <div 
-                class="absolute inset-x-0 lg:left-14 top-0">
-                    <img src="./image/index_GK_narutohinata_1024.png" class="h-44 lg:h-64 mx-auto lg:mx-0">
-                </div>
-              </div>
-              <div 
-              class="w-full lg:w-1/3 px-4 md:px-10 flex justify-center items-center text-white text-2xl font-bold py-6">
-                SOLD
-              </div>
-              <div
-              class="w-full lg:w-1/3 px-4 md:px-10">
-                  <ul>
-                    <li 
-                    class="flex text-white font-bold text-xs">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-white font-bold text-xs mt-2">
-                      Txn Hash
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      Srerjk14932894123asdsd8123912
-                    </li>
-                  </ul>
-              </div>
-            </div>
-
           </div>
+
 
 
 	      </div>
