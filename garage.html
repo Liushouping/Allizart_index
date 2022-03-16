@@ -339,8 +339,8 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
   <div 
   class="max-w-7xl w-full mx-auto p-8">
 
-    <div class="flex justify-end items-center flex-col sm:flex-row space-y-4 sm:space-y-0 space-x-0 sm:space-x-4 ">
-      <div class="w-full sm:w-1/4 relative text-gray-600 text-[12px] sm:text-[14px] ld:text-[16px]">
+    <div class="flex justify-between items-center flex-row space-y-0 space-x-2">
+      <div class="w-full sm:w-[320px] relative text-gray-600 text-[12px] sm:text-[14px] ld:text-[16px]">
         <input 
         class="bg-white h-10 md:h-9 px-3 rounded-[0.3rem] focus:outline-none relative w-full appearance-none" 
         type="search" 
@@ -354,27 +354,13 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
           </svg>
         </button>
       </div>
-      <div class="w-full sm:w-[320px] flex flex-row space-x-4">
-        <div class="w-full relative text-gray-600">
-          <select 
-          class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
-            <option>FILTER</option>
-            <option>Canada</option>
-            <option>Mexico</option>
-          </select>
-          <div 
-          class="absolute right-0 top-2 mr-2 text-black">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-            </svg>
-          </div>
-        </div>
-        <div class="w-full sm:w-[320px] relative text-gray-600">
+      <div class="w-full sm:w-[210px] flex flex-row">
+        <div class="w-full sm:w-[210px] relative text-gray-600">
           <select 
           class="w-full h-10 md:h-9 py-3 sm:py-1 pl-4 pr-10 bg-white rounded-[0.3rem] shadow-sm text-[12px] sm:text-[14px] ld:text-[16px] appearance-none relative">
             <option>STATUS</option>
-            <option>Canada</option>
-            <option>Mexico</option>
+            <option value="On Sale">On Sale</option>
+            <option value="In Stock">In Stock</option>
           </select>
           <div 
           class="absolute right-0 top-2 mr-2 text-black">
@@ -390,6 +376,7 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
   <div class="max-w-7xl w-full">
     <div 
     class="flex flex-row flex-wrap mx-6">    
+
       <div 
       class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
         <a href="account.html" class="appearance-none">
@@ -401,54 +388,147 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
               class="absolute top-0 z-10 w-full mx-auto">
                 <img 
                 class="block w-full mx-auto" 
-                src="./image/all-card-01.png" >
+                src="./image/index_GK_IMG_0285_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+              class="absolute bottom-16 text-white z-30 bg-red-400 w-full h-8 flex flex-row items-center justify-start" 
+              style="
+              background: linear-gradient(to right, #312e81, transparent); 
+              background: -webkit-linear-gradient(to right, #312e81, transparent); 
+              background: -moz-linear-gradient(to right, #312e81, transparent); 
+              background: -ms-linear-gradient(to right, #312e81, transparent); 
+              background: -o-linear-gradient(to right, #312e81, transparent);">
                 <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+                class="pl-2 py-2 text-left font-light text-[6px] text-white flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Exchange End 2022/06/15
+                </span>
               </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">NARUTO</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">NARUTO UZUMAKI</li>
+                </ul>
+              </div>
+              <div 
+              class="absolute bottom-28 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
                 On Sale
-              </div> -->
+              </div>
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/test-1-removebg-preview.gif" >
+              </div>
+              <div 
+              class="absolute bottom-16 text-white z-30 bg-red-400 w-full h-8 flex flex-row items-center justify-start" 
+              style="
+              background: linear-gradient(to right, #312e81, transparent); 
+              background: -webkit-linear-gradient(to right, #312e81, transparent); 
+              background: -moz-linear-gradient(to right, #312e81, transparent); 
+              background: -ms-linear-gradient(to right, #312e81, transparent); 
+              background: -o-linear-gradient(to right, #312e81, transparent);">
+                <span 
+                class="pl-2 py-2 text-left font-light text-[6px] text-white flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Reveal On 2022/06/15
+                </span>
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">MYSTERY BOX</li>
+                </ul>
+              </div>
+              <div 
+              class="absolute bottom-28 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -471,252 +551,45 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/red-card-01.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
                   <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
                   <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/test-1-removebg-preview.gif" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/test-1-removebg-preview.gif" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-              <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
               </div>
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/test-1-removebg-preview.gif" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -739,51 +612,45 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/yellow-card-01.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
               </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -806,185 +673,45 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/blue-card-01.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
                   <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
                   <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/green-card-01.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-              <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
               </div>
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_0285_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div> -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -1007,51 +734,247 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/purple-card-01.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
               </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div>  -->
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/green-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/all-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/index_GK_IMG_7723_1024.png" >
+              </div>
+              <div 
+              class="absolute bottom-16 text-white z-30 bg-red-400 w-full h-8 flex flex-row items-center justify-start" 
+              style="
+              background: linear-gradient(to right, #312e81, transparent); 
+              background: -webkit-linear-gradient(to right, #312e81, transparent); 
+              background: -moz-linear-gradient(to right, #312e81, transparent); 
+              background: -ms-linear-gradient(to right, #312e81, transparent); 
+              background: -o-linear-gradient(to right, #312e81, transparent);">
+                <span 
+                class="pl-2 py-2 text-left font-light text-[6px] text-white flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Exchange End 2022/06/15
+                </span>
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">NARUTO</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">SASUKE UCHIHA</li>
+                </ul>
+              </div>
+              <div 
+              class="absolute bottom-28 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+                On Sale
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -1074,51 +997,308 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/index_GK_narutohinata_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+              class="absolute bottom-16 text-white z-30 bg-red-400 w-full h-8 flex flex-row items-center justify-start" 
+              style="
+              background: linear-gradient(to right, #312e81, transparent); 
+              background: -webkit-linear-gradient(to right, #312e81, transparent); 
+              background: -moz-linear-gradient(to right, #312e81, transparent); 
+              background: -ms-linear-gradient(to right, #312e81, transparent); 
+              background: -o-linear-gradient(to right, #312e81, transparent);">
                 <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+                class="pl-2 py-2 text-left font-light text-[6px] text-white flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Exchange End 2022/06/15
+                </span>
               </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">NARUTO</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">NARUTO UZUMAKI & HINATA HYUGA</li>
+                </ul>
+              </div>
+              <div 
+              class="absolute bottom-28 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
                 On Sale
-              </div>  -->
+              </div>
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+            <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/blue-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/purple-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/green-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div 
+      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
+        <a href="account.html" class="appearance-none">
+          <div 
+          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
+            <picture 
+            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
+              <div 
+              class="absolute top-0 z-10 w-full mx-auto">
+                <img 
+                class="block w-full mx-auto" 
+                src="./image/all-card-01.png" >
+              </div>
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">Anime Name</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">LUCKY CARD</li>
+                </ul>
+              </div>
+            </picture>
+            <div 
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
+              <ul>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
+                          </div>
+                      </div>
+                  </li>
+                  <li 
+                  class="">
+                      <div 
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
+                          </div>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -1141,51 +1321,64 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
                 src="./image/index_GK_IMG_7723_1024.png" >
               </div>
               <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
+              class="absolute bottom-16 text-white z-30 bg-red-400 w-full h-8 flex flex-row items-center justify-start" 
+              style="
+              background: linear-gradient(to right, #312e81, transparent); 
+              background: -webkit-linear-gradient(to right, #312e81, transparent); 
+              background: -moz-linear-gradient(to right, #312e81, transparent); 
+              background: -ms-linear-gradient(to right, #312e81, transparent); 
+              background: -o-linear-gradient(to right, #312e81, transparent);">
                 <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
+                class="pl-2 py-2 text-left font-light text-[6px] text-white flex flex-row items-center">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 mr-1" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Exchange End 2022/06/15
+                </span>
               </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
+              <div 
+              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start justify-center flex-col" 
+              style="
+              background: linear-gradient(to right, #D32546, transparent); 
+              background: -webkit-linear-gradient(to right, #D32546, transparent); 
+              background: -moz-linear-gradient(to right, #D32546, transparent); 
+              background: -ms-linear-gradient(to right, #D32546, transparent); 
+              background: -o-linear-gradient(to right, #D32546, transparent);">
+                <ul>
+                  <li 
+                  class="px-4 pt-1 text-left font-light text-[6px]">NARUTO</li>
+                  <li 
+                  class="px-4 py-1 text-md font-bold leading-4">SASUKE UCHIHA</li>
+                </ul>
+              </div>
+              <div 
+              class="absolute bottom-28 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
                 On Sale
-              </div>  -->
+              </div>
             </picture>
             <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
+            class="px-4 py-2 bg-gray-900 text-white text-sm relative z-20">
               <ul>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
+                      class="flex items-center justify-between">
+                          <div class="font-light text-[6px]">
+                            #0058
+                          </div>
+                          <div class="font-light text-[6px] text-gray-400">
+                            Price
                           </div>
                       </div>
                   </li>
                   <li 
-                  class="py-1">
+                  class="">
                       <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
+                      class="flex items-center justify-between space-x-4">
+                          <div class="font-light text-[6px]">
+                            2022/12/05
                           </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
+                          <div class="font-bold text-[6px]">
+                            1798.55
                           </div>
                       </div>
                   </li>
@@ -1194,208 +1387,7 @@ class="py-2 md:py-16 w-full bg-deepblue flex justify-center items-center flex-co
           </div>
         </a>
       </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_7723_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div>  -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_7723_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div>  -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-      <div 
-      class="w-full xs:w-1/2 md:w-1/5 mb-4 px-2 sm:px-6 md:px-2">
-        <a href="account.html" class="appearance-none">
-          <div 
-          class="relative rounded-[0.3rem] border-b border-black overflow-hidden bg-deepblack">
-            <picture 
-            class="relative block w-full mx-auto bg-black h-96 border-t rounded-[0.3rem] border-black h-[24rem] xs:h-[16rem] sm:h-[21rem] md:h-[16rem] lg:h-[21rem]">
-              <div 
-              class="absolute top-0 z-10 w-full mx-auto">
-                <img 
-                class="block w-full mx-auto" 
-                src="./image/index_GK_IMG_7723_1024.png" >
-              </div>
-              <div 
-              class="absolute bottom-0 text-white z-30 bg-red-400 w-full h-16 flex items-start flex-wrap flex-col justify-end" 
-              style="background: linear-gradient(to right, #D32546, transparent); background: -webkit-linear-gradient(to right, #D32546, transparent); background: -moz-linear-gradient(to right, #D32546, transparent); background: -ms-linear-gradient(to right, #D32546, transparent); background: -o-linear-gradient(to right, #D32546, transparent);">
-                <span 
-                class="px-4 pt-2 text-left font-light text-xs md:text-sm">NARUTO</span>
-                <span 
-                class="px-4 pb-2 text-md font-bold">NARUTO #003</span>
-              </div>
-<!--               <div 
-              class="absolute bottom-20 right-0 text-white bg-lightred rounded-l z-30 px-3 py-1 text-left font-light text-xs md:text-sm flex justify-center items-center">
-                On Sale
-              </div>  -->
-            </picture>
-            <div 
-            class="p-4 bg-gray-900 text-white text-sm relative z-20">
-              <ul>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex items-center space-x-4">
-                          <div 
-                          class="flex-1 min-w-0">
-                              <p 
-                              class="text-left font-light text-[12px]">
-                                  DKF58#**********1115
-                              </p>
-                          </div>
-                      </div>
-                  </li>
-                  <li 
-                  class="py-1">
-                      <div 
-                      class="flex flex-col sm:flex-row justify-start items-start">
-                          <div 
-                          class="flex-1 min-w-0">
-                            <p 
-                            class="text-left font-light text-[12px] text-gray-500 opacity-50">
-                              2022/10/22
-                            </p>
-                          </div>
-                          <div 
-                          class="inline-flex items-center">
-                            <p 
-                            class="text-left font-bold text-[12px]">
-                              17.5 USDT
-                            </p>
-                          </div>
-                      </div>
-                  </li>
-              </ul>
-            </div>
-          </div>
-        </a>
-      </div>
-
+      
     </div>
   </div>
 
