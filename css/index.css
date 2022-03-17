@@ -15,12 +15,13 @@
   src: url(../font/beatstreet.ttf) format("opentype");
 }
 /* 
-   Account input radio
+   
 */
-/*.radio input:checked ~ label {
-  background-color: #E01E49;
-  color: white;
-}*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+       -webkit-appearance: none;
+       margin: 0;
+}
 /* 
    cookie theme
 */
