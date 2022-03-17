@@ -145,7 +145,7 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
   </div>
 
   <div 
-  class="w-full h-full transition-all duration-500 -mt-52 sm:hidden" 
+  class="w-full h-full transition-all duration-500 -mt-52 sm:hidden bg-yellow-200" 
   :class="{ 'mt-0': isopen }">
     <div 
     class="bg-gradient-to-r from-deepblue to-lightblue">
@@ -391,7 +391,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           <!-- GK 買入 -->
 	        <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
 
 	          <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -461,7 +461,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
 	          </div>
 
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-y-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
             :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8.5rem] opacity-0': !open }">
               <div
               class="w-full sm:w-1/5 px-4">
@@ -502,7 +502,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           <!-- GK 賣出 -->
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -579,7 +579,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
             </div>
 
             <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
+            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-y-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
             :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8.5rem] opacity-0': !open }">
               <div
               class="w-full sm:w-1/5 px-4">
@@ -618,7 +618,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           </div>
           <!-- 虛擬幣 儲值 -->
           <div  
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
@@ -674,7 +674,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           </div>
           <!-- 虛擬幣 提領 -->
           <div  
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
