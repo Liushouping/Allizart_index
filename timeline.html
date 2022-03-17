@@ -127,7 +127,7 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
             <button 
               @click="isopen = !isopen" 
               type="button" 
-              class="text-white flex items-center justify-center text-sm">
+              class="slide text-white flex items-center justify-center text-sm">
                 <svg class="h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
@@ -145,7 +145,7 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
   </div>
 
   <div 
-  class="w-full h-full transition-all duration-500 -mt-32 sm:hidden" 
+  class="w-full h-full transition-all duration-500 -mt-52 sm:hidden" 
   :class="{ 'mt-0': isopen }">
     <div 
     class="bg-gradient-to-r from-deepblue to-lightblue">
@@ -154,6 +154,12 @@ class="fixed top-0 w-full h-16 z-50 bg-gradient-to-r from-deepblue to-lightblue"
         <li 
         class="flex items-center justify-center text-white hover:text-buttonhover cursor-pointer font-light text-xs md:text-sm">
           <a href="market.html">SECONDARY</a>
+        </li>
+        <li>
+          <button
+          class="flex mx-auto text-white bg-gradient-to-t from-deepred to-lightred px-12 py-2 rounded-[0.3rem] text-left font-medium text-xs md:text-sm tracking-widest">
+            LOGOUT
+          </button>
         </li>
       </ul>
     </div>
@@ -166,7 +172,7 @@ class="relative bg-cover bg-center h-52 sm:h-72 py-12 flex justify-between z-20 
 style="background-image: url(./image/vapor.png);">
 
   <div 
-  class="relative max-w-5xl md:mx-auto flex justify-between w-full md:px-20">
+  class="relative max-w-5xl mx-auto flex justify-between w-full xs:px-4 md:px-20">
 
     <div 
     class="flex opacity-0 sm:opacity-100">
@@ -178,7 +184,7 @@ style="background-image: url(./image/vapor.png);">
         </li>
         <li 
         class="before:content-['&#9656;'] before:content-['&#9656;'] before:mr-2 before:text-transparent before:text-red-500 text-red-500 font-light text-xs sm:text-[16px]">
-          <a href="timeline.html" class="appearance-none">USDT RRCORD</a>
+          <a href="javascript:;" class="appearance-none">USDT RRCORD</a>
         </li>
         <li 
         class="before:content-['&#9656;'] before:content-['&#9656;'] before:mr-2 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs sm:text-[16px]">
@@ -188,7 +194,7 @@ style="background-image: url(./image/vapor.png);">
     </div>
 
     <div
-    class="flex flex-col text-white flex justify-end space-y-4">
+    class="flex flex-col text-white flex justify-center space-y-4">
       <div
       class="flex flex-col">
         <h5 
@@ -235,6 +241,7 @@ style="background-image: url(./image/vapor.png);">
           </div>
         </div>
     </div>
+
   </div>
 
 </section>
@@ -413,14 +420,14 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   <ul 
                   class="flex flex-col justify-between">
                     <li 
-                    class="text-charyred text-5xl font-bold flex flex-col items-start">
+                    class="text-charyred text-[2xl] sm:text-5xl font-bold flex flex-col items-start">
                     -1527.25
                     </li>
                     <li 
                     class="text-gray-900 text-xs mt-14">
                     Account Balance
                       <span 
-                      class="md:ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
@@ -429,7 +436,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   <ul 
                   class="flex flex-col justify-between h-full">
                     <li 
-                    class="text-black text-xl">
+                    class="text-black text-[1rem] sm:text-xl">
                       2021/03/15 19:57
                     </li>
                     <li 
@@ -455,7 +462,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
 
             <div 
             class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
-            :class="{ 'mt-0': open, '-mt-[21rem] sm:-mt-32 opacity-0': !open }">
+            :class="{ 'mt-0': open, '-mt-[21rem] sm:-mt-[8.5rem] opacity-0': !open }">
               <div
               class="w-full sm:w-1/5 px-4">
                 <div 
@@ -524,14 +531,14 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   <ul 
                   class="flex flex-col justify-between">
                     <li 
-                    class="text-lightgreen text-5xl font-bold flex flex-col items-start">
+                    class="text-lightgreen text-[2xl] sm:text-5xl font-bold flex flex-col items-start">
                     +1527.25
                     </li>
                     <li 
                     class="text-gray-900 text-xs mt-14">
                     Account Balance
                       <span 
-                      class="md:ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
@@ -539,7 +546,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                 class="w-full lg:w-1/2 sm:border-l border-gray-100 px-4 lg:px-10 pt-6 sm:pt-0 flex items-start">
                   <ul>
                     <li 
-                    class="text-black text-xl">
+                    class="text-black text-[1rem] sm:text-xl">
                       2021/03/15 19:57
                     </li>
                     <li 
@@ -628,7 +635,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                 class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 lg:pb-0">
                   <ul>
                     <li 
-                    class="text-lightgreen text-5xl font-bold flex flex-col items-start">
+                    class="text-lightgreen text-[2xl] sm:text-5xl font-bold flex flex-col items-start">
                     +1527.25
                       <span 
                       class="text-lightgreen font-light text-xs mt-4">Transfer</span>
@@ -637,7 +644,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                     class="text-gray-900 text-xs mt-14">
                     Account Balance
                       <span 
-                      class="md:ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
@@ -646,7 +653,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   <ul 
                   class="flex flex-col justify-between h-full">
                     <li 
-                    class="text-black text-xl">
+                    class="text-black text-[1rem] sm:text-xl">
                       2021/03/15 19:57
                     </li>
                     <li>
@@ -684,7 +691,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                 class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 lg:pb-0">
                   <ul>
                     <li 
-                    class="text-charyred text-5xl font-bold flex flex-col items-start">
+                    class="text-charyred text-[2xl] sm:text-5xl font-bold flex flex-col items-start">
                     -1527.25
                       <span 
                       class="text-charyred font-light text-xs mt-4">Deposit</span>
@@ -693,7 +700,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                     class="text-gray-900 text-xs mt-14">
                     Account Balance
                       <span 
-                      class="md:ml-4 text-xl">12.64233</span>
+                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
                     </li>
                   </ul>
                 </div>
@@ -702,7 +709,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
                   <ul 
                   class="flex flex-col justify-between h-full">
                     <li 
-                    class="text-black text-xl">
+                    class="text-black text-[1rem] sm:text-xl">
                       2021/03/15 19:57
                     </li>
                     <li 
