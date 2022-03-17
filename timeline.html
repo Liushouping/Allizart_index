@@ -391,7 +391,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           <!-- GK 買入 -->
 	        <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
 	          <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -399,110 +399,112 @@ class="bg-gray-900 pt-0 sm:mt-16">
 	          	<span class="text-xs font-light">2021</span>
 	          </div>
 
-	          <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20 h-full sm:h-[220px]">
-	          	<div 
-              class="flex flex-col sm:flex-row px-4 py-8 rounded-[0.3rem] font-light h-full">
-                <div 
-                class="absolute right-5 top-5 text-gray-900" 
-                @click="open = !open">
-                  <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 sm:pb-0">
-                  <ul 
-                  class="flex flex-col justify-between">
-                    <li 
-                    class="text-charyred text-[2rem] sm:text-5xl font-bold flex flex-col items-start">
-                    -1527.25
-                    </li>
-                    <li 
-                    class="text-gray-900 text-xs mt-14">
-                    Account Balance
-                      <span 
-                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
-                    </li>
-                  </ul>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 sm:border-l border-gray-100 px-4 lg:px-10 pt-6 sm:pt-0 flex items-start">
-                  <ul 
-                  class="flex flex-col justify-between h-full">
-                    <li 
-                    class="text-black text-[1rem] sm:text-xl">
-                      2021/03/15 19:57
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-6">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Amount
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      1610.88 USDT
-                    </li>
-                  </ul>
-                </div>  
-              </div>
-	          </div>
-
-            <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-y-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
-            :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8.5rem] opacity-0': !open }">
-              <div
-              class="w-full sm:w-1/5 px-4">
-                <div 
-                class="absolute inset-x-0 lg:left-6 top-0">
-                    <img src="./image/index_GK_IMG_0285_1366.png" class="h-44 sm:h-64 mx-auto sm:mx-0">
-                </div>
-              </div>
+	          <div class="w-full rounded-[0.3rem] overflow-hidden">
               <div 
-              class="w-full sm:w-2/5 px-4 flex justify-center sm:justify-end items-center text-white text-2xl font-bold py-6">
-                RECEIVED
+              class="relative flex w-full flex-col bg-white rounded-[0.3rem] h-full sm:h-[220px] z-20">
+                <div 
+                class="flex flex-col sm:flex-row px-4 py-8 rounded-[0.3rem] font-light h-full">
+                  <div 
+                  class="absolute right-5 top-5 text-gray-900" 
+                  @click="open = !open">
+                    <button type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div 
+                  class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 sm:pb-0">
+                    <ul 
+                    class="flex flex-col justify-between">
+                      <li 
+                      class="text-charyred text-[2rem] sm:text-5xl font-bold flex flex-col items-start">
+                      -1527.25
+                      </li>
+                      <li 
+                      class="text-gray-900 text-xs mt-14">
+                      Account Balance
+                        <span 
+                        class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div 
+                  class="w-full lg:w-1/2 sm:border-l border-gray-100 px-4 lg:px-10 pt-6 sm:pt-0 flex items-start">
+                    <ul 
+                    class="flex flex-col justify-between h-full">
+                      <li 
+                      class="text-black text-[1rem] sm:text-xl">
+                        2021/03/15 19:57
+                      </li>
+                      <li 
+                      class="flex text-gray-900 font-bold text-xs mt-6">
+                        Transaction number
+                      </li>
+                      <li 
+                      class="flex text-gray-900 text-xs">
+                        #SFRS5158128524
+                      </li>
+                      <li 
+                      class="flex text-gray-900 font-bold text-xs mt-2">
+                        Amount
+                      </li>
+                      <li 
+                      class="flex text-gray-900 text-xs">
+                        1610.88 USDT
+                      </li>
+                    </ul>
+                  </div>  
+                </div>
               </div>
-              <div
-              class="w-full sm:w-2/5 px-4">
-                  <ul 
-                  class="flex flex-col justify-between h-full">
-                    <li 
-                    class="flex text-white font-bold text-xs">
-                      Item Name
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      NARUTO UZUMAKI
-                    </li>
-                    <li 
-                    class="flex text-white font-bold text-xs mt-2">
-                      Tokien ID
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      #0025
-                    </li>
-                  </ul>
-              </div>
+
+              <div 
+              class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between pt-40 sm:pt-6 pb-6 font-light transition-all duration-300 z-10" 
+              :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8rem]': !open }">
+                <div
+                class="w-full sm:w-1/5 px-4">
+                  <div 
+                  class="absolute inset-x-0 lg:left-6 top-0">
+                      <img src="./image/index_GK_IMG_0285_1366.png" class="h-44 sm:h-64 mx-auto sm:mx-0">
+                  </div>
+                </div>
+                <div 
+                class="w-full sm:w-2/5 px-4 flex justify-center sm:justify-end items-center text-white text-2xl font-bold py-6">
+                  RECEIVED
+                </div>
+                <div
+                class="w-full sm:w-2/5 px-4">
+                    <ul 
+                    class="flex flex-col justify-between h-full">
+                      <li 
+                      class="flex text-white font-bold text-xs">
+                        Item Name
+                      </li>
+                      <li 
+                      class="flex text-gray-300 text-xs">
+                        NARUTO UZUMAKI
+                      </li>
+                      <li 
+                      class="flex text-white font-bold text-xs mt-2">
+                        Tokien ID
+                      </li>
+                      <li 
+                      class="flex text-gray-300 text-xs">
+                        #0025
+                      </li>
+                    </ul>
+                </div>
+              </div> 
             </div>
 
 	        </div>
           <!-- GK 賣出 -->
           <div  
           x-data="{ open: false }" 
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col">
@@ -510,115 +512,119 @@ class="bg-gray-900 pt-0 sm:mt-16">
               <span class="text-xs font-light">2022</span>
             </div>
 
-            <div 
-            class="flex w-full flex-col bg-white rounded-[0.3rem] z-20 h-full sm:h-[220px]">
+            <div class="w-full rounded-[0.3rem] overflow-hidden">
               <div 
-              class="flex flex-col sm:flex-row px-4 py-8 rounded-[0.3rem] font-light h-full">
+              class="relative flex w-full flex-col bg-white rounded-[0.3rem] h-full sm:h-[220px] z-20">
                 <div 
-                class="absolute right-5 top-5 text-gray-900" 
-                @click="open = !open">
-                  <button type="button">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
-                    </svg>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
-                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
-                    </svg>
-                  </button>
+                class="flex flex-col sm:flex-row px-4 py-8 rounded-[0.3rem] font-light h-full">
+                  <div 
+                  class="absolute right-5 top-5 text-gray-900" 
+                  @click="open = !open">
+                    <button type="button">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                      </svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="open">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 15l7-7 7 7" />
+                      </svg>
+                    </button>
+                  </div>
+                  <div 
+                  class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 sm:pb-0">
+                    <ul 
+                    class="flex flex-col justify-between">
+                      <li 
+                      class="text-lightgreen text-[2rem] sm:text-5xl font-bold flex flex-col items-start">
+                       +1527.25
+                      </li>
+                      <li 
+                      class="text-gray-900 text-xs mt-14">
+                      Account Balance
+                        <span 
+                        class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
+                      </li>
+                    </ul>
+                  </div>
+                  <div 
+                  class="w-full lg:w-1/2 sm:border-l border-gray-100 px-4 lg:px-10 pt-6 sm:pt-0 flex items-start">
+                    <ul 
+                    class="flex flex-col justify-between h-full">
+                      <li 
+                      class="text-black text-[1rem] sm:text-xl">
+                        2021/03/15 19:57
+                      </li>
+                      <li 
+                      class="flex text-gray-900 font-bold text-xs mt-6">
+                        Transaction number
+                      </li>
+                      <li 
+                      class="flex text-gray-900 text-xs">
+                        #SFRS5158128524
+                      </li>
+                      <li 
+                      class="flex text-gray-900 font-bold text-xs mt-2">
+                        Amount
+                      </li>
+                      <li 
+                      class="flex text-gray-900 text-xs">
+                        1610.88 USDT
+                      </li>
+                      <li 
+                      class="flex text-gray-900 font-bold text-xs mt-2">
+                        Fee
+                      </li>
+                      <li 
+                      class="flex text-gray-900 text-xs">
+                        5.62 USDT
+                      </li>
+                    </ul>
+                  </div>  
                 </div>
-                <div 
-                class="w-full lg:w-1/2 px-4 flex border-b sm:border-0 pb-6 sm:pb-0">
-                  <ul 
-                  class="flex flex-col justify-between">
-                    <li 
-                    class="text-lightgreen text-[2rem] sm:text-5xl font-bold flex flex-col items-start">
-                    +1527.25
-                    </li>
-                    <li 
-                    class="text-gray-900 text-xs mt-14">
-                    Account Balance
-                      <span 
-                      class="md:ml-4 text-[1rem] sm:text-xl">12.64233</span>
-                    </li>
-                  </ul>
-                </div>
-                <div 
-                class="w-full lg:w-1/2 sm:border-l border-gray-100 px-4 lg:px-10 pt-6 sm:pt-0 flex items-start">
-                  <ul>
-                    <li 
-                    class="text-black text-[1rem] sm:text-xl">
-                      2021/03/15 19:57
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-6">
-                      Transaction number
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      #SFRS5158128524
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Amount
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      1610.88 USDT
-                    </li>
-                    <li 
-                    class="flex text-gray-900 font-bold text-xs mt-2">
-                      Fee
-                    </li>
-                    <li 
-                    class="flex text-gray-900 text-xs">
-                      5.62 USDT
-                    </li>
-                  </ul>
-                </div>  
               </div>
-            </div>
 
-            <div 
-            class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between overflow-y-hidden pt-40 sm:pt-6 pb-6 font-light z-10 transition-all duration-300" 
-            :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8.5rem] opacity-0': !open }">
-              <div
-              class="w-full sm:w-1/5 px-4">
-                <div 
-                class="absolute inset-x-0 lg:left-6 top-0">
-                    <img src="./image/index_GK_narutohinata_1366.png" class="h-44 sm:h-64 mx-auto sm:mx-0">
-                </div>
-              </div>
               <div 
-              class="w-full sm:w-2/5 px-4 flex justify-center sm:justify-end items-center text-white text-2xl font-bold py-6">
-                SOLD
-              </div>
-              <div
-              class="w-full sm:w-2/5 px-4">
-                  <ul>
-                    <li 
-                    class="flex text-white font-bold text-xs">
-                      Item Name
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      NARUTO UZUMAKI & HINATA HYUGA
-                    </li>
-                    <li 
-                    class="flex text-white font-bold text-xs mt-2">
-                      Tokien ID
-                    </li>
-                    <li 
-                    class="flex text-gray-300 text-xs">
-                      #0025
-                    </li>
-                  </ul>
-              </div>
+              class="relative w-full bg-gray-800 border-gray-500 rounded-[0.3rem] px-4 flex flex-col sm:flex-row justify-between pt-40 sm:pt-6 pb-6 font-light transition-all duration-300 z-10" 
+              :class="{ 'mt-0': open, '-mt-[22rem] sm:-mt-[8rem]': !open }">
+                <div
+                class="w-full sm:w-1/5 px-4">
+                  <div 
+                  class="absolute inset-x-0 lg:left-6 top-0">
+                      <img src="./image/index_GK_narutohinata_1366.png" class="h-44 sm:h-64 mx-auto sm:mx-0">
+                  </div>
+                </div>
+                <div 
+                class="w-full sm:w-2/5 px-4 flex justify-center sm:justify-end items-center text-white text-2xl font-bold py-6">
+                  SOLD
+                </div>
+                <div
+                class="w-full sm:w-2/5 px-4">
+                    <ul 
+                    class="flex flex-col justify-between h-full">
+                      <li 
+                      class="flex text-white font-bold text-xs">
+                        Item Name
+                      </li>
+                      <li 
+                      class="flex text-gray-300 text-xs">
+                        NARUTO UZUMAKI
+                      </li>
+                      <li 
+                      class="flex text-white font-bold text-xs mt-2">
+                        Tokien ID
+                      </li>
+                      <li 
+                      class="flex text-gray-300 text-xs">
+                        #0025
+                      </li>
+                    </ul>
+                </div>
+              </div> 
             </div>
-
+  
           </div>
           <!-- 虛擬幣 儲值 -->
           <div  
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
@@ -674,7 +680,7 @@ class="bg-gray-900 pt-0 sm:mt-16">
           </div>
           <!-- 虛擬幣 提領 -->
           <div  
-          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col overflow-y-hidden">
+          class="ml-10 relative flex items-center text-white bg-gray-800 rounded-[0.3rem] mb-10 flex-col">
 
             <div 
             class="w-16 h-16 absolute -left-12 transform -translate-y-1/2 top-6 -translate-x-1/2 rounded-full z-10 mt-2 md:mt-0 bg-gray-500 flex justify-center items-center flex-col hidden">
