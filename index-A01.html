@@ -53,12 +53,7 @@ function OptanonWrapper() { }
 </head>
 <body 
 class="tracking-[1px]">
-<!-- OneTrust Cookie 列表开始 -->
-<div id="ot-sdk-cookie-policy"></div>
-<!-- OneTrust Cookie 列表结束 -->
-<!-- OneTrust Cookie 设置按钮开始 -->
-<button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie 设置</button>
-<!-- OneTrust Cookie 设置按钮结束 -->
+
 <nav 
 x-data="{ isopen: false }" 
 class="fixed top-0 w-full h-16 z-50">
@@ -317,7 +312,7 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
     x-data="{ open: true }" 
     class="bg-darkblue rounded-[0.3rem] flex justify-start items-start flex-col p-10 relative">
       <div 
-      class=" absolute right-5 top-5 text-white" 
+      class=" absolute right-5 top-5 text-white hidden" 
       @click="open = !open">
         <button type="button">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" x-show="!open">
