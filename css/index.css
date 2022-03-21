@@ -25,7 +25,7 @@ input::-webkit-inner-spin-button {
 /* 
    cookie theme
 */
-.theme_gk{
+/*.theme_gk{
     --cc-bg: #161a1c;
     --cc-text: #d8e5ea;
     --cc-btn-primary-bg: #E01E49;
@@ -59,4 +59,4 @@ input::-webkit-inner-spin-button {
 
 .theme_turquoise .cc_div #c-txt{
     color: #b0b8c6!important;
-}
+}*/
