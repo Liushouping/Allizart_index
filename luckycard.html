@@ -325,10 +325,10 @@ style="background-image: url(./image/vapor.png);">
 </section>
 
 <section
-class="h-full w-full bg-gray-900 flex justify-center items-center flex-col pt-2 sm:pt-16 pb-24 px-4">
-  
+class="w-full pb-8 bg-gray-900 flex flex-col justify-center items-center">
+
   <div 
-  class="max-w-7xl mx-auto flex sm:hidden flex-col justify-center items-center w-full">
+  class="max-w-7xl mx-auto flex sm:hidden flex-col justify-center items-center w-full py-2 md:pt-24">
 
     <div style="width: 90%;">
       <ul
@@ -342,7 +342,7 @@ class="h-full w-full bg-gray-900 flex justify-center items-center flex-col pt-2 
           <a href="timeline.html" class="appearance-none">USDT RRCORD</a>
         </li>
         <li 
-        class="mx-1 w-25 md:w-48 h-10 flex justify-start md:justify-center items-center before:content-['&#9656;'] before:mr-2 before:text-transparent before:text-red-500 text-red-500 font-light text-xs md:text-sm flex flex-row text-center">
+        class="mx-1 w-25 md:w-48 h-10 flex justify-start md:justify-center items-center before:content-['&#9656;'] before:mr-2 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs md:text-sm flex flex-row text-center">
           <a href="settings.html" class="appearance-none">SETTINGS</a>
         </li>
       </ul>
@@ -350,47 +350,41 @@ class="h-full w-full bg-gray-900 flex justify-center items-center flex-col pt-2 
 
   </div>
 
-  <h3
-  class="text-white py-10 text-[3rem] sm:text-[4rem] ld:text-[5rem] font-beatstreet">WALLET ADDRESS</h3>
+  <div 
+  x-data="{ productstatus: 'sale' }"
+  class="max-w-7xl mx-auto w-full sm:pt-28 mt-6">
+    <div class="bg-white rounded-[0.3rem] mx-10 flex flex-col sm:flex-row items-between p-10">
+      <div class="w-full md:w-1/2 px-6 sm:px-10 py-4 sm:py-10 md:py-20 flex flex-col justify-center items-center">
+        <img src="./image/all-card-01.png" class="w-full">
+        <p class="text-[12px] leading-6 font-light">在指定時間內，賣回平台，享有原價 100% + 額外乘數的回饋，額外獎勵的乘數 將依照每檔期而制定。</p>
+      </div>
+      <div class="w-full md:w-1/2 px-6 sm:px-10 py-4 sm:py-10 md:py-20 sm:border-l border-gray-100">
+          <p class="text-gray-400 font-light">Naruto Uzumaki & Hinata Hyuga</p>
+          <p class="text-[24px] sm:text-[32px] font-bold">LUCKY CARD</p>
+          <p class="text-gray-400 text-[12px] font-light mt-6">Contract Address</p>
+          <p class="font-light text-[12px] mb-12">DEKF51848#**********118515</p>
 
-  <div
-  class="relative max-w-xl sm:max-w-[35rem] w-full h-72 bg-black rounded">
-    <ul
-    class="text-white py-9 px-4 space-y-4">
-      <li 
-      class="before:content-['&#9656;'] before:mr-0 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs md:text-sm">
-        <a href="javascript:;" class="appearance-none">BTC</a>
-      </li>
-      <li 
-      class="before:content-['&#9656;'] before:mr-0 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs md:text-sm">
-        <a href="javascript:;" class="appearance-none">ETH</a>
-      </li>
-      <li 
-      class="before:content-['&#9656;'] before:mr-0 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs md:text-sm">
-        <a href="javascript:;" class="appearance-none">LTC</a>
-      </li>
-      <li 
-      class="before:content-['&#9656;'] before:mr-0 before:text-transparent hover:before:text-red-500 hover:text-red-500 font-light text-xs md:text-sm">
-        <a href="javascript:;" class="appearance-none">USDT_ETH</a>
-      </li>
-    </ul>
+          <div>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-bold mt-6">End Date</p>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-light text-gray-900 my-2">2022/3/31</p>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-bold mt-6">USDT Out</p>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-light text-gray-900 my-2">5%</p>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-bold mt-6">Fee</p>
+            <p class="text-[12px] sm:text-[14px] ld:text-[16px] font-bold my-2">0.0 USDT</p>
+            <p class="text-[12px] leading-6 font-light">1% of the total sale will be paid to Binance as a Platform fee. An additional 1% will be also be paid to the original creator / beneficiary as a Royalty payment.</p>
+          </div>
 
-    <div
-    class="absolute w-4/6 md:w-80 h-72 right-0 top-0 bg-white rounded-[0.3rem] flex justify-center items-center flex-col text-xs md:text-sm">
-      <h5
-      class="text-gray-400 py-2 font-light">BTC</h5>
-      <img 
-      src="./image/qrcode.png" 
-      class="h-40">
-      <input 
-      id="copycode" 
-      class="font-light text-gray-400 py-2 text-center" 
-      value="DTF51582#54824636"></input>
-      <button 
-      type="button" 
-      class="bg-gray-400 px-4 py-2 rounded-[0.3rem] text-white hover:bg-gray-500 font-light text-[12px] sm:text-[14px] ld:text-[16px]" 
-      onclick="copy();">Copy Address</button>
+      </div>
     </div>
+  </div>
+
+  <div 
+  class="my-12">
+    <button 
+      type="button"  
+      class="w-[260px] bg-gradient-to-t from-deepred to-lightred rounded-[0.3rem] text-white text-xl py-2">
+      USDT OUT
+    </button>
   </div>
 </section>
 
@@ -476,11 +470,9 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
   class="mt-4 tracking-widest" 
   style="writing-mode: vertical-lr;">BACK TO TOP</p>
 </button>
-<script src="./js/sweetalert2@9.js"></script>
 <script src="./js/alpinejs@3.2.3.js" defer></script>
-<!-- <script src="./js/CookieConsent@2.8.0.js" defer></script>
-<script src="./js/cookieconsent-init.js" defer></script> -->
-  <script>
+<script src="./js/datepicker.js"></script>
+<script>
         // back to top
         document.addEventListener('alpine:init', () => {
             Alpine.data('topBtn', () => ({
@@ -497,29 +489,6 @@ class="fixed z-50 hidden p-3 text-white bottom-[5%] right-[2%]">
             topBtn.classList.remove("hidden"): topBtn.classList.add("hidden");
 
         }
-        // copy
-        function copy() {
-            var content = document.getElementById('copycode');
-            content.select();
-            document.execCommand('copy');
-
-            const Toast = Swal.mixin({
-              toast: true,
-              position: 'top-end',
-              showConfirmButton: false,
-              timer: 3000,
-              timerProgressBar: true,
-              didOpen: (toast) => {
-                toast.addEventListener('mouseenter', Swal.stopTimer)
-                toast.addEventListener('mouseleave', Swal.resumeTimer)
-              }
-            });
-
-            Toast.fire({
-                icon: 'success',
-                title: '你已經完成複製動作。'
-            });
-        }
-  </script>
+</script>
 </body>
 </html>
