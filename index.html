@@ -498,7 +498,8 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22
                   <span 
                   x-data="{ tooltip: false }" 
                   x-on:mouseover="tooltip = true" 
-                  x-on:mouseleave="tooltip = false">
+                  x-on:mouseleave="tooltip = false" 
+                  @click="tooltip != tooltip">
                     <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
                     <div 
                     x-show="tooltip" 
