@@ -233,9 +233,19 @@ class="relative overflow-hidden mt-16">
             <div class="flex">
               <p class="flex flex-row items-center">USDT Out
                 <span class="font-bold text-black ml-2">5%</span>
-                <span>
-                  <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
-                </span>
+                <div class="relative flex flex-row justify-center items-center cursor-pointer">
+                  <span 
+                  x-data="{ tooltip: true }" 
+                  x-on:mouseover="tooltip = true" 
+                  x-on:mouseleave="tooltip = false">
+                    <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
+                    <div 
+                    x-show="tooltip" 
+                    class="absolute top-8 -left-40 sm:left-0 w-[350px] h-auto bg-gradient-to-r from-deepblue to-lightblue text-white rounded-[0.3rem] p-4 z-50 font-light text-xs">
+                      Do not fret, you are still receiving an additional reward to use on our webstore. Sell back to the platform within the specified time period and receive a rebate of 100% of the original price + an additional amount, which will be set for each tranche.
+                    </div>
+                  </span>
+                </div>
               </p>
             </div>
           </div>
@@ -480,9 +490,19 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22
             <div class="flex">
               <p class="flex flex-row items-center">USDT Out
                 <span class="font-bold text-black ml-2">5%</span>
-                <span>
-                  <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
-                </span>
+                <div class="relative flex flex-row justify-center items-center cursor-pointer">
+                  <span 
+                  x-data="{ tooltip: true }" 
+                  x-on:mouseover="tooltip = true" 
+                  x-on:mouseleave="tooltip = false">
+                    <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
+                    <div 
+                    x-show="tooltip" 
+                    class="absolute top-8 -left-40 sm:left-0 w-[350px] h-auto bg-gradient-to-r from-deepblue to-lightblue text-white rounded-[0.3rem] p-4 z-50 font-light text-xs">
+                      Do not fret, you are still receiving an additional reward to use on our webstore. Sell back to the platform within the specified time period and receive a rebate of 100% of the original price + an additional amount, which will be set for each tranche.
+                    </div>
+                  </span>
+                </div>
               </p>
             </div>
           </div>
