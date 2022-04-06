@@ -236,6 +236,8 @@ class="relative overflow-hidden mt-16">
                 <div class="relative flex flex-row justify-center items-center cursor-pointer">
                   <span 
                   x-data="{ tooltip: false }" 
+                  @mouseover="tooltip = true" 
+                  @mouseleave="tooltip = false"
                   @click="tooltip =! tooltip">
                     <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
                     <div 
@@ -492,6 +494,8 @@ class="relative bg-gradient-to-r from-deepred to-lightred h-100 pb-[3rem] pt-[22
                 <div class="relative flex flex-row justify-center items-center cursor-pointer">
                   <span 
                   x-data="{ tooltip: false }" 
+                  @mouseover="tooltip = true" 
+                  @mouseleave="tooltip = false"
                   @click="tooltip =! tooltip">
                     <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
                     <div 
