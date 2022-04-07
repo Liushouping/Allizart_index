@@ -33,8 +33,6 @@ input::-webkit-inner-spin-button {
    right: 0;
    bottom: 0;
    left: 0;
-   background-position: right;
-   background-repeat: no-repeat;
-   background: url(../image/vapor-02.png);
+   background: url(../image/vapor-02.png) center no-repeat;
    background-size: cover;
 }
