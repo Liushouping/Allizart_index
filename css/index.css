@@ -22,3 +22,19 @@ input::-webkit-inner-spin-button {
        -webkit-appearance: none;
        margin: 0;
 }
+/*
+ fixed for ios
+*/
+.bg-vapor-fixed::before {
+   content: ' ';
+   position: fixed;
+   z-index: -1;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-position: right;
+   background-repeat: no-repeat;
+   background: url(../image/vapor-02.png);
+   background-size: cover;
+}
