@@ -233,12 +233,13 @@ class="relative overflow-hidden mt-16">
             <div class="flex">
               <p class="flex flex-row items-center">USDT Out
                 <span class="font-bold text-black ml-2">5%</span>
-                <div class="relative flex flex-row justify-center items-center cursor-pointer">
+                <div 
+                class="relative flex flex-row justify-center items-center cursor-pointer" 
+                @click="tooltip =! tooltip">
                   <span 
                   x-data="{ tooltip: false }" 
                   @mouseover="tooltip = true" 
-                  @mouseleave="tooltip = false"
-                  @click="tooltip =! tooltip">
+                  @mouseleave="tooltip = false">
                     <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
                     <div 
                     x-show="tooltip" 
@@ -491,12 +492,13 @@ class="relative bg-gradient-to-r from-deepred to-lightred pb-[3rem] pt-[22rem] m
             <div class="flex">
               <p class="flex flex-row items-center">USDT Out
                 <span class="font-bold text-black ml-2">5%</span>
-                <div class="relative flex flex-row justify-center items-center cursor-pointer">
+                <div 
+                class="relative flex flex-row justify-center items-center cursor-pointer" 
+                @click="tooltip =! tooltip">
                   <span 
                   x-data="{ tooltip: false }" 
                   @mouseover="tooltip = true" 
-                  @mouseleave="tooltip = false"
-                  @click="tooltip =! tooltip">
+                  @mouseleave="tooltip = false">
                     <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
                     <div 
                     x-show="tooltip" 
