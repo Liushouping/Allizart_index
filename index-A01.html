@@ -462,68 +462,72 @@ class="py-24 w-full bg-gray-900 flex justify-center items-center flex-col">
 class="relative bg-gradient-to-r from-deepred to-lightred pb-[3rem] pt-[22rem] md:py-36 overflow-hidden">
 
   <div 
-  class="max-w-5xl flex flex-col justify-center md:justify-end items-center md:items-end w-full mx-auto px-10">
+  class="max-w-7xl flex flex-col justify-center md:justify-end items-center md:items-end w-full mx-auto px-10">
     <div 
-    class="absolute object-cover top-0">
-      <img src="./image/index_GK_IMG_7723_1024.png" class="w-full h-full">
+    class="absolute object-cover top-0 left-0">
+      <img src="./image/index_GK_IMG_7723_1366.png" class="w-full h-full">
     </div>
-    <div 
-    class="text-center z-20 py-6 px-4">
-      <h3 
-      class="text-[24px] sm:text-[48px] my-[0.8rem] mx-auto font-bold text-white text-center w-full lg:w-[420px]">Sasuke Uchiha</h3>
-    </div>
-    <div 
-    class="bg-white rounded-[0.3rem] flex flex-col z-20 shadow-lg px-4 min-w-[20rem]">
-        <div 
-        class="pt-6">
+
+    <div class="z-20 flex flex-col justify-center items-center">
+      <div 
+      class="py-6">
+        <h3 
+        class="text-[24px] sm:text-[48px] my-[0.8rem] mx-auto font-bold text-white text-center w-full">Sasuke Uchiha</h3>
+      </div>
+      <div 
+      class="bg-white rounded-[0.3rem] flex flex-col z-20 shadow-lg px-4 min-w-[20rem]">
           <div 
-          class="flex items-start flex-col text-[14px] sm:text-[16px] font-light text-gray-500">
-            <div class="flex flex-row">
-              <span>Sale starts in</span>
-              <span class="text-black font-bold pl-2 sm:pl-4">00:00:00</span>
+          class="pt-6">
+            <div 
+            class="flex items-start flex-col text-[14px] sm:text-[16px] font-light text-gray-500">
+              <div class="flex flex-row">
+                <span>Sale starts in</span>
+                <span class="text-black font-bold pl-2 sm:pl-4">00:00:00</span>
+              </div>
+              <div class="flex flex-row">
+                <span>Remaining Amount</span>
+                <span class="text-black font-bold pl-2 sm:pl-4">22,000 / 22,000</span>
+              </div>
+              <div class="flex flex-row">
+                <p>Probability<span class="font-bold text-black ml-2">5%</span></p>
+              </div>
+              <div class="flex">
+                <p class="flex flex-row items-center">USDT Out
+                  <span class="font-bold text-black ml-2">5%</span>
+                  <div 
+                  class="relative flex flex-row justify-center items-center cursor-pointer" 
+                  x-data="{ tooltip: false }"
+                  @click="tooltip =! tooltip">
+                    <span 
+                    @mouseover="tooltip = true" 
+                    @mouseleave="tooltip = false">
+                      <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
+                      <div 
+                      x-show="tooltip" 
+                      class="absolute top-8 -left-[8.5rem] sm:left-0 w-[350px] h-auto bg-gradient-to-r from-deepblue to-lightblue text-white rounded-[0.3rem] p-4 z-50 font-light text-xs">
+                        Do not fret, you are still receiving an additional reward to use on our webstore. Sell back to the platform within the specified time period and receive a rebate of 100% of the original price + an additional amount, which will be set for each tranche.
+                      </div>
+                    </span>
+                  </div>
+                </p>
+              </div>
             </div>
-            <div class="flex flex-row">
-              <span>Remaining Amount</span>
-              <span class="text-black font-bold pl-2 sm:pl-4">22,000 / 22,000</span>
-            </div>
-            <div class="flex flex-row">
-              <p>Probability<span class="font-bold text-black ml-2">5%</span></p>
-            </div>
-            <div class="flex">
-              <p class="flex flex-row items-center">USDT Out
-                <span class="font-bold text-black ml-2">5%</span>
-                <div 
-                class="relative flex flex-row justify-center items-center cursor-pointer" 
-                x-data="{ tooltip: false }"
-                @click="tooltip =! tooltip">
-                  <span 
-                  @mouseover="tooltip = true" 
-                  @mouseleave="tooltip = false">
-                    <img src="./image/banner_bonus_sp_0324.svg" class="w-4 h-4 ml-2">
-                    <div 
-                    x-show="tooltip" 
-                    class="absolute top-8 -left-[8.5rem] sm:left-0 w-[350px] h-auto bg-gradient-to-r from-deepblue to-lightblue text-white rounded-[0.3rem] p-4 z-50 font-light text-xs">
-                      Do not fret, you are still receiving an additional reward to use on our webstore. Sell back to the platform within the specified time period and receive a rebate of 100% of the original price + an additional amount, which will be set for each tranche.
-                    </div>
-                  </span>
-                </div>
-              </p>
+            <div 
+            class="text-center py-4 ld:py-12 flex flex-row justify-center items-end space-x-6">
+              <h2 
+              class="text-4xl font-bold">1785.56</h2>
+              <span class="text-[14px] sm:text-[16px] font-bold text-black">USDT</span>
             </div>
           </div>
           <div 
-          class="text-center py-4 ld:py-12 flex flex-row justify-center items-end space-x-6">
-            <h2 
-            class="text-4xl font-bold">1785.56</h2>
-            <span class="text-[14px] sm:text-[16px] font-bold text-black">USDT</span>
+          class="pb-6">
+            <a href="garage.html" class="appearance-none w-full flex justify-center bg-gradient-to-t from-deepred to-lightred rounded-[0.3rem] text-white py-2 px-2">
+              BUY NOW
+            </a>
           </div>
-        </div>
-        <div 
-        class="pb-6">
-          <a href="garage.html" class="appearance-none w-full flex justify-center bg-gradient-to-t from-deepred to-lightred rounded-[0.3rem] text-white py-2 px-2">
-            BUY NOW
-          </a>
-        </div>
+      </div>
     </div>
+
   </div>
 
 </section>
